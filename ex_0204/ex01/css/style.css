@@ -1,0 +1,19 @@
+th,td{
+    border: 1px solid #ccc; 
+    padding: 5px;
+    font-size: 0.8em;
+ }
+
+ a, a:visited{
+     color: #222;
+     text-decoration: none;
+ }
+
+ #sns > ul{
+     padding-left: 0;
+ }
+
+ #sns > ul > li {
+     display: inline-block;
+     width: 80px;
+ }

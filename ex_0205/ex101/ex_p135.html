@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #fff;
+            }
+            form legend {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            form ul li {
+                list-style: none;
+                margin: 15px 0;
+            }
+            form fieldset {
+                margin-bottom: 25px;
+            }
+            #member,
+            #stuffs {
+                width: 50px;
+            }
+
+            .container {
+                width: 600px;
+                margin: 0 auto;
+            }
+            ul {
+                /* 순서없는 목록에 적용할 스타일 */
+                list-style-type: none;
+                /* 불릿 없앰 */
+            }
+
+            label.title {
+                /* class=title인 label에 적용할 스타일 */
+                font-weight: bold;
+                /* 굵은 글자 */
+                width: 80px;
+                /* 너비 80px */
+                float: left;
+                /* 왼쪽부터 배치 */
+            }
+
+            div.centered {
+                /* class=centered인 div에 적용할 스타일 */
+                text-align: center;
+                /* 가운데 정렬 */
+            }
+
+            fieldset {
+                /* 필드셋에 적용할 스타일*/
+                margin: 15px 10px;
+                /* 상하 마진 15xp, 좌우 마진 10px */
+            }
+
+            fieldset legend {
+                /* 필드셋의 제목 */
+                font-weight: bold;
+                /* 굵은 글자 */
+                font-size: 18px;
+                /* 글자 크기 18px */
+                color: purple;
+                /* 글자색 자주 */
+            }
+
+            ul li {
+                /* 목록의 각 항목 */
+                margin-bottom: 10px;
+                /* 아래 마진 10px */
+            }
+
+            form .easys {
+			text-align: left;
+			font-size: 12px;
+			color: blue;
+		}
+        .subm{  /* 버튼 스타일 */
+			display:block;  /* 블록 레벨 요소 */
+			background-color:#fff;  /* 배경색 */
+			border:1px solid #dedede;  /* 테두리 */
+			cursor:pointer;  /* 마우스 포인터 */
+			padding:5px 10px 6px 7px;	/* 패딩 */
+		}
+		.subm img{  /* 버튼 내 왼쪽 이미지 */
+			border:0;  /* 테두리 없음*/
+			padding:0;  /* 패딩 없음 */
+			width:16px;  /* 가로 크기 */
+			height:16px;  /* 세로 크기 */	
+		}
+		.subm:hover{  /* 버튼 위로 마우스 포인터 올렸을 때 스타일 */
+			background-color:#e6efc2;  /* 배경색 */
+			border:1px solid #c6d880;  /* 테두리 */
+			color:#529215; /* 글자색 */
+		}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>폼 삽입하기</h3>
+            <form action="#" method="post" autocomplete="off">
+                <input type="text" title="검색">
+                <input type="submit" value="검색">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>포커스</h3>
+            <form action="#" method="post">
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>태그 사용하기</h3>
+            <form action="#">
+                <h3>수강 분야(다수 선택 가능)</h3>
+                <ul>
+                    <li><input type="checkbox" value="grm">문법</li>
+                    <li><input type="checkbox" value="wr">작문</li>
+                    <li><input type="checkbox" value="rd">독해</li>
+                </ul>
+                <h3>수강 과목(1과목만 선택 가능)</h3>
+                <ul>
+                    <li>
+                        <label><input type="radio" name="subject" value="eng">영어회화</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="subject" value="ch">중국어회화</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="subject" value="jp">일어회화</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>폼 요소 그룹으로 묶기</h3>
+            <form action="#">
+                <fieldset>
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="name">이름</label>
+                            <input type="text" id="name">
+                        </li>
+                        <li>
+                            <label for="mail">메일 주소</label>
+                            <input type="text" id="mail">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="id">아이디</label>
+                            <input type="text" id="id">
+                        </li>
+                        <li>
+                            <label for="pwd">비밀번호</label>
+                            <input type="text" id="pwd">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>1분복습</h3>
+            <form action="#">
+                <h3>회원 가입</h3>
+                <fieldset>
+                    <legend>필수 정보</legend>
+                    <label for="name">이름 :
+                    </label>
+                    <input type="text" id="name">
+                </fieldset>
+                <fieldset>
+                    <legend>선택 정보</legend>
+                    <label for="birth">생일 :
+                    </label>
+                    <input type="text" id="birth" placeholder="연도-월-일">
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form action="#">
+                <input type="hidden" id="agreement" value="Y">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>로그인 폼 만들기</h3>
+            <form>
+                <fieldset>
+                    <label for="user_id">아이디:<input type="text" id="user_id" size="10" placeholder="아이디를 입력하세요"></label>
+                    <label for="user_pw">비밀번호:<input type="password" id="user_pw" size="10"></label>
+                    <input type="submit" value="로그인">
+
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>회원 가입 폼 만들기</h3>
+            <form>
+                <h3>회원 가입</h3>
+                <fieldset>
+                    <legend>로그인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="user-id">아이디</label>
+                            <input type="text" id="user-id">
+                        </li>
+                        <li>
+                            <label for="user-pw">비밀번호</label>
+                            <input type="password" id="user-pw" size="20">
+                        </li>
+                        <li>
+                            <label for="user-pw2">비밀번호 확인</label>
+                            <input type="password" id="user-pw2" size="20">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="user-name">이름</label>
+                            <input type="text" id="user-name" size="20">
+                        </li>
+                        <li>
+                            <label for="mail">메일 주소</label>
+                            <input type="text" id="mail" size="20">
+                        </li>
+                        <li>
+                            <label for="phone">연락처</label>
+                            <input type="text" id="phone" size="20">
+                        </li>
+                        <li>
+                            <label for="homep">홈페이지</label>
+                            <input type="text" id="homep" size="20">
+                        </li>
+                    </ul>
+                </fieldset><br><br>
+                <input type="submit" value="가입하기">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>복습</h3>
+            <form>
+                <label for="dap">한 줄 댓글 :
+                    <input type="text" id="dap" size="60" maxlength="30" \="\"></label>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>number 사용하기</h3>
+            <form>
+                <input type="number" min="1" max="5" value="1">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>다양한 숫자 입력 폼</h3>
+            <fieldset>
+                <legend>등록 정보</legend>
+                <ul>
+                    <li>
+                        <label for="member" class="reg">참여인원<small>(최대10명)</small>
+                        </label>
+                        <input type="number" id="member" value="1" min="0" max="10" step="1">
+                    </li>
+                    <li>
+                        <label for="stuffs" class="reg">지원물품<small>(1인당 5개)</small>
+                        </label>
+                        <input type="number" id="stuffs" value="5" min="0" max="50" step="5">
+                    </li>
+                    <li>
+                        <label for="satis" class="reg">희망 단계<small>(하,중,상)</small>
+                        </label>
+                        <input type="number" id="satis" value="1" min="1" max="3">
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <hr>
+        <div>
+            <h3>라디오 버튼과 체크박스 삽입하기</h3>
+            <form action="#">
+                <fieldset>
+                    <legend>신청 과목</legend>
+                    <label><input type="radio" name="subject" value="speaking">회화</label>
+                    <label><input type="radio" name="subject" value="grammar">문법</label>
+                    <label><input type="radio" name="subject" value="writing">작문</label>
+                </fieldset>
+                <fieldset>
+                    <legend>메일링</legend>
+                    <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+                    <label><input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
+                    <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>색상 선택 삽입하기</h3>
+            <form action="#">
+                <p>올해 과 티(T)를 만들려고 합니다. 원하는 색상을 추천해 주세요.</p>
+                <label>선호색상
+                    <input type="color" value="#00ff00"></label>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>날짜 입력 폼 삽입하기</h3>
+            <form action="#">
+                <label><input type="date" id="start" min="2025-02-04"></label>
+                <label><input type="date" id="end" max="2025-03-01"></label>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>시간 입력 폼 삽입하기</h3>
+            <form action="#">
+                <h3>원하는 대관시간을 선택하세요(오늘)</h3>
+                <label>시작 시간<input type="time" value="09:00" id="start1"></label>
+                <label>종료 시간<input type="time" value="18:00" id="end1"></label>
+                <h3>대관시간을 선택하세요(다른날짜)</h3>
+                <label>시작 시간<input type="datetime-local" value="2016-03-02T09:00" id="start2"></label>
+                <label>종료 시간<input type="datetime-local" value="2016-03-02T18:00" id="end2"></label>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>submit 버튼과 reset 버튼 삽입하기</h3>
+            <form action="#" method="post">
+                <label>
+                    메일 주소
+                    <input type="text"></label>
+                <input type="submit" value="제출">
+                <input type="reset" value="다시입력">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>submit 버튼에 이미지 사용하기</h3>
+            <form action="#">
+                <label>아이디
+                    <input type="text" size="15"></label>
+                <label>비밀번호
+                    <input type="password" size="15"></label>
+                <input type="image" id="butt" src="./images/login.jpg" alt="login">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>복습</h3>
+            <input type="text" value="닫기" onclick="window.close()">
+        </div>
+        <hr>
+        <div>
+            <h3>텍스트 필드에 플레이스 홀더 표시하기</h3>
+            <form action="#">
+                <label for="uid" class="reg">학번</label>
+                <input type="text" id="uid" placeholder="하이픈없이 입력">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>읽기 전용 필드 만들기</h3>
+            <form action="#">
+                <label for="subj" class="reg">영어회화(초급)</label>
+                <input type="text" id="subj" value="오전 9:00~11:00" readonly="readonly">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>필수 필드 지정하기</h3>
+            <form action="#">
+                <label for="uname" class="reg">이름</label>
+                <input type="text" id="uname" autofocus required="required">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>최대, 최소값, step 지정하기</h3>
+            <form action="#">
+                <label for="group" class="reg">단체주문</label>
+                <input type="number" id="group" value="10" min="10" max="100" step="10">
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>텍스트 필드의 글자 길이 지정하기</h3>
+            <form action="#">
+                <label>아이디:
+                    <input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+                <small style="color: red;">4~15자리 이내의 영문과 숫자</small>
+            </form>
+        </div>
+        <hr>
+        <div class="container">
+            <h1>상품 주문서</h1>
+            <form action="#">
+                <fieldset>
+                    <legend>개인 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="uname" class="title">이름</label>
+                            <input type="text" id="uname" placeholder="여백없이 입력" required="required">
+                        </li>
+                        <li>
+                            <label for="tel1" class="title">연락처</label>
+                            <input type="tel" id="tel1" placeholder="연락가능한 번호" required="required">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>배송지 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="addr" class="title">주소</label>
+                            <input type="text" id="addr" size="40" required="required">
+                        </li>
+                        <li>
+                            <label for="tel2" class="title">전화번호</label>
+                            <input type="text" id="tel2" required="required">
+                        </li>
+                        <li>
+                            <label for="comment" class="title">메모</label>
+                            <textarea id="comment" rows="3" cols="40"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>주문 정보</legend>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox">과테말라 안티구아 (100g)</label>
+                            <label><input type="number" value="0" min="0" max="5">개 </label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                            <label><input type="number" value="0" min="0" max="5">개 </label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox">탐라는도다(블렌딩) (100g)</label>
+                            <label><input type="number" value="0" min="0" max="5">개 </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="centered">
+                    <input type="submit" value="주문하기">
+                    <input type="reset" value="다시 작성">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>복습</h3>
+            <form action="#">
+                <label>이름 : <input type="text" autofocus required></label><br>
+                <label>닉네임 : <input type="text"></label><br>
+                <label>메일 주소 : <input type="email" required></label>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>드롭다운 목록 만들기</h3>
+            <form action="#">
+                <label for="class" class="reg">학과</label>
+                <select id="class" multiple>
+                    <option value="archi">건축공학과</option>
+                    <option value="mechanic">기계공학과</option>
+                    <option value="indust">산업공학과</option>
+                    <option value="elec">전기전자공학과</option>
+                    <option value="computer" selected>컴퓨터공학과</option>
+                    <option value="chemical">화학공학과</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>드롭다운 항목 그룹으로 묶기</h3>
+            <form action="#">
+                <label for="class" class="reg">학과</label>
+                <select id="class">
+                    <optgroup label="공과대학">
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer">컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                    <optgroup label="인문대학">
+                        <option value="history">사학과</option>
+                        <option value="lang">어문학부</option>
+                        <option value="philo">철학</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+         <hr>
+        <div>
+            <h3>복습</h3>
+            <form action="#">
+                <select>
+                    <option>초급</option>
+                    <option>중급</option>
+                    <option>고급</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>데이터 목록 만들기</h3>
+            <form action="#">
+                <input type="text" id="interest" list="choices">
+                <datalist id="choices">
+                    <option value="grammer" label="문법"></option>
+                    <option value="voca" label="어휘"></option>
+                    <option value="speaking" label="회화"></option>
+                    <option value="listening" label="리스닝"></option>
+                    <option value="news" label="뉴스청취"></option>
+                </datalist>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>텍스트 영역 삽입하기</h3>
+            <form action="#">
+                <fieldset class="easys">
+                    <legend>이지스퍼블리싱</legend>
+                    <textarea name="intro" cols="70" rows="5">
+        열심히 사는 사람들의 손을 잡아주는 곳 - 이지스 퍼블리싱
+        
+        우리는 책을 내기 전에 다시 한번 물어봅니다
+        "이 책이 사람들에게 도움이 되는가?"
+        
+        더 쉽게, 더 빠르게 지식을 전달하고 싶습니다.
+        이지스퍼블리싱의 책과 앱을 만나보세요.
+                    </textarea>
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>버튼 삽입하기</h3>
+            <form action="#">
+                <button type="submit" class="subm">
+                    <img src="./images/tick.png" alt="">전송하기
+                </button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>결과값 지정하기</h3>
+            <form action="#" oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+                <input type="number" name="num1" value="0">
+                +
+                <input type="number" name="num2" value="0">
+                =
+                <output name="result" for="num"></output>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>진행 상태 막대 삽입하기</h3>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label>10초 남음</label>
+                        <!-- 전체 60초 중 50초 진행 -->
+                        <progress value="50" max="60"></progress>
+                    </li>
+                    <li>
+                        <label>진행률 30%</label>
+                        <!-- 전체 100 중 30만큼 진행 -->
+                        <progress value="30" max="100"></progress>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>전체 크기 중 차지하는 크기 삽입하기</h3>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label>점유율 0.8</label>
+                        <!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다. -->
+                        <meter value="0.8"></meter>
+                    </li>
+                    <li>
+                        <label>사용량 64%</label>
+                        <!-- 전체 100 중에서 64만큼 차지합니다. -->
+                        <meter value="64" min="0" max="100"></meter>
+                    </li>
+                    <li>
+                        <label>트래픽 초과</label>
+                        <!-- 전체 크기는 1024~10240인데 높다고 설정한 8192보다 현재 값 9216이 더 큽니다. -->
+                        <meter value="9216" min="1024" max="10240" low="2048" high="8182"></meter>
+                    </li>
+                    <li>
+                        <label>적절한 트래픽</label>
+                        <!-- 전체 1 중에서 현재0.5를 차지하고 있으며 적정도를 0.8로 설정했습니다. -->
+                        <meter value="0.5" optimum="0.8"></meter>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h3>연습문제1</h3>
+            <form>
+                <ul>
+                    <li>
+                        <label for="r-name">이름</label>
+                        <input type="text" id="r-name">
+                    </li>
+                    <li>
+                        <label for="r-phone">휴대폰</label>
+                        <input type="tel" id="r-phone">
+                    </li>
+                    <li>
+                        <label for="r-mail">이메일</label>
+                        <input type="email" id="r-mail">
+                    </li>
+                    <li>
+                        <input type="submit" value="예약하기">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>
