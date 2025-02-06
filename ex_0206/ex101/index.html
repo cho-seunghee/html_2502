@@ -1,11 +1,236 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                border: 1px solid red;
+            }
+            fieldset {
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>html Forms</h2>
+            <form action="#" autocomplete="on">
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="fname">아이디</label><br/>
+                    <input id="fname" name="fname" type="text"><br/>
+                    <label for="lname">패스워드</label><br/>
+                    <input id="lname" name="lname" type="text"><br/><br/>
+                    <input type="submit" value="로그인">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>라디오 버튼</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>라디오 버튼</legend>
+                    <input type="radio" id="html" name="fav_language" vale="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" name="fav_language" id="css" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" name="fav_language" id="javascript" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>체크박스</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>체크박스</legend>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">나는 자전거 있음</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+                    <label for="vehicle2">나는 차가 있어</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+                    <label for="vehicle3">나는 보트를 가지고 있음</label><br>
+                    <input type="submit" name="" id="">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>드롭리스트</h2>
+            <form action="#" target="_self" method="get" novalidate="novalidate">
+                <fieldset>
+                    <legend>드롭리스트</legend>
+                    <label for="cars">Choose a car:</label><br>
+                    <select name="cars" size="5" multiple="multiple" style="width: 200px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab" selected="selected">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                        <option value="audi1">Audi1</option>
+                        <option value="audi2">Audi2</option>
+                        <option value="audi3">Audi3</option>
+                        <option value="audi4">Audi4</option>
+                        <option value="audi5">Audi5</option>
+                    </select><br>
+                    <label for="cars2">Choose a car2:</label><br>
+                    <select name="cars2" style="width: 200px;">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat" selected="selected">Fiat</option>
+                        <option value="audi">Audi</option>
+                        <option value="audi1">Audi1</option>
+                        <option value="audi2">Audi2</option>
+                        <option value="audi3">Audi3</option>
+                        <option value="audi4">Audi4</option>
+                        <option value="audi5">Audi5</option>
+                    </select><br>
+                    <input type="submit" name="" id="" value="submit">
+                </fieldset>
+                
+            </form>
+        </div>
+        <div>
+            <h2>textarea</h2>
+            <form action="#">
+                <textarea
+                    name="message"
+                    rows="10"
+                    cols="30"
+                    id="message"
+                    style="width: 200px;height: 600px;">The cat was playing in the garden.</textarea>
+            </form>
+        </div>
+        <div>
+            <h2>button</h2>
+            <form action="">
+                <button type="button" onclick="alert('Hello World')">Click Me!</button>
+            </form>
+        </div>
+        <div>
+            <h2>fieldset</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="fname">아이디</label><br/>
+                    <input id="fname" name="fname" type="text"><br/>
+                    <label for="lname">패스워드</label><br/>
+                    <input id="lname" name="lname" type="text"><br/><br/>
+                    <input type="submit" value="로그인">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>datalist</h2>
+            <form action="#">
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+            </form>
+        </div>
+        <div>
+            <h2>output</h2>
+            <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" name="a" id="a" value="50">
+                <input type="number" name="b" id="b" value="50">
+                <output name="x" for="a b"></output><br><br>
+                <input type="submit" name="" id="">
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 비밀번호</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="fname">아이디</label><br/>
+                    <input id="fname" name="fname" type="text"><br/>
+                    <label for="lname">패스워드</label><br/>
+                    <input id="lname" name="lname" type="password"><br/><br/>
+                    <input type="submit" value="로그인">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 제출</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="fname">아이디</label><br/>
+                    <input id="fname" name="fname" type="text"><br/>
+                    <label for="lname">패스워드</label><br/>
+                    <input id="lname" name="lname" type="password"><br/><br/>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 재설정</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="fname">아이디</label><br/>
+                    <input id="fname" name="fname" type="text"><br/>
+                    <label for="lname">패스워드</label><br/>
+                    <input id="lname" name="lname" type="password"><br/><br/>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset" name="" id="">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 색상, 날짜</h2>
+            <form action="#">
+                <fieldset>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" name="favcolor" id="favcolor"><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" name="birthday" id="birthday">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 날짜 min max</h2>
+            <form action="">
+                <fieldset>
+                    <legend>입력 날짜</legend>
+                    <label for="datemax">Enter a date before 1980-01-01:</label>
+                    <input type="date" name="datemax" id="datemax" max="1979-12-31"><br>
+                    <label for="datemin">Enter a date after 2024-01-01:</label>
+                    <input type="date" name="datemin" id="datemin" min="2024-01-02"><br>
+                    <br>
+                    <label for="birthdaytime">Birthday (date and time):</label>
+                    <input type="datetime-local" name="birthdaytime" id="birthdaytime">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 이미지</h2>
+            <form action="">
+                <fieldset>
+                    <legend>입력 유형 이미지</legend>
+                    <input type="image" name="" id="" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 범위</h2>
+            <form action="">
+                <label for="vol">Volume (between 0 and 50):</label>
+                <input type="range" name="vol" min="0" max="50">
+            </form>
+        </div>
+        <div>
+            <h2>입력 유형 검색</h2>
+            <form action="">
+                <label for="gsearch">Search Google:</label>
+                <input type="search" name="gsearch">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
 </html>
