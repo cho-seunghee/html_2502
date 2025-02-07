@@ -1,0 +1,33 @@
+div {
+    background-color: #fff4a3;
+    width: 300px;
+}
+section.mycontainerc > div {
+    margin: auto;
+}
+section.mycontainer {
+    width: 100%;
+    overflow: auto;
+}
+section.mycontainer > div {
+    width: 33%;
+    float: left;
+}
+section.mycontainer2 > div {
+    width: 30%;
+    display: inline-block;
+}
+section.mycontainer3 {
+    display: flex;
+}
+section.mycontainer3 > div {
+    width: 33%;
+}
+section.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.clearB{
+    clear: both;
+}
