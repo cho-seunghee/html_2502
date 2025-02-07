@@ -1,0 +1,103 @@
+.s1 {
+    background-color: lightblue;
+}
+
+.s2 > h1 {
+    background-color: green;
+}
+
+.s2 > div {
+    background-color: lightblue;
+}
+
+.s2 p {
+    background-color: yellow;
+}
+
+.s3 > div {
+    background-color: green;
+}
+
+.s3 > div.first {
+    opacity: 0.1;
+}
+
+.s3 > div.second {
+    opacity: 0.3;
+}
+
+.s3 > div.third {
+    opacity: 0.6;
+}
+.s4 > div {
+    background: rgb(0, 128, 0);
+}
+
+.s4 > div.first {
+    background: rgba(0, 128, 0, 0.1);
+}
+
+.s4 > div.second {
+    background: rgba(0, 128, 0, 0.3);
+}
+
+.s4 > div.third {
+    background: rgba(0, 128, 0, 0.6);
+}
+
+.s5 {
+    background-image: url("../images/paper.gif");
+    height: 200px;
+}
+
+.s6 {
+    background-image: url("../images/bgdesert.jpg");
+    height: 200px;
+}
+
+.s7 > p {
+    background-image: url("../images/paper.gif");
+}
+
+.s8 {
+    background-image: url("../images/gradient_bg.png");
+    height: 300px;
+}
+.s9 {
+    background-image: url("../images/gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+.s10 {
+    background-image: url("../images/img_tree.png");
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.s11 {
+    background-image: url("../images/img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 300px;
+}
+
+.s12 {
+    background-image: url("../images/img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 10px;
+    background-attachment: fixed;
+}
+
+.s13 {
+    background-image: url("../images/img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 10px;
+    background-attachment: scroll;
+}
+
+.s14 {
+    background: #ffffff url("../images/img_tree.png") no-repeat right top;
+    margin-right: 10px;
+}
