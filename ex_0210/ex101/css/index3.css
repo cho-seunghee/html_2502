@@ -1,0 +1,80 @@
+.s1 div {
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.s2 div {
+    border: 1px solid rgb(25, 100, 119);
+    margin: 0 0 0 100px;
+}
+
+.s2 p.ex1 {
+    margin: inherit;
+}
+
+.s3 > h1 {
+    margin: 0 0 50px;
+}
+
+.s3 > h2 {
+    margin: 20px 0 0;
+}
+
+.s4 > div {
+    padding: 70px;
+    border: 1px solid #4CAF50;
+}
+
+.s5 > div {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 50px 30px 50px 80px;
+}
+
+.s6 > div {
+    border: 1px solid black;
+    padding: 25px 50px 75px 100px;
+    background-color: lightblue;
+}
+
+.s7 > div {
+    border: 1px solid black;
+    padding: 25px 50px 75px;
+    background-color: lightblue;
+}
+
+.s8 > div {
+    border: 1px solid black;
+    padding: 25px 50px;
+    background-color: lightblue;
+}
+
+.s9 > div {
+    border: 1px solid black;
+    padding: 25px;
+    background-color: lightblue;
+}
+
+.s10 > div.ex1 {
+    width: 300px;
+    background-color: yellow;
+}
+
+.s10 > div.ex2 {
+    width: 300px;
+    padding: 25px;
+    background-color: lightblue;
+}
+
+.s11 > div.ex1 {
+    width: 300px;
+    background-color: yellow;
+}
+
+.s11 > div.ex2 {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+}

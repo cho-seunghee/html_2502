@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>여백</title>
+        <link rel="stylesheet" href="./css/index3.css">
+    </head>
+    <body>
+        <header></header>
+        <section class="s1">
+            <h1>자동 가치</h1>
+
+            <h2>Use of margin: auto</h2>
+            <p>You can set the margin property to auto to horizontally center the element
+                within its container. The element will then take up the specified width, and the
+                remaining space will be split equally between the left and right margins:</p>
+            <div>
+                This div will be horizontally centered because it has margin: auto;
+            </div>
+        </section>
+        <hr>
+        <section class="s2">
+            <h1>상속 가치</h1>
+            <h2>Use of the inherit value</h2>
+            <p>Let the left margin be inherited from the parent element:</p>
+
+            <div>
+                <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+            </div>
+        </section>
+        <hr>
+        <section class="s3">
+            <h1>마진 붕괴</h1>
+            <p>In this example the h1 element has a bottom margin of 50px and the h2 element
+                has a top margin of 20px. So, the vertical margin between h1 and h2 should have
+                been 70px (50px + 20px). However, due to margin collapse, the actual margin ends
+                up being 50px.</p>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+        </section>
+        <br>
+        <section class="s4">
+            <h1>패딩</h1>
+            <h2>CSS Padding</h2>
+            <div>This element has a padding of 70px.</div>
+        </section>
+        <hr>
+        <section class="s5">
+            <h1>패딩 - 개별 측면</h1>
+            <h2>Using individual padding properties</h2>
+            <div>This div element has a top padding of 50px, a right padding of 30px, a
+                bottom padding of 50px, and a left padding of 80px.</div>
+        </section>
+        <hr>
+        <section class="s6">
+            <h1>패딩 - 속기 속성1</h1>
+            <h2>The padding shorthand property - 4 values</h2>
+
+            <div>This div element has a top padding of 25px, a right padding of 50px, a
+                bottom padding of 75px, and a left padding of 100px.</div>
+        </section>
+        <hr>
+        <section class="s7">
+            <h1>패딩 - 속기 속성2</h1>
+            <h2>The padding shorthand property - 3 values</h2>
+
+            <div>This div element has a top padding of 25px, a right and left padding of
+                50px, and a bottom padding of 75px.</div>
+        </section>
+        <hr>
+        <section class="s8">
+            <h1>패딩 - 속기 속성3</h1>
+            <h2>The padding shorthand property - 2 values</h2>
+
+            <div>This div element has a top and bottom padding of 25px, and a right and left
+                padding of 50px.</div>
+        </section>
+        <hr>
+        <section class="s9">
+            <h1>패딩 - 속기 속성4</h1>
+            <h2>The padding shorthand property - 1 value</h2>
+
+            <div>This div element has a top, bottom, left, and right padding of 25px.</div>
+        </section>
+        <hr>
+        <section class="s10">
+            <h1>패딩 및 요소 너비1</h1>
+            <h2>Padding and element width</h2>
+            <div class="ex1">This div is 300px wide.</div>
+            <br>
+            <div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+        </section>
+        <hr>
+        <section class="s11">
+            <h1>패딩 및 요소 너비2</h1>
+            <h2>Padding and element width - with box-sizing</h2>
+            <div class="ex1">This div is 300px wide.</div>
+            <br>
+            <div class="ex2">The width of this div remains at 300px, in spite of the 50px of
+                total left and right padding, because of the box-sizing: border-box property.
+            </div>
+        </section>
+
+        <footer></footer>
+    </body>
+</html>

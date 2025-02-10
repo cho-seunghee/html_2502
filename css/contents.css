@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* 메인페이지 */
+.main-banner {width:100%; height:160px; background:url('/Resource/images/img_main_banner.jpg?20240626') no-repeat 50%; background-size:cover; margin-top:20px;}
+.table-wrapper:after {content:''; display:block; overflow:hidden; clear:both;}
+.table-wrapper > div {width: 48.8505%;}
+.table-wrapper .table-notice {float:left;}
+.table-wrapper .table-tech {float:right;}
+.table-wrapper .table-notice .paging,
+.table-wrapper .table-tech .paging {margin-top:28px;}
+.table-wrapper > [class^='table-'] h2 {line-height: 1;}
+
+/* 로그인 페이지 */
+/* 2024.06.20 추가 */
+form#form1 {height: 100%;}
+form#form1 #wrap {max-width: 100%; height: 100%;}
+.page-login {display: flex; flex-direction: column; align-items: center; height: 100%;}
+.login-table {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; background:url('/Resource/images/img_login_bg.jpg') #999 no-repeat 100% 75%; background-size:cover;}
+.login-table .login-cell {padding: 50px 30px; border-radius: 15px; background: #ffffff;}
+.login-table .login-cell .login-contents .login-logo {display: flex; justify-content: center; margin-bottom: 50px;}
+.login-table .login-cell .login-contents .login-logo img {width: 180px; height: auto;}
+.login-table .login-cell .login-contents .loginbox {display: flex; flex-direction: column; align-items: center;}
+.login-table .login-cell .login-contents .loginbox .inpbox {display: flex; align-items: center; width: 305px; height:50px; background: #f9fcfd; border: 1px solid #d5e8f5; border-radius: 5px; margin-bottom: 12px; padding: 0 20px;}
+.login-table .login-cell .login-contents .loginbox .inpbox input {width: 100%; height: 30px; line-height: 1.5; border: none; background: none; font-size: 16px;}
+.login-table .login-cell .login-contents .loginbox .inpbox input::placeholder {font-size: 16px !important; color: #999; height: 30px; line-height: 1.5;}
+.login-table .login-cell .login-contents .loginbox .inpbox input:-webkit-autofill { box-shadow: 0 0 0 1000px #f9fcfd inset;}
+.login-table .login-cell .login-contents .loginbox .inpbox span.iconId {display: flex; width: 20px; height: 20px; background-image:url('/Resource/Mobile_images/icon_id.png'); background-size: 20px 20px ; background-repeat: no-repeat;}
+.login-table .login-cell .login-contents .loginbox .inpbox span.iconPw {display: flex; width: 20px; height: 20px;  background-image:url('/Resource/Mobile_images/icon_pw.png'); background-size: 20px 20px ; background-repeat: no-repeat;}
+.login-table .login-cell .login-contents .button-wrapper {display: flex; flex-direction: column;}
+.login-table .login-cell .login-contents .button-wrapper .login-btn {font-size: 16px; font-weight: 400; color: #ffffff; height: 50px; border-radius: 5px; border: none; background: #2CBBB7;}
+.login-table .login-cell .login-contents .button-wrapper .change-btn {font-size: 16px; font-weight: 400; color: #4c4c4e; height: 50px; border-radius: 5px; border: 1px solid #dcdcdc; background: #ffffff; margin-top: 12px;}
+.copyright {position: absolute; bottom: 0; font-size:12px; color: #777; margin-bottom: 30px;}
+
+
+
+
+
+
+.page-error {position:fixed; left:0; top:0; width:100%; height:100%;}
+.error-table {display:table; z-index:0; padding-left:20px; position:relative; width:100%; height:100%; background:url('/Resource/images/img_login_bg.jpg') #999 no-repeat 100% 75%; background-size:cover;}
+.error-table .error-cell {display:table-cell; z-index:1; position:relative; padding:40px; max-width:70%;  vertical-align:middle; text-align:center;}
+.error-table .error-cell .error-contents {display:inline-block; position:relative; padding:50px 40px 22px; max-width:70%; background: #fff;}
+.error-table .error-cell .error-contents .error-logo {line-height:1;}
+.error-table .error-cell .error-contents .error {position:absolute; left:0; right:0; color:#000; text-align:center; font-size:20px; font-weight:800;}
+.error-table .error-cell .error-contents .button-wrapper button {margin-bottom:17px; width:200px; height:60px; background:#009687; color:#fff; font-size:18px; font-weight:800;}
+.error-table .error-cell .error-contents .button-wrapper button.change-btn {margin-bottom:0; background:transparent; color: #000; font-size:15px; font-weight:400;}
+.error-table .error-cell .error-contents .button-wrapper input {margin-bottom:17px; width:200px; height:60px; background:#009687; color:#fff; font-size:18px; font-weight:800; border-style:none;}
+.error-table .error-cell .error-contents .button-wrapper input.change-btn {margin-bottom:0; background:transparent; color: #000; font-size:15px; font-weight:400; border-style:none;}
+.page-error .copyright {position:absolute; left:0; right:0; bottom:20px; color:#000; text-align:center; font-size:15px; font-weight:800;}
+
+/* 메뉴관리 페이지 */
+/* 2020.09.14 테이블 높이값 수정 -> LINE 35 */
+.page-menu-management .list-top {margin-top:38px;}
+.page-menu-management .list-top .btnset button {width:100px; height:40px; background: #0eaba7; border-radius:5px; color: #fff; font-size:14px; font-weight:800;}
+.page-menu-management .datalist {margin-top:20px; border-top:1px solid #000;}
+.page-menu-management .datalist table {width:100%; font-size:15px;}
+.page-menu-management .datalist table tbody tr {border-bottom:1px solid #dfdfdf;}
+.page-menu-management .datalist table tbody tr th {text-align: center; border-right:1px solid #dfdfdf; font-weight:200;}
+.page-menu-management .datalist table tbody tr td {border-right:1px solid #dfdfdf;text-align:left;}
+.page-menu-management .datalist table tbody tr td > table{ border:none;}
+.page-menu-management .datalist table tbody tr td > table tr { border:none;}
+.page-menu-management .datalist table tbody tr td > table tr td { height:24px; border:none; }
+
+
+/* 실적급 업로드 페이지 */
+.page-upload-management .list-top {margin-top:38px;}
+.page-upload-management .upload-list ul {padding-bottom:40px; margin-top:20px; width:100%; border-top:1px solid #000;}
+.page-upload-management .upload-list ul li {padding:8px 0; width: 100%; border-bottom:1px solid #dfdfdf; text-align: center;}
+.page-upload-management .upload-list ul li > strong {display:inline-flex; width:170px; line-height:40px; text-align: left; font-size:14px; color: #000;}
+.page-upload-management .upload-list ul li > .file-field {display:inline-flex; width:595px; vertical-align: middle; font-size:0;}
+.page-upload-management .upload-list ul li > .file-field > strong {display:inline-flex; margin:0 8px 0 0; vertical-align:middle; color:#000; font-size:15px; font-weight:800;}
+.page-upload-management .upload-list ul li > .file-field .filebox {display: flex; margin-right:0;}
+.page-upload-management .upload-list ul li > .file-field .filebox input[type="text"] {width:450px;}
+.fileBtnWrap {display: inline-flex;}
+.fileBtnWrap > input {margin-left: 5px;}
+
+/* 실적급정산 월별조회 페이지 */
+.page-month-search .searchbox {margin-bottom: 40px;}
+
+/* 실적급정산 추이조회 페이지*/
+/* 2020.09.14 테이블 높이값 수정 -> LINE65 */
+.page-flow-search .chartbox {margin-top: 30px;}
+.page-flow-search .searchbox .optionbox > em {font-weight: 300;}
+.page-flow-search .datalist .scrollbox table tr.sum {background: #d1d2d4;}
+.page-flow-search .datalist .scrollbox table tr th {width: 127px;}
+.page-flow-search .datalist .scrollbox table tr th:first-child {width:auto;}
+.page-flow-search .datalist .scrollbox table tr th.line {border-right:1px solid #dfdfdf;}
+.page-flow-search .datalist .scrollbox table tbody tr th {text-align:center; font-weight:200;}
+.page-flow-search .datalist .scrollbox table tbody tr th:first-child, 
+.page-flow-search .datalist .scrollbox table tbody tr td:first-child{padding: 0 0 0 37px; min-width: 58px; width: 58px; text-align: left;}
+.page-flow-search .datalist .scrollbox table tbody tr.sum th {padding: 11px 20px 11px; border-right: 1px solid #dfdfdf; text-align: center; color: #000; font-weight: 800;}
+
+/* 2020.09.14 테이블 높이값 수정 */
+.datalist table tbody tr > * {padding:4px 20px 4px; height:48px;}
+
+/* 로딩바 */
+/* 2022.04.05 추가 */
+.loading {position: fixed; z-index: 99; top: 200px; left: 0px; right: 0px; bottom: 0px; background-color: #f9f9f9 !important; opacity: 0.8;}
+.loadingContent {z-index: 98; margin: 200px auto; text-align: center;}
+.loadingContent img {width: 80px; height: 80px;}

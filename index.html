@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./script/top.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
-    test
+    <header id="menu-container">
+        <!-- 여기에서 top.html의 메뉴를 로드합니다. -->
+    </header>
+
+    <main>
+        <h1>메인 콘텐츠</h1>
+        <p>여기에 메인 콘텐츠를 추가합니다.</p>
+    </main>
+
+    <script>
+        // top.html을 불러오기
+        fetch('top.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data; // 메뉴 로드
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    </script>
 </body>
 </html>

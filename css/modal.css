@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* modal */
+.windowpop .popupwrap {position:relative; width:100%}
+.windowpop .popupwrap .title {height:50px; padding:0 30px; background:#0eaba7; text-align:left; line-height:50px; color:#fff; font-size:20px; font-weight:800}
+.windowpop .popupwrap .title strong {display:inline-block; vertical-align:middle; line-height:1.2;}
+.windowpop .popupwrap .btn-popclose {top:15px; right:40px; position:absolute; width:18px; height:18px; background:url('/Resource/images/icon_close_01.png') no-repeat 50%; font-size:0; text-indent:-99999px}
+.windowpop .popupwrap .popcontents {padding:37px 39px}
+.windowpop .popupwrap .btncenter {margin-top:30px; text-align:center}
+.windowpop .popupwrap table thead tr > * {border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.windowpop .popupwrap table thead tr > *:first-child {border-left:0}
+.windowpop .popupwrap table tbody tr > * {border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.windowpop .popupwrap table tbody tr > *:first-child {border-left:0}
+
+.pop-transparents-layer {z-index:99; top:0; left:0; position:fixed; width:100%; min-height:100%; background:rgba(0,0,0,0.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000)}
+.modalpop {visibility:hidden; z-index:101; overflow-y:scroll; position:fixed; top:-99999px; left:-99999px; width:100%; height:100%; max-height:100%; text-align:center}
+.modalpop.active {visibility:visible; top:0; left:0; opacity:1}
+.modalpop .popup-table {display:table; z-index:101; position:relative; width:100%; height:100%}
+.modalpop .popup-cell {display:table-cell; z-index:101; position:relative; padding:40px; vertical-align:middle}
+.modalpop .popupwrap {display:inline-block; z-index:100; position:relative; width:100%; background:#fff}
+.modalpop .popupwrap .title {padding:45px 0 30px; text-align:center; color:#000; font-size:24px; font-weight:800}
+.modalpop .popupwrap .title strong {display:inline-block; vertical-align:middle; line-height:1.2;}
+.modalpop .popupwrap .btn-popclose {top:20px; right:20px; position:absolute; width:20px; height:20px; background:url('/Resource/images/icon_close_02.png') no-repeat 50%; font-size:0; text-indent:-99999px}
+.modalpop .popupwrap .popcontents {padding:0 40px 45px}
+.modalpop .popupwrap .btncenter {margin-top:30px; text-align:center}
+
+.modalpop.pop-alert .popupwrap {width:500px}
+.modalpop.pop-confirm .popupwrap {width:500px}
+
+/* 피복신청 팝업 */
+/* 2020.09.14 테이블 높이값 수정 -> LINE 32 */
+.pop-clothes-request .popupwrap table tbody tr > * {padding:5px 0; min-width:auto; border:0;}
+.pop-clothes-request .datalist .list-top strong {margin:0;}
+.pop-clothes-request .datalist table tbody tr > th {padding: 0 7px 0 20px;}
+.pop-clothes-request .datalist table tbody tr > td .inpbox input:disabled {background:#fff; color: #000;}
+
+/* 공지사항 글목록 팝업 */
+.pop-notice-list .popupwrap table tbody tr > * {border:0;}
+.pop-notice-list .table-wrapper > div {width:100%;}
+.pop-notice-list .table-wrapper .boardlist table tbody tr td.date {padding:0;}
+
+/* 공지사항 글작성 팝업 */
+
+.pop-notice-write .popupwrap table tbody tr > * {padding:4px 20px 4px; text-align:left;}
+.pop-notice-write .popupwrap table tbody tr:first-child p.inpbox {max-width:170px}
+.pop-notice-write .popupwrap table tbody tr.textarea-field th,
+.pop-notice-write .popupwrap table tbody tr td p.inpbox textarea {padding:14px; width:100%; height:380px; border:1px solid #dfdfdf; font-size:15px;}
+.pop-notice-write .popupwrap table tbody tr td p.filebox {float:none; width:100%;}
+.pop-notice-write .popupwrap table tbody tr td p.filebox > input[type="text"] {width:50%;}
+.pop-notice-write .popupwrap table tbody tr td p.filebox > button {float:none;}
+.pop-notice-write .popupwrap table tbody tr td p.filebox .file input[type="file"] + label {display:inline-block;}
+.pop-notice-write .popupwrap table tbody tr.upload-field th {vertical-align:top;}
+.pop-notice-write .popupwrap table tbody tr.upload-field td p {padding-left:20px; margin-bottom:8px; background: url('/Resource/images/icon_upload.png'); background-repeat: no-repeat; background-position: 0 50%;}
+.pop-notice-write .popupwrap table tbody tr.upload-field td p button {padding-left:8px; vertical-align: -1px; color:#999; font-size:13px;}
+
+/* 메인페이지 상세보기 팝업 */
+.pop-mainlist-item .popupwrap .popcontents {overflow:hidden; text-align:center;}
+.pop-mainlist-item .popupwrap .popcontents .list-wrapper {width:auto; margin:0 auto;}
+.pop-mainlist-item .popupwrap .popcontents .list-top {display:inline-block; text-align:center;}
+.pop-mainlist-item .popupwrap .popcontents .list-top strong {margin-top:0; margin-bottom:10px; line-height:1; color:#000; font-size:24px;}
+.pop-mainlist-item .popupwrap .popcontents .list-top > p {line-height:1; color:#888; font-size:14px; font-weight:200;}
+.pop-mainlist-item .popupwrap .popcontents .list-top > p span {position:relative; padding-left:32px; font-size:15px;}
+.pop-mainlist-item .popupwrap .popcontents .list-top > p span:after {content:''; position:absolute; left:16px; top:1px; width:1px; height:14px; background:#ccc;}
+.pop-mainlist-item .popupwrap .popcontents .list-item {margin-top:25px}
+.pop-mainlist-item .popupwrap .popcontents .list-item > span {display:block; overflow:hidden; margin-bottom:30px; max-width:100%;}
+.pop-mainlist-item .popupwrap .popcontents .list-item > span img {width:100%; vertical-align:top;}
+.pop-mainlist-item .popupwrap .popcontents .list-item .item-text {text-align:left; color:#000; font-size:14px; font-weight:200;}
+.pop-mainlist-item .popupwrap .popcontents .scrollbox table tbody tr.upload-field th {vertical-align:top;}
+.pop-mainlist-item .popupwrap .popcontents .scrollbox table tbody tr.upload-field td p {padding-left:20px; margin-bottom:8px; background: url('/Resource/images/icon_upload.png'); background-repeat: no-repeat; background-position: 0 50%;}
+.pop-mainlist-item .popupwrap .popcontents .scrollbox table tbody tr.upload-field td p button {padding-left:8px; vertical-align: -1px; color:#999; font-size:13px;}
+
+/* 국사관리 조직전체 */
+.pop-organization-all .popupwrap .popcontents .searchbox {margin:0; width:100%; background: #f9f9f9;}
+.pop-organization-all .popupwrap .popcontents .searchbox .inpbox button {float:right;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper {position:relative; margin-top:20px;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper:after {content:''; display:block; overflow:hidden; clear:both}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper > div {width:45.6140%;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper > .tree01 {float:left;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper > .tree02 {float:right;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper > div .organization-tree ul {overflow-x:hidden; overflow-y:hidden; height: 430px;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper .button-wrapper {position:absolute; top:50%; left:50%; width:40px; margin:-50px 0 0 -20px }
+.pop-organization-all .popupwrap .popcontents .tree-wrapper .button-wrapper button {display:block; padding:0; margin:0 auto; min-width:40px; width:40px; height:40px; background:#999 url('/Resource/images/icon_arr_left.png')no-repeat; font-size:0; text-indent: -9999px;}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper .button-wrapper button.add-btn {margin-bottom:20px}
+.pop-organization-all .popupwrap .popcontents .tree-wrapper .button-wrapper button.del-btn {margin-bottom:20px; background-image:url('/Resource/images/icon_arr_right.png');}
+
+.pop-organization .popupwrap .popcontents table thead tr > * {border:0}
+.pop-organization .popupwrap .popcontents table tbody tr > * {border:0}
+
+/* 사용자 등록 */
+/* 2020.09.14 테이블 높이값 수정 */
+.pop-user-registration .datalist table tbody tr:first-child > *,
+.pop-user-registration .datalist table tbody tr > * {padding:5px 20px 5px }

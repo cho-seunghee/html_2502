@@ -1,0 +1,106 @@
+p {
+    border-color: #5b77c2;
+}
+
+p.t1 {
+    border-style: solid;
+    border-width: 5px 20px;
+}
+
+p.t2 {
+    border-style: solid;
+    border-width: 20px 5px;
+}
+
+/* 시계방향 위, 우, 아래, 좌 */
+p.t3 {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+}
+
+p.c1 {
+    border-style: solid;
+    border-color: red;
+}
+
+p.c2 {
+    border-style: solid;
+    border-color: green;
+}
+
+p.c3 {
+    border-style: dotted;
+    border-color: blue;
+}
+
+p.c4 {
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+
+p.hex1 {
+    border-style: solid;
+    border-color: #ff0000;
+}
+
+p.hex2 {
+    border-style: solid;
+    border-color: #0000ff;
+}
+
+p.hex3 {
+    border-style: solid;
+    border-color: #bbbbbb;
+}
+
+p.r1 {
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+}
+
+p.r2 {
+    border-style: solid;
+    border-color: rgb(0, 0, 255);
+}
+
+p.r3 {
+    border-style: solid;
+    border-color: rgb(187, 187, 187);
+}
+
+p.hs1 {
+    border-style: solid;
+    border-color: hsl(0, 100%, 50%);
+}
+
+p.hs2 {
+    border-style: solid;
+    border-color: hsl(240, 100%, 50%);
+}
+
+p.hs3 {
+    border-style: solid;
+    border-color: hsl(0, 0%, 73%);
+}
+p.normal {
+    border: 2px solid red;
+    padding: 5px;
+}
+
+p.round1 {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+p.round2 {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+p.round3 {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+}

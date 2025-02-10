@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">메뉴 1</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">서브메뉴 1-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">서브메뉴 1-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴 2</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">서브메뉴 2-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">서브메뉴 2-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="topmenu">
+                <div id="allMenuLayer" class="menuAllLayer" >
+                    <div class="menuAllLayerIn">
+                        <a id="closeMenuAll" href="javascript:void(0);" class="close">닫기</a>
+                        <ul class="highDepth">
+                            <li>
+                                <a id="MENU0001" onmouseover="showAllSubMenu('MENU0001')">물자관리</a>
+                            </li>
+                            <li>
+                                <a id="MENU0002" onmouseover="showAllSubMenu('MENU0002')">정산/실적관리</a>
+                            </li>
+                        </ul>
+                        <div id="lowMenuMENU0001" class="lowDepthWrap" >
+                            <ul class="lowDepth">
+                                <li class="title">
+                                    <a href="#">피복관리</a>
+                                </li>
+                                <li>
+                                    <a href="/WorkingClothes/OperRequestClothStats">피복현황통계</a>
+                                </li>
+                                <li>
+                                    <a href="/WorkingClothes/UserRequestClothInfo">피복신청 및 조회</a>
+                                </li>
+                            </ul>
+                            <ul class="lowDepth">
+                                <li class="title">
+                                    <a href="#">단말관리</a>
+                                </li>
+                                <li>
+                                    <a href="/Material/TerminalInfoDetaill">장기미사용단말</a>
+                                </li>
+                                <li>
+                                    <a href="/Material/TerminalInfoDetaill_All">전체단말</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="lowMenuMENU0002" class="lowDepthWrap" style="display:none">
+                            <ul class="lowDepth">
+                                <li class="title">
+                                    <a href="#">실적급정산</a>
+                                </li>
+                                <li>
+                                    <a href="/Pay/MaritPayTotalListByOrgState">실적급월별조회</a>
+                                </li>
+                                <li>
+                                    <a href="/Pay/MaritPayStatByMonth">실적급월별추이</a>
+                                </li>
+                            </ul>
+                            <ul class="lowDepth">
+                                <li class="title">
+                                    <a href="#">턴키정산</a>
+                                </li>
+                                <li>
+                                    <a href="/Pay/TurnkeyTotalList">턴키월별조회</a>
+                                </li>
+                                <li>
+                                    <a href="/Pay/TurnkeyStatByMonth">턴키추이조회</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <script></script>
+    </body>
+</html>

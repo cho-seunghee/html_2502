@@ -1,0 +1,19 @@
+nav {
+    background-color: #666;
+}
+
+.submenu {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute;
+    background-color: #444;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li:hover .submenu {
+    display: block; /* 마우스 오버 시 표시 */
+    transform: translateY(10px);
+    transition: transform 0.2s ease; /* 드롭 효과 */
+}
