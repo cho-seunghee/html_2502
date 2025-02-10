@@ -1,0 +1,91 @@
+.s1 > h2 {
+  color: blue;
+}
+.s1 > p {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 > * {
+  margin: 20px auto;
+}
+
+.s2,
+.s3,
+.s4,
+.s5 .container {
+  width: 600px;
+  padding: 15px;
+  border: 1px dotted gray;
+}
+
+.s2,
+.s3,
+.s4,
+.s5 .container p {
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+.s2 > .container .bluetext {
+  color: blue;
+}
+
+.s3 > .container .bluetext {
+  color: blue;
+}
+
+.s4 > .container > h2.accent {
+  background-color: #222;
+  color: #fff;
+  padding: 5px;
+}
+
+.s4 > .container .bluetext {
+  color: blue;
+}
+
+.s5 > #container > h2.accent {
+  background-color: #222;
+  color: #fff;
+  padding: 5px;
+}
+
+.s5 > #container .browntext {
+  color: brown;
+}
+.s5 > #container .boldtext {
+  font-weight: bold;
+}
+
+.s6 > #container > h2.accent {
+  background-color: #222;
+  color: #fff;
+  padding: 5px;
+}
+
+.s5,
+.s6 > #container {
+  width: 600px;
+  padding: 15px;
+  border: 1px dotted gray;
+}
+
+.s6 > #container .bluetext {
+  color: blue;
+}
+
+.s6 > #container .browntext {
+  color: brown;
+}
+.s6 > #container .boldtext {
+  font-weight: bold;
+}
+
+.s7 > .container .undertext {
+  text-decoration: underline;
+}

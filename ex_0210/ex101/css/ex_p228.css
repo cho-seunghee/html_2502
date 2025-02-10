@@ -1,0 +1,76 @@
+.s1 > div > h1 {
+  color: rgb(0, 200, 0);
+}
+.s1 > div > h2 {
+  color: blue;
+}
+.s1 > div .accent {
+  color: #f00;
+}
+.s1 > div > img {
+  float: right;
+  margin-right: 10px;
+}
+
+.s2 > div > p {
+  line-height: 1.8;
+}
+.s2 > div a {
+  text-decoration: none;
+}
+.s2 > div .edited {
+  text-decoration: line-through;
+}
+
+.s3 > div .trans1 {
+  text-transform: uppercase;
+}
+.s3 > div .trans2 {
+  text-transform: capitalize;
+}
+
+.s4 > div > h1 {
+  font-size: 100px;
+  font-family: "Arial Rounded MT";
+}
+.s4 > div > .shadow1 {
+  color: orange;
+  text-shadow: 1px 1px;
+}
+.s4 > div > .shadow2 {
+  text-shadow: 5px 5px 3px #f00;
+}
+.s4 > div > .shadow3 {
+  color: #fff;
+  text-shadow: 7px -7px 5px #000;
+}
+
+.s5 > div {
+  background: #222;
+}
+
+.s5 > div > h1 {
+  font-size: 80px;
+  font-family: "Arial Rounded MT";
+  letter-spacing: 4px;
+}
+.s5 > div > .shadow3 {
+  color: #000;
+  text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3,
+    -2px -15px 11px #f80, 2px -19px 18px #f20;
+}
+
+.s6 > div > h1 {
+  font-size: 40px;
+}
+.s6 > div > .letter1 {
+  letter-spacing: 0.2em;
+}
+.s6 > div > .letter2 {
+  letter-spacing: 0.5em;
+}
+
+.s7 > div > p > .under {
+  color: red;
+  text-decoration: underline;
+}
