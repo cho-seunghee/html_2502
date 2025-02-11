@@ -9,162 +9,132 @@
     <body>
         <header>
             <section class="topmenu">
-                <div class="topMenuIn">
-                    <div id="allMenuLayer" class="menuAllLayer">
-                        <div class="menuAllLayerIn">
-                            <a id="closeMenuAll" href="javascript:void(0);" class="close">닫기</a>
-                            <ul class="highDepth">
+                <div class="nav-container active">
+                    <nav>
+                        <ul class="mobile-nav">
+                            <li>
+                                <div class="menu-icon-container">
+                                    <div class="menu-icon">
+                                        <span class="line-1"></span>
+                                        <span class="line-2"></span>
+                                    </div>
+                                </div>
+                            </li>
+            
+                            <li>
+                                <a href="#" class="link-logo"></a>
+                            </li>
+            
+                            <li>
+                                <a href="#" class="link-bag"></a>
+                            </li>
+                        </ul>
+            
+                        <ul class="desktop-nav">
+                            <li>
+                                <a href="#" class="link-logo"></a>
+                            </li>
+                            <li>
+                                <a href="#">Mac</a>
+                            </li>
+                            <li>
+                                <a href="#">iPad</a>
+                            </li>
+                            <li>
+                                <a href="#">iPhone</a>
+                            </li>
+                            <li>
+                                <a href="#">Watch</a>
+                            </li>
+                            <li>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Music</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-search"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-bag"></a>
+                            </li>
+                        </ul>
+                    </nav>
+            
+                    <div class="search-container hide">
+                        <div class="link-search"></div>
+                        <div class="search-bar">
+                            <form action="">
+                                <input type="text" placeholder="Search apple.com">
+                            </form>
+                        </div>
+                        <div class="link-close"></div>
+                        <!-- <div class="link-close"></div> -->
+                
+                        <div class="quick-links">
+                            <h2>Quick Links</h2>
+                            <ul>
                                 <li>
-                                    <a id="MENU0001" onmouseover="showAllSubMenu('MENU0001')">물자관리</a>
+                                    <a href="#">Visiting an Apple Store FAQ</a>
                                 </li>
                                 <li>
-                                    <a id="MENU0002" onmouseover="showAllSubMenu('MENU0002')">정산/실적관리</a>
+                                    <a href="#">Shop Apple Store Online</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">AirPods</a>
+                                </li>
+                                <li>
+                                    <a href="#">AirTag</a>
                                 </li>
                             </ul>
-                            <div id="lowMenuMENU0001" class="lowDepthWrap">
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">피복관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/OperRequestClothStats">피복현황통계</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/UserRequestClothInfo">피복신청 및 조회</a>
-                                    </li>
-                                </ul>
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">단말관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalInfoDetaill">장기미사용단말</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalInfoDetaill_All">전체단말</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="lowMenuMENU0002" class="lowDepthWrap" style="display:none">
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">실적급정산</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayTotalListByOrgState">실적급월별조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayStatByMonth">실적급월별추이</a>
-                                    </li>
-                                </ul>
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">턴키정산</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/TurnkeyTotalList">턴키월별조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/TurnkeyStatByMonth">턴키추이조회</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-                    <div id="subMenuLayer" class="menuSubLayer" style="display: flex;">
-                        <div class="menuSubLayerIn">
-                            <a id="closeMenuSub" href="javascript:void(0);" class="close">닫기</a>
-                            <div id="lowSubMenuMENU0001" class="lowDepthWrap" style="display:none">
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">피복관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/OperRequestClothStats">피복현황통계</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/UserRequestClothInfo">피복신청 및 조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/OperRequestClothInfo">피복신청승인관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/WorkingClothPointInfo">피복포인트관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/OperStandardClothStats">피복지급내역통계</a>
-                                    </li>
-                                    <li>
-                                        <a href="/WorkingClothes/OperRequestConfList">피복지급상세조회</a>
-                                    </li>
-                                </ul>
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">단말관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalInfoDetaill">장기미사용단말</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalInfoDetaill_All">전체단말</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalStatByEmp">개인별단말현황</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalStatByOrg">조직별단말현황</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Material/TerminalSendMMSResult">MMS발송내역관리</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                                id="lowSubMenuMENU0002"
-                                class="lowDepthWrap"
-                                style="display: flex; flex-wrap: wrap;">
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">실적급정산</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayTotalListByOrgState">실적급월별조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayStatByMonth">실적급월별추이</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayTotalListByEmpState">실적급개인별조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/MaritPayEmpStatByMonth">실적급개인별추이</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/DispatchInfo">파견관리</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/UserPayCoefficientInfo">구역계수조정</a>
-                                    </li>
-                                </ul>
-                                <ul class="lowDepth">
-                                    <li class="title">
-                                        <a href="#">턴키정산</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/TurnkeyTotalList">턴키월별조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/TurnkeyStatByMonth">턴키추이조회</a>
-                                    </li>
-                                    <li>
-                                        <a href="/Pay/BCompanyState">B협력사업체별조회</a>
-                                    </li>
-                                </ul>
-                            </div>
+            
+                    <div class="mobile-search-container">
+                        <div class="link-search"></div>
+                        <div class="search-bar">
+                            <form action="">
+                                <input type="text" placeholder="Search apple.com">
+                            </form>
+                        </div>
+                        <span class="cancel-btn">Cancel</span>
+                        <!-- <div class="link-close"></div> -->
+                
+                        <div class="quick-links">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Visiting an Apple Store FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop Apple Store Online</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">AirPods</a>
+                                </li>
+                                <li>
+                                    <a href="#">AirTag</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-            </header>
-            <script></script>
+            
+                </div>
+            
+                <div class="overlay"></div>
+
+    <script src="./script/top.js"></script>
+            </section>
+        </header>
+        <script></script>
         </body>
     </html>
