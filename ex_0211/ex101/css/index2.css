@@ -1,0 +1,58 @@
+section.s1 > div > a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+section.s1 > div > a:visited {
+    color: rgb(83, 107, 109);
+    background-color: transparent;
+    text-decoration: none;
+}
+section.s1 > div > a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+section.s1 > div > a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+section.s2 > div > a:link,
+a:visited {
+    background-color: #964641;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 10px 10px #258671;
+}
+
+section.s2 > div > a:hover,
+a:active {
+    background-color: red;
+}
+
+section.s3 > div > p > a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+section.s3 > div > p > a:visited {
+    color: rgb(83, 107, 109);
+    background-color: transparent;
+    text-decoration: none;
+}
+section.s3 > div > p > a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+section.s3 > div > p > a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/index3_width.css">
+    </head>
+    <body>
+        <header></header>
+
+        <div id="b_width">test</div>
+        <section class="s1">
+            <h1>HTML
+                <picture>
+                    요소</h1>
+                <div>
+                    <h2>The picture Element</h2>
+                    <picture>
+                        <source media="(min-width: 850px)" srcset="./images/img_food.jpg">
+                        <source media="(min-width: 665px)" srcset="./images/img_car.jpg">
+                        <img src="./images/img_girl.jpg" style="width:auto;">
+                    </picture>
+
+                    <p>Resize the browser to see different versions of the picture loading at
+                        different viewport sizes. The browser looks for the first source element where
+                        the media query matches the user's current viewport width, and fetches the image
+                        specified in the srcset attribute.</p>
+
+                    <p>The img element is required as the last child tag of the picture declaration
+                        block. The img element is used to provide backward compatibility for browsers
+                        that do not support the picture element, or if none of the source tags matched.
+                    </p>
+                </div>
+            </section>
+            <footer></footer>
+
+            <script>
+                // document.getElementById("b_width").innerHTML = "브라우저 넓이: " + window.innerWidth + "px"; 
+                
+                // document.addEventListener("resize", function () {
+                //     document.getElementById("b_width").innerHTML = "브라우저 넓이: " + window.innerWidth + "px"; 
+                // });
+
+                function updateWidth() {
+                    document.getElementById("b_width").innerHTML = "브라우저 넓이: " + window.innerWidth + "px";
+                }
+
+                // 페이지 로드 시 브라우저 넓이 업데이트
+                window.onload = function () {
+                    updateWidth();
+                };
+
+                // 리사이즈 이벤트 리스너 등록
+                window.addEventListener("resize", updateWidth);
+            </script>
+        </body>
+    </html>
