@@ -40,6 +40,10 @@ section.s2 td:nth-child(even) {
     height: 20px;
 }
 
+section.s2 td:nth-child(odd) {
+    background-color: #2fc512;
+}
+
 section.s3 table,
 section.s3 th,
 section.s3 td {
