@@ -1,0 +1,32 @@
+section {
+    padding: 0 100px;
+    align-items: center;
+}
+
+iframe {
+    height: 200px;
+    width: 80%;
+}
+
+.s1 iframe {
+    background-color: rgb(124, 158, 32);
+}
+
+.s2 iframe {
+    border: none;
+    background-color: aquamarine;
+}
+
+.s3 iframe {
+    border: 2px double green;
+    background-color: rgb(139, 143, 123);
+}
+
+.s4 iframe {
+    background-color: rgb(190, 225, 226);
+}
+
+.s4 a {
+    font-size: 2rem;
+    text-decoration: none;
+}
