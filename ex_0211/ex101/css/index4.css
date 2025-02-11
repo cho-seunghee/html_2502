@@ -1,6 +1,10 @@
+div {
+    padding: 0 100px;
+}
+
 table {
     margin: 20px;
-    width: 100%;
+    width: 92%;
 }
 
 tr:hover {
@@ -49,7 +53,7 @@ section.s3 tr:nth-child(even) {
 
 section.s3 th:nth-child(even),
 section.s3 td:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
+    background-color: rgba(31, 32, 32, 0.4);
     height: 20px;
 }
 
