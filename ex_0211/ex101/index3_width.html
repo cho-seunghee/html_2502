@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./css/index3_width.css">
     </head>
     <body>
         <header></header>
@@ -33,6 +32,42 @@
                     </p>
                 </div>
             </section>
+            <hr>
+            <section class="s2">
+                <h1>Picture Element를 사용하는 경우</h1>
+                <div>
+                    <h2>The picture Element</h2>
+
+                    <picture>
+                        <source srcset="./images/img_avatar.png">
+                        <source srcset="./images/img_girl.jpg">
+                        <img src="./images/img_beatles.gif" alt="Beatles" style="width:auto;">
+                    </picture>
+
+                    <p>The picture element can be used when the image format is not supported by all
+                        devices.</p>
+
+                    <p>The device will use the first image format it supports, and ignore the rest
+                        of the images.</p>
+                </div>
+            </section>
+            <section class="s3">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </section>
+            <section class="s4">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </section>
+
             <footer></footer>
 
             <script>
@@ -46,12 +81,10 @@
                     document.getElementById("b_width").innerHTML = "브라우저 넓이: " + window.innerWidth + "px";
                 }
 
-                // 페이지 로드 시 브라우저 넓이 업데이트
                 window.onload = function () {
                     updateWidth();
                 };
 
-                // 리사이즈 이벤트 리스너 등록
                 window.addEventListener("resize", updateWidth);
             </script>
         </body>
