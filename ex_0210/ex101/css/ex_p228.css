@@ -8,13 +8,18 @@
   color: #f00;
 }
 .s1 > div > img {
-  float: right;
+  float: left;
   margin-right: 10px;
 }
 
 .s2 > div > p {
   line-height: 1.8;
 }
+
+.s1 > div > .p2 {
+  clear: both;
+}
+
 .s2 > div a {
   text-decoration: none;
 }

@@ -1,0 +1,30 @@
+section.s1 > div > h1 {
+    font-size: 3em;
+}
+
+section.s1 > div > p {
+    font-size: 1em;
+}
+
+section.s2 > div > p > span.accent {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+section.s3 > div > p {
+    font-style: italic;
+}
+
+section.s3 > div > p.txt {
+    font-style: normal;
+}
+
+section.s4 > div > p.txt {
+    font: italic 12px/24px 돋움;
+}
+
+section.s5 > div > p > span.accent {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
