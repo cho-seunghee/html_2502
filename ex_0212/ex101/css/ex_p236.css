@@ -41,16 +41,16 @@ section.s4 > div > p {
 }
 
 section.s5 > div#container {
-    width:650px;
-    margin:0 auto;
-    padding:5px;
+    width: 650px;
+    margin: 0 auto;
+    padding: 5px;
 }
 section.s5 > div#container > div#check {
-    width:640px;
-    border:1px solid #ccc;
+    width: 640px;
+    border: 1px solid #ccc;
 }
 
-section.s5 h1 {
+section.s5 > div h1 {
     color: white;
     font-size: 1em;
     background: #222;
@@ -77,4 +77,32 @@ section.s5 .accent {
 
 section.s5 .smalltext {
     font-size: 0.7em;
+}
+
+section.s6 .sqbullet {
+    list-style-type: square;
+}
+
+section.s6 .nobullet {
+    list-style-type: none;
+}
+
+section.s7 .book1 {
+    list-style-type: lower-alpha;
+}
+section.s7 .book2 {
+    list-style-type: upper-roman;
+}
+
+section.s8 ul {
+    list-style-image: url('../images/dot.png');
+}
+
+section.s9 .inside {
+    list-style-position: inside;
+}
+
+section.s10 ul {
+    list-style-position: inside;
+    list-style: none;
 }
