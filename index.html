@@ -59,27 +59,40 @@
             // 현재 URL의 전체 경로
             const currentUrl = window.location.href;
             const urlObject = new URL(currentUrl);
-            const fullPath = urlObject.origin; // 전체 경로 가져오기
+            let fullPath = urlObject.origin; // 전체 경로 가져오기
+
+            // localhost 여부 확인
+            if (!(currentUrl.includes("localhost")
+                ||currentUrl.includes("127.0.0.1"))) {
+                fullPath += '/html_2502'; // 전체 경로 가져오기
+            } 
 
             const exPath = 'ex101';
 
-            if (exPath == 'ex_0203' || exPath == 'ex_0204') {
-                exPath = 'ex01';
-            }
+            if (path != undefined && name != undefined)
+            {
+                if (exPath == 'ex_0203' || exPath == 'ex_0204') {
+                    exPath = 'ex01';
+                }
 
-            let url = '';
-            // 최종 URL 생성
-            url += fullPath;
-            url += '/' + path;
-            url += '/' + exPath;
-            url += '/' + name + '.html';
+                let url = '';
+                // 최종 URL 생성
+                url += fullPath;
+                url += '/' + path;
+                url += '/' + exPath;
+                url += '/' + name + '.html';
 
-            // URL이 존재하는 경우 iFrame의 src 속성에 설정
-            if (url) {
-                $('.my-iframe').attr('src', url);
-            } else {
-                $('.my-iframe').attr('src', 'about:blank'); // URL이 없는 경우 빈 페이지 설정
+
+
+                // URL이 존재하는 경우 iFrame의 src 속성에 설정
+                if (url) {
+                    $('.my-iframe').attr('src', url);
+                } else {
+                    $('.my-iframe').attr('src', 'about:blank'); // URL이 없는 경우 빈 페이지 설정
+                }
+
             }
+            
         });
     </script>
 </body>
