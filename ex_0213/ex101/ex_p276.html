@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>그러데이션 효과로 배경 꾸미기</title>
+        <link rel="stylesheet" href="./css/ex_p276.css">
+    </head>
+    <body>
+        <header></header>
+        <section class="s1">
+            <h1>위치 키워드를 사용해 선형 그러데이션 만들기</h1>
+            <div class="grad">
+                <pre>
+background: blue;
+background: -webkit-linear-gradient(left top, blue, white);
+background: -moz-linear-gradient(right bottom, white);
+background: -o-linear-gradient(right bottom, white);
+background: linear-gradient(right bottom, blue, white);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s2">
+            <h1>각도를 사용해 선형 그러데이션 만들기</h1>
+            <div class="grad">
+                <pre>
+background: #ff0000;
+background: -webkit-gradient(45deg, #ff0000, #ffffff);
+background: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+background: -o-linear-gradient(45deg, #ff0000, #ffffff);
+background: linear-gradient(45deg, #ff0000, #ffffff);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s3">
+            <h1>선형 그러데이션의 색상 중지점 지정하기</h1>
+            <div>
+                <div class="grad">
+                    <pre>
+background: #06f;
+background: -webkit-gradient(top, #06f, white 30%, #06f);
+background: -moz-linear-gradient(bottom, #06f, white 30%, #06f);
+background: -o-linear-gradient(bottom, #06f, white 30%, #06f);
+background: linear-gradient(to bottom, #06f, white 30%, #06f);
+                </pre>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s4">
+            <h1>원형 그러데이션</h1>
+            <div class="grad1">
+                <pre>
+background: red;
+background: -webkit-radial-gradient(white, yellow, red);
+background: -moz-radial-gradient(white, yellow, red);
+background: -o-radial-gradient(white, yellow, red);
+background: radial-gradient(white, yellow, red);
+            </pre>
+            </div>
+            <div class="grad2">
+                <pre>
+background: red;
+background: -webkit-radial-gradient(circle, white, yellow, red);
+background: -moz-radial-gradient(circle, white, yellow, red);
+background: -o-radial-gradient(circle, white, yellow, red);
+background: radial-gradient(circle, white, yellow, red);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s5">
+            <h1>위치 키워드를 사용해 원형 그러데이션 만들기</h1>
+            <div>
+                <div class="grad">
+                    <pre>
+background: blue;
+background: -webkit-radial-gradient(10% 10%, circle, white, blue);
+background: -moz-radial-gradient(10% 10%, circle, white, blue);
+background: -o-radial-gradient(10% 10%, circle, white, blue);
+background: radial-gradient(circle at 10% 10%, white, blue);
+                </pre>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s6">
+            <h1>원형 그러데이션 크기 지정하기</h1>
+            <div>
+                <ul>
+                    <li id="div1">
+                        <pre>
+background: darkgreen;
+background: -webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+background: -moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+background: -o-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+                    </pre>
+                    </li>
+                    <li id="div2">
+                        <pre>
+background: darkgreen;
+background: -webkit-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+background: -moz-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+background: -o-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+                    </pre>
+                    </li>
+                    <li id="div3">
+                        <pre>
+background: darkgreen;
+background: -webkit-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+background: -moz-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+background: -o-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+                    </pre>
+                    </li>
+                    <li id="div4">
+                        <pre>
+background: darkgreen;
+background: -webkit-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+background: -moz-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+background: -o-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);
+                    </pre>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="s7">
+            <h1>원형 그러데이션의 색상 중지점 지정하기</h1>
+            <div class="grad1">
+                <pre>
+background: skyblue;
+background: -webkit-radial-gradient(red, yellow, skyblue);
+background: -moz-radial-gradient(red, yellow, skyblue);
+background: -o-radial-gradient(red, yellow, skyblue);
+background: radial-gradient(red, yellow, skyblue);
+            </pre>
+            </div>
+            <div class="grad2">
+                <pre>
+background: skyblue;
+background: -webkit-radial-gradient(red, yellow 20%, skyblue);
+background: -moz-radial-gradient(red, yellow 20%, skyblue);
+background: -o-radial-gradient(red, yellow 20%, skyblue);
+background: radial-gradient(red, yellow 20%, skyblue);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s8">
+            <h1>그러데이션 반복하기 - 기본</h1>
+            <div class="grad1">
+                <pre>
+background: red;
+background: -webkit-repeating-linear-gradient(yellow, red 20px);
+background: -moz-repeating-linear-gradient(yellow, red 20px);
+background: -o-repeating-linear-gradient(yellow, red 20px);
+background: repeating-linear-gradient(yellow, red 20px);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s9">
+            <h1>그러데이션 반복하기 - 패턴</h1>
+            <div class="grad2">
+                <pre>
+background: red;
+background: -webkit-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+background: -moz-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+background: -o-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s10">
+            <h1>그러데이션 반복하기 - 원형</h1>
+            <div class="grad1">
+                <pre>
+background: #ccc;
+background: -webkit-repeating-radial-gradient(circle, white, #ccc 10%);
+background: -moz-repeating-radial-gradient(circle, white, #ccc 10%);
+background: -o-repeating-radial-gradient(circle, white, #ccc 10%);
+background: repeating-radial-gradient(circle, white, #ccc 10%);
+            </pre>
+            </div>
+            <div class="grad2">
+                <pre>
+background: #ccc;
+background: -webkit-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+background: -moz-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+background: -o-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+            </pre>
+            </div>
+        </section>
+        <hr>
+        <section class="s11">
+            <h1>복습</h1>
+            <div class="grad1">
+background: green;
+background: -webkit-linear-gradient(top, green 10px, white);
+background: -moz-repeating-radial-gradient(top, green 10px, white);
+background: -o-repeating-radial-gradient(top, green 10px, white);
+background: linear-gradient(top, green 10px, white);
+            </div>
+        </section>
+
+        <footer></footer>
+    </body>
+</html>

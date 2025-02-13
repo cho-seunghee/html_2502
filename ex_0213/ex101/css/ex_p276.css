@@ -1,0 +1,208 @@
+pre {
+    display: inline-block;
+}
+
+.s1 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.s1 .grad {
+    background: blue;
+    background: -webkit-linear-gradient(left top, blue, white);
+    background: -moz-linear-gradient(right bottom, white);
+    background: -o-linear-gradient(right bottom, white);
+    background: linear-gradient(right bottom, blue, white);
+}
+
+.s2 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.s2 .grad {
+    background: #ff0000;
+    background: -webkit-gradient(45deg, #ff0000, #ffffff);
+    background: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+    background: -o-linear-gradient(45deg, #ff0000, #ffffff);
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+}
+
+.s3 div {
+    width: 500px;
+    height: 300px;
+}
+
+.s3 .grad {
+    background: #06f;
+    background: -webkit-gradient(top, #06f, white 30%, #06f);
+    background: -moz-linear-gradient(bottom, #06f, white 30%, #06f);
+    background: -o-linear-gradient(bottom, #06f, white 30%, #06f);
+    background: linear-gradient(to bottom, #06f, white 30%, #06f);
+}
+
+.s4 div {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.s4 .grad1 {
+    background: red;
+    background: -webkit-radial-gradient(white, yellow, red);
+    background: -moz-radial-gradient(white, yellow, red);
+    background: -o-radial-gradient(white, yellow, red);
+    background: radial-gradient(white, yellow, red);
+}
+
+.s4 .grad2 {
+    background: red;
+    background: -webkit-radial-gradient(circle, white, yellow, red);
+    background: -moz-radial-gradient(circle, white, yellow, red);
+    background: -o-radial-gradient(circle, white, yellow, red);
+    background: radial-gradient(circle, white, yellow, red);
+}
+
+.s5 div {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.s5 .grad {
+    background: blue;
+    background: -webkit-radial-gradient(10% 10%, circle, white, blue);
+    background: -moz-radial-gradient(10% 10%, circle, white, blue);
+    background: -o-radial-gradient(10% 10%, circle, white, blue);
+    background: radial-gradient(circle at 10% 10%, white, blue);
+}
+
+.s6 li {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.s6 #div1 {
+    background: darkgreen;
+    background: -webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+    background: -moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+    background: -o-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+    background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+}
+
+.s6 #div2 {
+    background: darkgreen;
+    background: -webkit-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+    background: -moz-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+    background: -o-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+    background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+}
+
+.s6 #div3 {
+    background: darkgreen;
+    background: -webkit-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+    background: -moz-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+    background: -o-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+    background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+}
+
+.s6 #div4 {
+    background: darkgreen;
+    background: -webkit-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+    background: -moz-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+    background: -o-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+    background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);
+}
+
+.s7 div {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.s7 .grad1 {
+    background: skyblue;
+    background: -webkit-radial-gradient(red, yellow, skyblue);
+    background: -moz-radial-gradient(red, yellow, skyblue);
+    background: -o-radial-gradient(red, yellow, skyblue);
+    background: radial-gradient(red, yellow, skyblue);
+}
+
+.s7 .grad2 {
+    background: skyblue;
+    background: -webkit-radial-gradient(red, yellow 20%, skyblue);
+    background: -moz-radial-gradient(red, yellow 20%, skyblue);
+    background: -o-radial-gradient(red, yellow 20%, skyblue);
+    background: radial-gradient(red, yellow 20%, skyblue);
+}
+
+.s8 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.s8 .grad1 {
+    background: red;
+    background: -webkit-repeating-linear-gradient(yellow, red 20px);
+    background: -moz-repeating-linear-gradient(yellow, red 20px);
+    background: -o-repeating-linear-gradient(yellow, red 20px);
+    background: repeating-linear-gradient(yellow, red 20px);
+}
+
+.s9 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.s9 .grad2 {
+    background: red;
+    background: -webkit-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: -moz-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: -o-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+    background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+}
+
+.s10 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.s10 .grad1 {
+    background: #ccc;
+    background: -webkit-repeating-radial-gradient(circle, white, #ccc 10%);
+    background: -moz-repeating-radial-gradient(circle, white, #ccc 10%);
+    background: -o-repeating-radial-gradient(circle, white, #ccc 10%);
+    background: repeating-radial-gradient(circle, white, #ccc 10%);
+}
+.s10 .grad2 {
+    background: #ccc;
+    background: -webkit-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: -moz-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: -o-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+    background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+}
+
+.s11 div {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.s11 .grad1 {
+    background: green;
+    background: -webkit-linear-gradient(top, green 10px, white);
+    background: -moz-repeating-radial-gradient(top, green 10px, white);
+    background: -o-repeating-radial-gradient(top, green 10px, white);
+    background: linear-gradient(top, green 10px, white);
+}
