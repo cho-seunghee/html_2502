@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>오버플로</title>
+        <link rel="stylesheet" href="./css/index_overflow.css">
+    </head>
+    <body>
+        <header></header>
+        <section class="s1">
+            <h1></h1>
+            <div>
+                <h2>CSS Overflow</h2>
+
+                <p>The overflow property controls what happens to content that is too big to fit
+                    into an area.</p>
+
+                <div id="overflowTest">이 텍스트는 정말 길고 컨테이너의 높이는 100픽셀에 불과합니다. 따라서 독자가 콘텐츠를 스크롤하는 데
+                    도움이 되도록 스크롤바가 추가되었습니다. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismodtincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                    iriure dolor in hendrerit in vulputate velit esse Molestie consequat, velillum
+                    dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+                    feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue
+                    nihil imperdiet doming id quod mazim placeratfacer possim assum. 유형은 non habent
+                    claritatem insitam; est usus legendis in iis qui facit eorum claritatem.</div>
+            </div>
+        </section>
+        <hr>
+        <section class="s2">
+            <h1>오버플로: 눈에 보이는</h1>
+            <div>
+                <h2>Overflow: visible</h2>
+
+                <p>By default, the overflow is visible, meaning that it is not clipped and it
+                    renders outside the element's box:</p>
+
+                <div>You can use the overflow property when you want to have better control of
+                    the layout. The overflow property specifies what happens if content overflows an
+                    element's box.</div>
+            </div>
+        </section>
+        <hr>
+        <section class="s3">
+            <h1>오버플로: 숨김</h1>
+            <div>
+                <h2>Overflow: hidden</h2>
+
+                <p>With the hidden value, the overflow is clipped, and the rest of the content
+                    is hidden:</p>
+                <p>Try to remove the overflow property to understand how it works.</p>
+
+                <div>You can use the overflow property when you want to have better control of
+                    the layout. The overflow property specifies what happens if content overflows an
+                    element's box.</div>
+            </div>
+        </section>
+        <hr>
+        <section class="s4">
+            <h1>오버플로우: 스크롤</h1>
+            <div>
+                <h2>Overflow: scroll</h2>
+
+                <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar
+                    is added to scroll inside the box. Note that this will add a scrollbar both
+                    horizontally and vertically (even if you do not need it):</p>
+
+                <div>You can use the overflow property when you want to have better control of
+                    the layout. The overflow property specifies what happens if content overflows an
+                    element's box.</div>
+            </div>
+        </section>
+        <hr>
+        <section class="s5">
+            <h1>오버플로우: 자동</h1>
+            <div>
+                <h2>Overflow: auto</h2>
+
+                <p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+                <div>You can use the overflow property when you want to have better control of
+                    the layout. The overflow property specifies what happens if content overflows an
+                    element's box.</div>
+            </div>
+        </section>
+        <hr>
+        <section class="s6">
+            <h1>오버플로-x와 오버플로-y</h1>
+            <div>
+                <h2>Overflow-x and overflow-y</h2>
+
+                <p>You can also change the overflow of content horizontally or vertically.</p>
+                <p>overflow-x specifies what to do with the left/right edges of the content.</p>
+                <p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+
+                <div>You can use the overflow property when you want to have better control of
+                    the layout. The overflow property specifies what happens if content overflows an
+                    element's box.</div>
+            </div>
+        </section>
+
+        <footer></footer>
+    </body>
+</html>
