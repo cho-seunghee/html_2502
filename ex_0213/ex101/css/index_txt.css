@@ -1,0 +1,300 @@
+div:nth-child(even) {
+    background-color: #dbf0dd;
+    display: inline-block;
+}
+
+section > h1 {
+    color: #000000;
+}
+
+.s1 div {
+    border: 1px solid gray;
+    width: 60%;
+    padding: 8px;
+}
+
+.s1 div h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+.s1 p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+.s1 a {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+.s2 {
+    color: blue;
+}
+
+.s2 div h1 {
+    color: green;
+}
+
+.s3 div {
+    background-color: lightgrey;
+    color: blue;
+}
+
+.s3 div h1 {
+    background-color: black;
+    color: white;
+}
+
+.s3 div div {
+    background-color: blue;
+    color: white;
+}
+
+.s4 div h1 {
+    text-align: center;
+}
+
+.s4 h2 {
+    text-align: left;
+}
+
+.s4 h3 {
+    text-align: right;
+}
+
+.s5 div div {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+
+.s6 p.a {
+    text-align-last: right;
+}
+
+.s6 p.b {
+    text-align-last: center;
+}
+
+.s6 p.c {
+    text-align-last: justify;
+}
+
+.s7 div {
+    width: 100%;
+}
+
+.s7 p.ex1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.s8 img.a {
+    vertical-align: baseline;
+}
+
+.s8 img.b {
+    vertical-align: text-top;
+}
+
+.s8 img.c {
+    vertical-align: text-bottom;
+}
+
+.s8 img.d {
+    vertical-align: sub;
+}
+
+.s8 img.e {
+    vertical-align: super;
+}
+
+.s9 div h1 {
+    text-decoration: overline;
+}
+
+.s9 h2 {
+    text-decoration: line-through;
+}
+
+.s9 h3 {
+    text-decoration: underline;
+}
+
+.s9 p.ex {
+    text-decoration: overline underline;
+}
+
+.s10 div h1 {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+.s10 h2 {
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+}
+
+.s10 h3 {
+    text-decoration-line: underline;
+    text-decoration-color: green;
+}
+
+.s10 p {
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;
+}
+
+.s11 div h1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    /* this is default */
+}
+
+.s11 h2 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.s11 h3 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.s11 p.ex1 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.s11 p.ex2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.s11 p.ex3 {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+}
+
+.s12 div h1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;
+    /* this is default */
+}
+
+.s12 h2 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+.s12 h3 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 25%;
+}
+
+.s12 p {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+}
+
+.s13 div h1 {
+    text-decoration: underline;
+}
+
+.s13 h2 {
+    text-decoration: underline red;
+}
+
+.s13 h3 {
+    text-decoration: underline red double;
+}
+
+.s13 p {
+    text-decoration: underline red double 5px;
+}
+
+.s14 a {
+    text-decoration: none;
+}
+
+.s15 p.uppercase {
+    text-transform: uppercase;
+}
+
+.s15 p.lowercase {
+    text-transform: lowercase;
+}
+
+.s15 p.capitalize {
+    text-transform: capitalize;
+}
+
+.s16 p {
+    text-indent: 50px;
+}
+
+.s17 h2 {
+    letter-spacing: 5px;
+}
+
+.s17 h3 {
+    letter-spacing: -2px;
+}
+
+.s18 p.small {
+    line-height: 0.7;
+}
+
+.s18 p.big {
+    line-height: 1.8;
+}
+
+.s19 p.one {
+    word-spacing: 10px;
+}
+
+.s19 p.two {
+    word-spacing: -2px;
+}
+
+.s20 p {
+    white-space: nowrap;
+}
+
+.s21 div h1 {
+    text-shadow: 2px 2px;
+}
+
+.s22 div h1 {
+    text-shadow: 2px 2px red;
+}
+
+.s23 div h1 {
+    text-shadow: 2px 2px 5px red;
+}
+
+.s24 div h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.s25 div h1 {
+    text-shadow: 0 0 3px #FF0000;
+}
+
+.s26 div h1 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.s27 div h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
