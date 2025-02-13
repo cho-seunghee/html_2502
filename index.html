@@ -18,10 +18,6 @@
             <iframe class="my-iframe" src="./ex_0211/ex101/index5_iframe.html" allowfullscreen></iframe>
         </div>
     </section>
-    <main>
-        <h1>메인 콘텐츠</h1>
-        <p>여기에 메인 콘텐츠를 추가합니다.</p>
-    </main>
 
     <script>
         // top.html을 불러오기
@@ -38,6 +34,53 @@
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
+
+
+        // URL의 쿼리 파라미터를 가져오는 함수
+        function getQueryParams() {
+            const queryString = window.location.search; // 현재 URL의 쿼리 문자열
+            const params = {};
+
+            // 쿼리 문자열을 '&'로 나누고, 각 파라미터를 '='로 나누어 익명 객체에 저장
+            queryString.substring(1).split('&').forEach(function(param) {
+                const [key, value] = param.split('=');
+                params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+            });
+
+            return params;
+        }
+
+        // GET 값을 표시하는 함수
+        $(document).ready(function () {
+            const params = getQueryParams();
+            const path = params['path'];
+            const name = params['name'];
+
+            // 현재 URL의 전체 경로
+            const currentUrl = window.location.href;
+            const urlObject = new URL(currentUrl);
+            const fullPath = urlObject.origin; // 전체 경로 가져오기
+
+            const exPath = 'ex101';
+
+            if (exPath == 'ex_0203' || exPath == 'ex_0204') {
+                exPath = 'ex01';
+            }
+
+            let url = '';
+            // 최종 URL 생성
+            url += fullPath;
+            url += '/' + path;
+            url += '/' + exPath;
+            url += '/' + name + '.html';
+
+            // URL이 존재하는 경우 iFrame의 src 속성에 설정
+            if (url) {
+                $('.my-iframe').attr('src', url);
+            } else {
+                $('.my-iframe').attr('src', 'about:blank'); // URL이 없는 경우 빈 페이지 설정
+            }
+        });
     </script>
 </body>
 </html>
