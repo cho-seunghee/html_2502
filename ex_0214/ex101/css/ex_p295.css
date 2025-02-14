@@ -335,6 +335,10 @@ div:not(.tit)
     border-bottom-right-radius:30px;
 }
 
+.s20 > div {
+    padding: 0;
+}
+
 .s20 > div div {
     display: inline-block;
     border: 10px solid #0094ff;
