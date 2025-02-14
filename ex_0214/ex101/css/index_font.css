@@ -205,7 +205,12 @@ section.title > div > h1 {
     font-size: 10vw;
 }
 
-.s18 div p.vw {
+
+.s18 div p:nth-child(even).vw {
+    font-size: 5vh;
+}
+
+.s18 div p:nth-child(odd).vw {
     font-size: 5vw;
 }
 
