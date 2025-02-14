@@ -1,0 +1,362 @@
+section > div {
+    border: 1px solid #000000;
+}
+
+section > h1 {
+    color: #0099ff;
+}
+
+section.title > div {
+    border: 5px double #c7c7c7;
+    background: #7a7979;
+    text-decoration: underline;
+    text-shadow: 2px 2px 0 #cc4141,4px 4px 0 #962f2f,6px 6px 10px #e9ff27;
+}
+
+section.title > div > h1 {
+    color: #fff;
+}
+
+div.tit
+{
+    font-size: 26px;
+    font-weight: bolder;
+    color: #0987cf;
+    background-color: #fbffe6;
+    border-bottom: 5px solid #3a0606;
+    margin: 10px;
+    display: inline-block;
+}
+
+div:not(.tit)
+{
+    background: #cccccc;
+}
+
+
+.s2 > div .box1{
+    width: 400px;
+    height: 100px;
+    background: #ff6a00;
+}
+
+.s2 > div .box2{
+    width: 50%;
+    height: 100px;
+    background: #0094ff;
+}
+
+.s2 > div div{
+    margin: 10px;
+}
+
+.s3 div #block img{
+    display: block;
+    margin: 10px;
+}
+
+.s3 div #inline img{
+    display: inline;
+    margin: 10px;
+}
+
+.s4 div nav ul {
+    list-style-type: none;
+}
+.s4 div nav ul li {
+    display: inline;
+    padding:10px 15px;
+    margin-right:20px;				
+    border-top:3px solid #222;
+}
+.s4 div nav ul li:hover {
+    background-color:rgb(196, 196, 196);
+}
+.s4 div nav ul li a {
+        color:black;
+        text-decoration: none;
+}
+
+.s5 nav {
+    width:100%;
+    height:60px;
+    background-color: #069;
+}
+.s5 nav ul {
+    list-style-type: none;
+}
+.s5 nav ul li {
+    display: inline-block;
+    margin:20px;
+}
+.s5 nav ul li a {
+        color: white;
+        text-decoration: none;
+}
+
+.s6 > div div {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.s7 > div div {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin: 15px;
+    border-width: 5px;
+}
+
+.s7 > div .box1 {
+    border-style: solid;
+}
+
+.s7 > div .box2 {
+    border-style: dotted;
+}
+
+.s7 > div .box3 {
+    border-style: dashed;
+}
+
+.s8 > div div {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.s8 > div .box1 {
+    border-color: red;
+}
+
+.s8 > div .box2 {
+    border-color: blue;
+}
+
+.s9 > div h1 {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ccc;
+}
+
+.s9 > div p {
+    padding: 10px;
+    border: 3px dotted black;
+}
+
+.s10 > div div {
+    width: 300px;
+    height: 200px;
+    margin : 20px;
+    display: inline-block;
+}
+
+.s10 > div .round {
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.s10 > div #bg {
+    background: url('../images/pic1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.s10 > div .round1 {
+    border: 2px solid blue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.s10 > div .round2 {
+    background: #0c78c8;
+    border-radius: 20px 70px;
+}
+
+.s11 > div div {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin: 15px;
+    background: #ffd800;
+    border: 2px solid;
+}
+
+.s11 > div .round1 {
+    border-top-left-radius: 100px 500px;
+}
+
+.s11 > div .round2 {
+    border-bottom-right-radius: 50% 30%;
+}
+
+.s11 > div .round3 {
+    border-top-right-radius: 50px;
+}
+
+.s12 > div div {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin: 15px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.s12 > div .box1 {
+    box-shadow: 2px -2px 5px 0px black;
+}
+
+.s12 > div .box2 {
+    box-shadow: 5px 5px 15px 5px gray;
+}
+
+.s13 > div div {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.s14 > div div {
+    width: 200px;
+    height: 100px;
+    background: #0094ff;
+    border: 1px solid #fff;
+}
+
+.s14 > div .box1 {
+    margin: 30px 50px 30px 50px;
+}
+
+.s14 > div .box2 {
+    margin: 30px 50px;
+}
+
+.s14 > div .box3 {
+    margin: 50px;
+}
+
+.s14 > div .box4 {
+    margin: 30px 5px 10px;
+}
+
+.s15 > div .box {
+    width:200px;
+    height:300px;
+    background:#ff6a00;
+    margin: 0 auto;
+}
+
+.s16 > div {
+    padding: 10px;
+}
+
+.s16 > div div {
+    border: 1px solid #0094ff;
+    width: 200px;
+    height: 100px;
+    margin: 60px;
+}
+
+.s16 > div #box1 {
+    background: rgb(0, 77, 243);
+}
+
+.s16 > div #box2 {
+    background: rgb(255, 72, 0);
+}
+
+.s16 > div #box3 {
+    background: rgb(18, 219, 0);
+}
+
+.s17 > div div {
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.s17 > div #box1 {
+    background: rgb(0, 77, 243);
+}
+
+.s17 > div #box2 {
+    background: rgb(255, 72, 0);
+}
+
+.s17 > div #box3 {
+    background: rgb(18, 219, 0);
+}
+
+.s18 > div div {
+    width: 200px;
+    height: auto;
+    background: #0094ff;
+    display: inline-block;
+    margin: 15px;
+    color: white;
+}
+
+.s18 > div .box1 {
+    padding: 10px 30px 10px 30px;
+}
+
+.s18 > div .box2 {
+    padding: 10px 30px;
+}
+
+.s18 > div .box3 {
+    padding: 10px;
+}
+
+.s19 > div article {
+    width:90%;
+    height:auto;
+    margin:20px 10px;
+    padding:20px;
+}
+
+.s19 > div #pet1{
+    border:1px solid black;
+    border-radius:10px;			
+}
+.s19 > div #pet2 {
+    border:1px dotted blue;
+    border-radius:20px;
+}
+.s19 > div #pet3 {
+    border:2px double green;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+}
+
+.s20 > div {
+    padding: 20px;
+}
+
+.s20 > div div {
+    display: inline-block;
+    border: 10px solid #0094ff;
+    border-width: 5px 10px 15px 20px;
+}
+
+.s21 a:link, .s21 a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+.s21 ul {
+    list-style-type: none;
+}
+
+.s21 ul > li {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 10px;
+}
