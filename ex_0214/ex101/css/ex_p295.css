@@ -335,10 +335,6 @@ div:not(.tit)
     border-bottom-right-radius:30px;
 }
 
-.s20 > div {
-    padding: 0;
-}
-
 .s20 > div div {
     display: inline-block;
     border: 10px solid #0094ff;
@@ -346,17 +342,24 @@ div:not(.tit)
 }
 
 .s21 a:link, .s21 a:visited {
+    padding: 10px 40px;
     color:black;
     text-decoration: none;
+    display: block;
+}
+
+.s21 a:hover {
+    background-color: #357ABD;
 }
 
 .s21 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .s21 ul > li {
     display: inline-block;
     border: 1px solid #000;
-    padding: 10px 20px;
-    margin: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
