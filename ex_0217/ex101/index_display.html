@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Display</title>
         <link rel="stylesheet" href="./css/index_display.css">
+        <script src="./js/index_display.js"></script>
         <script>
                         
             function removeElement() {
@@ -129,6 +130,21 @@
                     </p>
                 </div>
             </div>
+            <hr>
+            <section class="s7">
+                <h1>display: none;</h1>
+                <div id="panel1" onclick="fnHidden();">
+                    <span>panel</span>나를 클릭하면 사라져요
+                </div>
+            </section>
+            <hr>
+            <section class="s8" onclick="fnShow();">
+                <h1>display: block;</h1>
+                <div id="panel2">
+                    <span>panel</span>나를 클릭하면 나타나요.
+                </div>
+            </section>
+            <hr>
         </section>
 
         <footer></footer>
