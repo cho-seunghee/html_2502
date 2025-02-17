@@ -1,0 +1,10 @@
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17 ;
+    text-decoration: underline;;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
