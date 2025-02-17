@@ -204,8 +204,7 @@ html += _x + _100;
 
 innerObjHTML('demo17', html);
 
-
 function innerObjHTML(obj, val)
 {
-    document.getElementById(obj).innerHTML = val;
+    return document.getElementById(obj).innerHTML = val;
 }
