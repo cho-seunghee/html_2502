@@ -11,14 +11,14 @@ function fnHidden()
 }
 
 function removeElement() {
-    document.getElementById("div1").style.display = "none";
+    d.getElementById("div1").style.display = "none";
 }
 
 function changeVisibility() {
-    document.getElementById("div2").style.visibility = "hidden";
+    d.getElementById("div2").style.visibility = "hidden";
 }
 
 function resetElement() {
-    document.getElementById("div1").style.display = "block";
-    document.getElementById("div2").style.visibility = "visible";
+    d.getElementById("div1").style.display = "block";
+    d.getElementById("div2").style.visibility = "visible";
 }
