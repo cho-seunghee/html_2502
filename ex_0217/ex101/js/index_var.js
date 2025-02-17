@@ -80,9 +80,9 @@ html = '<pre>';
 html += 'const pi = 3.14;<br>';
 html += 'let person = "John Doe";<br>';
 html += "let answer = 'Yes I am!';<br>";
-html += 'pi + "<br>" + person + "<br>" + answer = ';
+html += 'pi + "&nbsp;" + person + "&nbsp;" + answer = ';
 html += '</pre>'
-html += pi + "<br>" + person + "<br>" + answer;
+html += pi + "&nbsp;" + person + "&nbsp;" + answer;
 
 document.getElementById("demo6").innerHTML = html;
 
