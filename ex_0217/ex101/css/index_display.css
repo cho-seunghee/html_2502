@@ -30,3 +30,31 @@ section > div {
 .s5 h1.hidden {
     visibility: hidden;
 }
+
+
+.s6 > div {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.s6 > div div {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.s6 > div img {
+    width: 200px;
+}
+
+.s6 > div button {
+    background-color: #128851;
+    color: #fff;
+    border-radius: 3px;
+    border: 0px;
+    display: inline;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+

@@ -5,6 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Display</title>
         <link rel="stylesheet" href="./css/index_display.css">
+        <script>
+                        
+            function removeElement() {
+                document.getElementById("div1").style.display = "none";
+            }
+
+            function changeVisibility() {
+                document.getElementById("div2").style.visibility = "hidden";
+            }
+
+            function resetElement() {
+                document.getElementById("div1").style.display = "block";
+                document.getElementById("div2").style.visibility = "visible";
+            }
+
+        </script>
     </head>
     <body>
         <header></header>
@@ -69,44 +85,49 @@
         </section>
         <hr>
         <section class="s6">
+            <h1>display: block;display: none;visibility: hidden;</h1>
             <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s7">
-            <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s8">
-            <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s9">
-            <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s10">
-            <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s11">
-            <div>
-                <p></p>
-            </div>
-        </section>
-        <hr>
-        <section class="s12">
-            <div>
-                <p></p>
+                <div id="div1">
+                    <p style="word-wrap: break-word;">
+                        <code class="w3-codespan" style="wrap">display:none</code>
+                    </p>
+                    <img src="./images/img_5terre.jpg" alt="이탈리아">
+                    <p>
+                        <button class="ws-btn w3-block" onclick="removeElement()">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">제거하다</font>
+                            </font>
+                        </button>
+                    </p>
+                </div>
+                <div id="div2">
+                    <p style="word-wrap: break-word;">
+                        <code class="w3-codespan">visibility:hidden</code>
+                    </p>
+                    <img src="./images/img_forest.jpg" alt="숲">
+                    <p>
+                        <button class="ws-btn w3-block" onclick="changeVisibility()">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">숨다</font>
+                            </font>
+                        </button>
+                    </p>
+                </div>
+                <div id="div3">
+                    <p>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">다시 놓기</font>
+                        </font>
+                    </p>
+                    <img src="./images/img_lights.jpg" alt="허파">
+                    <p>
+                        <button class="ws-btn w3-block" onclick="resetElement()">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">모두 재설정</font>
+                            </font>
+                        </button>
+                    </p>
+                </div>
             </div>
         </section>
 
