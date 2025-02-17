@@ -12,8 +12,7 @@ html += '"The value of z is: " + z';
 html += '</pre>'
 html += "The value of z is: " + z;
 
-
-document.getElementById("demo1").innerHTML = html;
+innerObjHTML('demo1', html);
 
 var x2 = 5;
 var y2 = 6;
@@ -27,8 +26,7 @@ html += '"The value of z is: " + z2';
 html += '</pre>'
 html += "The value of z is: " + z2;
 
-document.getElementById("demo2").innerHTML = html;
-
+innerObjHTML('demo2', html);
 
 let x3 = 5;
 let y3 = 6;
@@ -42,7 +40,7 @@ html += '"The value of z is: " + z3';
 html += '</pre>'
 html += "The value of z is: " + z3;
 
-document.getElementById("demo3").innerHTML = html;
+innerObjHTML('demo3', html);
 
 const x4 = 5;
 const y4 = 6;
@@ -56,7 +54,7 @@ html += '"The value of z is: " + z4';
 html += '</pre>'
 html += "The value of z is: " + z4;
 
-document.getElementById("demo4").innerHTML = html;
+innerObjHTML('demo4', html);
 
 const price1 = 5;
 const price2 = 6;
@@ -70,7 +68,7 @@ html += 'The total is: " + total';
 html += '</pre>'
 html += "The total is: " + total;
 
-document.getElementById("demo5").innerHTML = html;
+innerObjHTML('demo5', html);
     
 const pi = 3.14;
 let person = "John Doe";
@@ -84,7 +82,7 @@ html += 'pi + "&nbsp;" + person + "&nbsp;" + answer = ';
 html += '</pre>'
 html += pi + "&nbsp;" + person + "&nbsp;" + answer;
 
-document.getElementById("demo6").innerHTML = html;
+innerObjHTML('demo6', html);
 
 let carName = "Volvo";
 
@@ -94,7 +92,7 @@ html += 'carName = ';
 html += '</pre>'
 html += carName;
 
-document.getElementById("demo7").innerHTML = html;
+innerObjHTML('demo7', html);
 
 let person8 = "John Doe", carName8 = "Volvo", price8 = 200;
 
@@ -104,8 +102,7 @@ html += 'carName8 = ';
 html += '</pre>'
 html += carName8;
 
-
-document.getElementById("demo8").innerHTML = html;
+innerObjHTML('demo8', html);
 
 let person9 = "John Doe",
 carName9 = "Volvo",
@@ -119,7 +116,7 @@ html += 'carName9 = ';
 html += '</pre>'
 html += carName9;
 
-document.getElementById("demo9").innerHTML = html;
+innerObjHTML('demo9', html);
 
 let carName10;
 
@@ -129,7 +126,7 @@ html += 'carName10 = ';
 html += '</pre>'
 html += carName10;
 
-document.getElementById("demo11").innerHTML = html;
+innerObjHTML('demo10', html);
 
 var carName11 = "Volvo";
 var carName11;
@@ -141,7 +138,7 @@ html += 'carName11 = ';
 html += '</pre>'
 html += carName11;
 
-document.getElementById("demo11").innerHTML = html;
+innerObjHTML('demo11', html);
 
 let x12 = 5 + 2 + 3;
 
@@ -151,7 +148,7 @@ html += 'x12 = ';
 html += '</pre>'
 html += x12;
 
-document.getElementById("demo12").innerHTML = html;
+innerObjHTML('demo12', html);
 
 let x13 = "John" + " " + "Doe";
 
@@ -161,7 +158,7 @@ html += 'x13 = ';
 html += '</pre>'
 html += x13;
 
-document.getElementById("demo13").innerHTML = html;
+innerObjHTML('demo13', html);
 
 let x14 = "5" + 2 + 3;
 
@@ -171,7 +168,7 @@ html += 'x14 = ';
 html += '</pre>'
 html += x14;
 
-document.getElementById("demo14").innerHTML = html;
+innerObjHTML('demo14', html);
 
 let x15 = 2 + 3 + "5";
 
@@ -181,7 +178,7 @@ html += 'x15 = ';
 html += '</pre>'
 html += x15;
 
-document.getElementById("demo15").innerHTML = html;
+innerObjHTML('demo15', html);
 
 let $$$ = 2;
 let $myMoney = 5;
@@ -193,7 +190,7 @@ html += '$$$ + $myMoney = ';
 html += '</pre>';
 html += $$$ + $myMoney;
 
-document.getElementById("demo16").innerHTML = html;
+innerObjHTML('demo16', html);
 
 let _x = 2;
 let _100 = 5;
@@ -205,4 +202,10 @@ html += '_x + _100 = ';
 html += '</pre>'
 html += _x + _100;
 
-document.getElementById("demo17").innerHTML = html;
+innerObjHTML('demo17', html);
+
+
+function innerObjHTML(obj, val)
+{
+    document.getElementById(obj).innerHTML = val;
+}
