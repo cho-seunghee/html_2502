@@ -1,0 +1,32 @@
+
+
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17 ;
+    text-decoration: underline;;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
+
+.s1 li {
+    display: inline;
+}
+
+.s2 span {
+    display: block;
+}
+
+.s3 a {
+    display: block;
+}
+
+.s4 h1.hidden {
+    display: none;
+}
+
+.s5 h1.hidden {
+    visibility: hidden;
+}
