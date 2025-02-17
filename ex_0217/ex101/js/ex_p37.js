@@ -1,0 +1,1 @@
+document.writeln("환영합니다.<br>");
