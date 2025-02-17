@@ -57,3 +57,11 @@ section > div {
     margin: 0 auto;
     font-size: 20px;
 }
+
+.s7 #panel1 {
+    cursor: pointer;
+}
+
+.s8 #panel2 {
+    cursor: pointer;
+}
