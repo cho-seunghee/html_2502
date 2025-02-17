@@ -1,8 +1,143 @@
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+}
 
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
 
-
-
-.s1>div div.static {
+.s1 > div div.static {
     position: static;
     border: 3px solid #73AD21;
-  }
+}
+
+.s2 > div div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+
+.s3 > div {
+    height: 500px;
+}
+
+.s3 > div div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+.s4 > div div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+.s4 > div div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+.s5 > div div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+.s6 > div .container {
+    position: relative;
+}
+
+.s6 > div .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.s6 > div img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.s7 > div .container {
+    position: relative;
+}
+
+.s7 > div .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.s7 > div img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.s8 > div .container {
+    position: relative;
+}
+
+.s8 > div .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.s8 > div img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.s9 > div .container {
+    position: relative;
+}
+
+.s9 > div .bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.s9 > div img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.s10 > div .container {
+    position: relative;
+}
+
+.s10 > div .center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.s10 > div img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}

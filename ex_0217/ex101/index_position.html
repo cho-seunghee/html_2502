@@ -1,151 +1,188 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 위치</title>
-</head>
-<body>
-    <header></header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS 위치</title>
+        <link rel="stylesheet" href="./css/index_position.css">
+    </head>
+    <body>
+        <header></header>
 
-    <section class="s1">
-        <h1>위치: 정적;</h1>
-        <div>
-            <h2>position: static;</h2>
+        <section class="s1">
+            <h1>위치: 정적;</h1>
+            <div>
+                <h2>position: static;</h2>
 
-            <p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
-            
-            <div class="static">
-            This div element has position: static;
+                <p>An element with position: static; is not positioned in any special way; it is
+                    always positioned according to the normal flow of the page:</p>
+
+                <div class="static">
+                    This div element has position: static;
+                </div>
             </div>
-        </div>
-    </section>
-    <hr>
-    <section class="s2">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s3">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s4">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s5">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s6">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s7">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s8">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s9">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s10">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s11">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s12">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s13">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s14">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s15">
-        <h1>aaaa</h1>
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <hr>
-    <section class="s16">
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <section class="s17">
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <section class="s18">
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <section class="s19">
-        <div>
-            <p></p>
-        </div>
-    </section>
-    <section class="s20">
-        <div>
-            <p></p>
-        </div>
-    </section>
+        </section>
+        <hr>
+        <section class="s2">
+            <h1>위치: 상대적;</h1>
+            <div>
+                <h2>position: relative;</h2>
 
-    <footer></footer>
-    
-</body>
+                <p>An element with position: relative; is positioned relative to its normal
+                    position:</p>
+
+                <div class="relative">
+                    This div element has position: relative;
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="s3">
+            <h1>위치: 고정됨;</h1>
+            <div>
+                <h2>position: fixed;</h2>
+
+                <p>An element with position: fixed; is positioned relative to the viewport,
+                    which means it always stays in the same place even if the page is scrolled:</p>
+
+                <div class="fixed">
+                    위치: 고정됨;
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s4">
+            <h1>위치: 절대;</h1>
+            <div>
+                <h2>position: absolute;</h2>
+
+                <p>An element with position: absolute; is positioned relative to the nearest
+                    positioned ancestor (instead of positioned relative to the viewport, like
+                    fixed):</p>
+
+                <div class="relative">This div element has position: relative;
+                    <div class="absolute">This div element has position: absolute;</div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="s5">
+            <h1>위치: 고정;</h1>
+            <div>
+                <p>Try to
+                    <b>scroll</b>
+                    inside this frame to understand how sticky positioning works.</p>
+
+                <div class="sticky">I am sticky!</div>
+
+                <div style="padding-bottom:500px">
+                    <p>In this example, the sticky element sticks to the top of the page (top: 0),
+                        when you reach its scroll position.</p>
+                    <p>Scroll back up to remove the stickyness.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+                        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
+                        Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+                        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
+                        Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+                        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s6">
+            <h1>이미지에 텍스트 배치(왼쪽 위)</h1>
+            <div>
+                <h2>Image Text</h2>
+                <p>Add some text to an image in the top left corner:</p>
+
+                <div class="container">
+                    <img
+                        src="./images/img_5terre_wide.jpg"
+                        alt="Cinque Terre"
+                        width="1000"
+                        height="300">
+                    <div class="topleft">Top Left</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s7">
+            <h1>이미지에 텍스트 배치(오른쪽 위)</h1>
+            <div>
+                <h2>Image Text</h2>
+                <p>Add some text to an image in the top right corner:</p>
+
+                <div class="container">
+                    <img
+                        src="./images/img_5terre_wide.jpg"
+                        alt="Cinque Terre"
+                        width="1000"
+                        height="300">
+                    <div class="topright">Top Right</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s8">
+            <h1>이미지에 텍스트 배치(왼쪽 아래)</h1>
+            <div>
+                <h2>Image Text</h2>
+                <p>Add some text to an image in the bottom left corner:</p>
+
+                <div class="container">
+                    <img
+                        src="./images/img_5terre_wide.jpg"
+                        alt="Cinque Terre"
+                        width="1000"
+                        height="300">
+                    <div class="bottomleft">Bottom Left</div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="s9">
+            <h1>이미지에 텍스트 배치(오른쪽 아래)</h1>
+            <div>
+                <h2>Image Text</h2>
+                <p>Add some text to an image in the bottom right corner:</p>
+
+                <div class="container">
+                    <img
+                        src="./images/img_5terre_wide.jpg"
+                        alt="Cinque Terre"
+                        width="1000"
+                        height="300">
+                    <div class="bottomright">Bottom Right</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="s10">
+            <h1>이미지에 텍스트 배치(중앙)</h1>
+            <div>
+                <h2>Image Text</h2>
+
+                <p>Center text in image:</p>
+
+                <div class="container">
+                    <img
+                        src="./images/img_5terre_wide.jpg"
+                        alt="Cinque Terre"
+                        width="1000"
+                        height="300">
+                    <div class="center">Centered</div>
+                </div>
+            </div>
+        </section>
+
+        <footer></footer>
+
+    </body>
 </html>
