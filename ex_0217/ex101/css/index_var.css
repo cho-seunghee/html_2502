@@ -8,3 +8,9 @@ section > div {
     border: 1px solid #000;
     background-color: #cececed2;
 }
+
+
+section pre {
+    border: 1px solid #000;
+    background-color: #e1ff72;
+}
