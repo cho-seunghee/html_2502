@@ -20,7 +20,7 @@ output = '<p>' + rrresult + "</p>";
 d.write(output, "<br>");
 
 var sales = [1200, 1300, 1000];
-var sales4 = prompt("4분기 입력 : ", 3500);
+var sales4 = '';
 var avg;
 var sum = 0;
 var rrresult2;
@@ -35,7 +35,7 @@ d.write("----Q2---------------------------------<br>");
 
 avg = sum / sales.length + 1;
 
-output = '<p>';
+output = '<p id="pTest33">';
 output += '4분기 : ' + sales4 + '<br>';
 output += '총합 : ' + sum + '<br>';
 output += '평균 : ' + avg + '<br>';
@@ -47,5 +47,28 @@ d.write('rrresult2 = sales4 >= avg ? "4분기 판매량 : " + sales4 +" 판매�
 
 rrresult2 = sales4 >= avg ? "4분기 판매량 : " + sales4 +" 판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
 
-output = '<p>' + rrresult2 + "</p>";
+output = '<p id="pTest34">' + rrresult2 + "</p>";
 d.write(output + '<br>');
+
+function fn_Ok2(){
+    sales4 = document.getElementById('txtSales4').value;
+    
+        
+    for (var i = 0; i < sales.length; i++) {
+        sum = sum + Number(sales[i]);
+    }
+
+    sum += Number(sales4);
+
+    avg = sum / sales.length + 1;
+
+    output = '4분기 : ' + sales4 + '\n';
+    output += '총합 : ' + sum + '\n';
+    output += '평균 : ' + avg + '';
+
+    rrresult2 = sales4 >= avg ? "4분기 판매량 : " + sales4 +" 판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+
+    document.getElementById('pTest33').innerText = output;
+    document.getElementById('pTest34').innerText = rrresult2;
+
+}

@@ -11,5 +11,5 @@ var normal_w = (userHeight - 100) * 0.9;
 
 d.write('var normal_w = (userHeight - 100) * 0.9;<br>');
 
-output = '<p>' + normal_w + "</p>";
+output = '<p id="ptest1">' + normal_w + "</p>";
 d.write(output);
