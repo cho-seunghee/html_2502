@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자바스크립트 DOM</title>
+        <link rel="stylesheet" href="./css/index_dom.css">
+        <script>
+            var d = document;
+            var output;
+        </script>
+        
+    </head>
+    <body>
+        <header></header>
+
+        <section class="s1">
+            <h1>ID로 HTML 요소 찾기</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+
+                <p id="intro" style="border: 1px solid #008cff;">Finding HTML Elements by Id</p>
+                <p>This example demonstrates the <b>getElementsById</b> method.</p>
+                
+                <p id="demo1"></p>
+                <script src="./js/index_dom1.js"></script>
+            </div>
+        </section><hr>
+        <section class="s2">
+            <h1>태그 이름으로 HTML 요소 찾기1</h1>
+            <div id="div2">
+                <h2>JavaScript HTML DOM</h2>
+
+                <p style="border: 1px solid #008cff;">Finding HTML Elements by Tag Name.</p>
+                <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+                
+                <p id="demo2"></p>
+                <script src="./js/index_dom2.js"></script>
+            </div>
+        </section><hr>
+        <section class="s3">
+            <h1>태그 이름으로 HTML 요소 찾기2</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+
+                <div id="main">
+                <p style="border: 1px solid #008cff;">Finding HTML Elements by Tag Name</p>
+                <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+                </div>
+                
+                <p id="demo3"></p>
+                <script src="./js/index_dom3.js"></script>
+            </div>
+        </section><hr>
+        <section class="s4">
+            <h1>클래스 이름으로 HTML 요소 찾기</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+
+                <p>Finding HTML Elements by Class Name.</p>
+                <p class="intro" style="border: 1px solid #008cff;">Hello World!</p>
+                <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+                
+                <p id="demo4"></p>
+                <script src="./js/index_dom4.js"></script>
+            </div>
+        </section><hr>
+        <section class="s5">
+            <h1>CSS 선택기로 HTML 요소 찾기</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+
+                <p>Finding HTML Elements by Query Selector</p>
+                <p class="intro" style="border: 1px solid #008cff;">Hello World!.</p>
+                <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+                
+                <p id="demo5"></p>
+                <script src="./js/index_dom5.js"></script>
+            </div>
+        </section><hr>
+        <section class="s6">
+            <h1>HTML 객체 컬렉션으로 HTML 요소 찾기</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+                
+                <form id="frm1" action="#">
+                  First name: <input type="text" name="fname" value="Donald" style="color: #008cff;"><br>
+                  Last name: <input type="text" name="lname" value="Duck" style="color: #008cff;"><br><br>
+                  <input type="submit" value="Submit" style="color: #008cff;">
+                </form> 
+                
+                <p>These are the values of each element in the form:</p>
+                
+                <p id="demo6"></p>
+                <script src="./js/index_dom6.js"></script>
+            </div>
+        </section><hr>
+        <section class="s7">
+            <h1>HTML 콘텐츠 변경1</h1>
+            <div>
+                <h2>JavaScript can Change HTML</h2>
+                <p id="p1">Hello World!</p>
+                <p>위 문단은 스크립트에 의해 변경되었습니다.</p>
+                
+                <script src="./js/index_dom7.js"></script>
+            </div>
+        </section><hr>
+        <section class="s8">
+            <h1>HTML 콘텐츠 변경2</h1>
+            <div>
+                <h1 id="id01">Old Heading</h1>
+                <p>JavaScript가 "이전 제목"을 "새 제목"으로 변경했습니다.</p>
+
+                <script src="./js/index_dom8.js"></script>
+            </div>
+        </section><hr>
+        <section class="s9">
+            <h1>속성 값 변경</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <img id="image" src="#" width="160" height="120">
+                <p>원본 이미지는 smiley.gif였는데, 스크립트에서 Landscape.jpg로 변경했습니다.</p>
+
+                <script src="./js/index_dom9.js"></script>
+            </div>
+        </section><hr>
+        <section class="s10">
+            <h1>동적 HTML 콘텐츠</h1>
+            <div>
+                <p id="demo10"></p>
+                <script src="./js/index_dom10.js"></script>
+            </div>
+        </section><hr>
+        <section class="s11">
+            <h1>문서.쓰기()</h1>
+            <div>
+                <p>Bla, bla, bla</p>
+                <script src="./js/index_dom11.js"></script>
+                <p>Bla, bla, bla</p>
+            </div>
+        </section><hr>
+
+
+        <footer></footer>
+
+    </body>
+</html>
