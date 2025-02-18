@@ -1,1 +1,1 @@
-d.getElementById("image").src = "./images/landscape.jpg";
+d.getElementById("image2").src = "./images/landscape.jpg";
