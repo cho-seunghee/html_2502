@@ -1,4 +1,4 @@
-document.write("===============page 66==================<br>");
+d.write("===============page 66==================<br>");
 
 var output;
 const price1 = 3000;
@@ -14,13 +14,13 @@ rrresult = rrresult > 10000
     ? `${rrresult}원 1만원 초과<br>`
     : "돈 관리 잘 했어요!<br>";
 
-document.write("----Q1---------------------------------<br>");
+d.write("----Q1---------------------------------<br>");
 
 output = '<p>' + rrresult + "</p>";
 d.write(output, "<br>");
 
 var sales = [1200, 1300, 1000];
-var sales4 = prompt("4분기 입력 : ", 0);
+var sales4 = prompt("4분기 입력 : ", 3500);
 var avg;
 var sum = 0;
 var rrresult2;
@@ -31,7 +31,7 @@ for (var i = 0; i < sales.length; i++) {
 
 sum += Number(sales4);
 
-document.write("----Q2---------------------------------<br>");
+d.write("----Q2---------------------------------<br>");
 
 avg = sum / sales.length + 1;
 
@@ -41,11 +41,11 @@ output += '총합 : ' + sum + '<br>';
 output += '평균 : ' + avg + '<br>';
 output += "</p>";
 
-document.write(output + '<br>');
+d.write(output + '<br>');
 
 d.write('rrresult2 = sales4 >= avg ? "4분기 판매량 : " + sales4 +" 판매량이 평균 이상입니다." : "판매량이 평균 미달입니다."<br>');
 
 rrresult2 = sales4 >= avg ? "4분기 판매량 : " + sales4 +" 판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
 
 output = '<p>' + rrresult2 + "</p>";
-document.write(output + '<br>');
+d.write(output + '<br>');
