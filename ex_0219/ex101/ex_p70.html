@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제어문</title>
+        <link rel="stylesheet" href="./css/ex_p70.css">
+        <script src="./js/ex_p70.js"></script> 
+        
+    </head>
+    <body>
+        <section class="s1">
+            <h1>조건문(if문)1</h1>
+            <div>
+                <p>
+                    <span>당신의 하루 걷는 양은 몇 보인가요?</span>
+                    <input id="txtS1" type="text" value="0">
+                    <button id="btnS1" onclick="fnOutPut('divS1', 'txtS1', 'page70')" >확인</button>
+                </p>
+                <div id="divS1"></div>
+            </div>
+        </section><hr>
+        <section class="s2">
+            <h1>조건문(if문)2</h1>
+            <div>
+                <p>
+                    <span>당신의 하루 통화량은 몇분인가요?</span>
+                    <button id="btnS2" onclick="page71()" >확인</button>
+                </p>
+                <div id="divS2"></div>
+            </div>
+        </section><hr>
+        <section class="s3">
+            <h1>조건문(if문)3</h1>
+            <div>
+                <p>
+                    <span>방문자의 이름은?</span>
+                    <button id="btnS3" onclick="page72()" >확인</button>
+                </p>
+                <div id="divS3"></div>
+            </div>
+        </section><hr>
+        <section class="s4">
+            <h1>조건문(else문)1</h1>
+            <div>
+                <p>
+                    <span>당신이 좋아하는 숫자는?</span>
+                    <button id="btnS4" onclick="page73()" >확인</button>
+                </p>
+                <div id="divS4"></div>
+            </div>
+        </section><hr>
+        <section class="s5">
+            <h1>조건문(else문)2</h1>
+            <div>
+                <p>
+                    <span>정말로 회원을 탈퇴하시겠습니까?</span>
+                    <button id="btnS5" onclick="page75()" >확인</button>
+                </p>
+                <div id="divS5"></div>
+            </div>
+        </section><hr>
+        <section class="s6">
+            <h1>조건문(else if문)</h1>
+            <div>
+                <p>
+                    <span>현재는 몇 월입니까?</span>
+                    <button id="btnS6" onclick="page77()" >확인</button>
+                </p>
+                <div id="divS6"></div>
+            </div>
+        </section><hr>
+        <section class="s7">
+            <h1>조건문(중첩 if문)</h1>
+            <div>
+                <p>
+                    <span>아이디, 비밀번호는?</span>
+                    <button id="btnS7" onclick="page78()" >확인</button>
+                </p>
+                <div id="divS7"></div>
+            </div>
+        </section><hr>
+        <section class="s8">
+            <h1>조건문(if블록 레벨 스코프)</h1>
+            <div>
+                <p>
+                    <span>당신의 이름은?</span>
+                    <button id="btnS8" onclick="page80()" >확인</button>
+                </p>
+                <div id="divS8"></div>
+            </div>
+        </section><hr>
+        <section class="s9">
+            <h1>선택문(switch문)</h1>
+            <div>
+                <p>
+                    <span>즐겨 사용하는 포털 검색 사이트는?</span>
+                    <button id="btnS9" onclick="page83()" >확인</button>
+                </p>
+                <div id="divS9"></div>
+            </div>
+        </section><hr>
+        <section class="s10">
+            <h1>반복문(while문)1</h1>
+            <div>
+                <p>
+                    <span>안녕하세요(10번 반복)</span>
+                    <button id="btnS10" onclick="page84()" >확인</button>
+                </p>
+                <div id="divS10"></div>
+            </div>
+        </section><hr>
+        <section class="s11">
+            <h1>반복문(while문)2</h1>
+            <div>
+                <p>
+                    <span>2의 배수이면서 6의 배수(30까지 반복)</span>
+                    <button id="btnS11" onclick="page85()" >확인</button>
+                </p>
+                <div id="divS11"></div>
+            </div>
+        </section><hr>
+        <section class="s12">
+            <h1>반복문(while문)3</h1>
+            <div>
+                <p>
+                    <span>20~10 숫자 중 짝수, 홀수</span>
+                    <button id="btnS12" onclick="page86()" >확인</button>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section class="s13">
+            <h1>반복문(do while문)</h1>
+            <div>
+                <p>
+                    <span>hello 출력</span>
+                    <button id="btnS13" onclick="page87()" >확인</button>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section class="s14">
+            <h1>반복문(for문)1</h1>
+            <div>
+                <p>
+                    <span>i출력(10번 반복)</span>
+                    <button id="btnS14" onclick="page88()" >확인</button>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section class="s15">
+            <h1>반복문(for문)2</h1>
+            <div>
+                <p>
+                    <span>i출력 5의 배수, 7의 배수(100번 반복)</span>
+                    <button id="btnS15" onclick="page89()" >확인</button>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section class="s16">
+            <h1>반복문(for문 break)</h1>
+            <div>
+                <p>
+                    <span>i출력(10번 반복, 6 break)</span>
+                    <button id="btnS16" onclick="page90()" >확인</button>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section class="s17">
+            <h1>반복문(for문 continue)</h1>
+            <div>
+                <p>
+                    <span>i출력(10번 반복, 2의 배수 continue)</span>
+                    <button id="btnS17" onclick="page91()" >확인</button>
+                </p>
+                <div id="divS17"></div>
+            </div>
+        </section><hr>
+        <section class="s18">
+            <h1>반복문(중첩 for문)</h1>
+            <div>
+                <p>
+                    <span>i, k출력(3번 반복 * 2번 반복)</span>
+                    <button id="btnS18" onclick="page92()" >확인</button>
+                </p>
+                <div id="divS18"></div>
+            </div>
+        </section><hr>
+        <section class="s19">
+            <h1>마무리 문제(Q1)</h1>
+            <div>
+                <p>
+                    <span>구구단 중에서 5단을 출력하세요.</span>
+                    <button id="btnS19" onclick="page94()" >확인</button>
+                </p>
+                <div id="divS19"></div>
+            </div>
+        </section><hr>
+        <section class="s20">
+            <h1>마무리 문제(Q2)</h1>
+            <div>
+                <p>
+                    <span>5행 5열 표를 만들고, 데이터가 1부터 25까지 출력되도록 작성하세요.</span>
+                    <button id="btnS20" onclick="page95()" >확인</button>
+                </p>
+                <div id="divS20"></div>
+            </div>
+        </section><hr>
+        
+    </body>
+</html>
