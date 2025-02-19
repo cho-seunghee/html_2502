@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML DOM Events</title>
+        <link rel="stylesheet" href="./css/index_DOMEvents.css">
+        
+    </head>
+    <body onload="checkCookies()">
+        <section class="s1">
+            <h1>이벤트에 반응하기1</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onclick Attribute</h2>
+
+                <h2 class="blue" onclick="this.innerHTML='Ooops!'">이 텍스트를 클릭해보세요!</h2>
+            </div>
+        </section><hr>
+        <section class="s2">
+            <h1>이벤트에 반응하기2</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onclick Attribute</h2>
+
+                <h2 class="blue" onclick="changeText(this)">이 텍스트를 클릭해보세요!</h2>
+            </div>
+        </section><hr>
+        <section class="s3">
+            <h1>HTML 이벤트 속성</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onclick Attribute</h2>
+
+                <p>버튼을 클릭하면 날짜가 표시됩니다.</p>
+                <button onclick="displayDate1()">시간은?</button>
+                <p id="demo3"></p>
+            </div>
+        </section><hr>
+        <section class="s4">
+            <h1>HTML DOM을 사용하여 이벤트 할당</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onclick Events</h2>
+                
+                <p>"시도"를 클릭하여 displayDate() 함수를 실행하세요.</p>
+                <button id="myBtn">시도</button>
+                
+                <p id="demo4"></p>
+            </div>
+        </section><hr>
+        <section class="s5">
+            <h1>onload 및 onunload 이벤트</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onload Attribute</h2>
+
+                <p id="demo5"></p>
+            </div>
+        </section><hr>
+        <section class="s6">
+            <h1>oninput 이벤트</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The oninput Attribute</h2>
+                
+                Enter your name: <input type="text" id="fname1" oninput="upperCase1()">
+                <p>입력 필드에 쓰면 입력을 대문자로 변환하는 함수가 트리거됩니다.</p>
+            </div>
+        </section><hr>
+        <section class="s7">
+            <h1>onchange 이벤트</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onchange Attribute</h2>
+                
+                Enter your name: <input type="text" id="fname2" onchange="upperCase2()">
+                <p>입력 필드를 벗어나면 함수는 입력을 대문자로 변환합니다.</p>
+            </div>
+        </section><hr>
+        <section class="s8">
+            <h1>onmouseover 및 onmouseout 이벤트</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onmouseover Attribute</h2>
+                
+                <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+                style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+                Mouse Over Me</div>
+            </div>
+        </section><hr>
+        <section class="s9">
+            <h1>onmousedown, onmouseup 및 onclick 이벤트</h1>
+            <div>
+                <h1>JavaScript HTML Events</h1>
+                <h2>The onmousedown Attribute</h2>
+                
+                <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+                style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+                Click Me</div>
+            </div>
+        </section><hr>
+
+        <script src="./js/index_DOMEvents.js"></script>
+    </body>
+</html>

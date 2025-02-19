@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML DOM EventListener</title>
+        <link rel="stylesheet" href="./css/index_DOMEventListener.css">
+        
+    </head>
+    <body>
+        <section class="s1">
+            <h1>addEventListener() 메서드</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 addEventListener() 메서드를 사용하여 클릭 이벤트를 버튼에 연결합니다.</p>
+                <button id="myBtn1">확인</button>
+                <p id="demo1"></p>
+            </div>
+        </section><hr>
+        <section class="s2">
+            <h1>요소에 이벤트 핸들러 추가1</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 addEventListener() 메서드를 사용하여 클릭 이벤트를 버튼에 연결합니다.</p>
+                <button id="myBtn2">확인</button>
+            </div>
+        </section><hr>
+        <section class="s3">
+            <h1>요소에 이벤트 핸들러 추가2</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 addEventListener() 메서드를 사용하여 사용자가 버튼을 클릭할 때 함수를 실행합니다.</p>
+                <button id="myBtn3">확인</button>
+            </div>
+        </section><hr>
+        <section class="s4">
+            <h1>동일한 요소에 여러 이벤트 핸들러 추가1</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 addEventListener() 메서드를 사용하여 동일한 버튼에 두 개의 클릭 이벤트를 추가합니다.</p>
+                <button id="myBtn4">확인</button>
+            </div>
+        </section><hr>
+        <section class="s5">
+            <h1>동일한 요소에 여러 이벤트 핸들러 추가2</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 addEventListener() 메서드를 사용하여 동일한 버튼에 많은 이벤트를 추가합니다.</p>
+                <button id="myBtn5">확인</button>
+                
+                <p id="demo5"></p>
+            </div>
+        </section><hr>
+        <section class="s6">
+            <h1>창 객체에 이벤트 핸들러 추가</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예제에서는 window 객체에 addEventListener() 메서드를 사용합니다.</p>
+                <p>"resize" 이벤트 핸들러를 트리거하려면 이 브라우저 창의 크기를 조정해 보세요.</p>
+                <p id="demo6"></p>
+            </div>
+        </section><hr>
+        <section class="s7">
+            <h1>매개변수 전달</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+                <p>이 예에서는 addEventListener() 메서드를 사용할 때 매개변수 값을 전달하는 방법을 보여줍니다.</p>
+                <p>버튼을 클릭하면 계산이 실행됩니다.</p>
+                
+                <button id="myBtn7">확인</button>
+                <p id="demo7"></p>
+            </div>
+        </section><hr>
+        <section class="s8">
+            <h1>이벤트 버블링 또는 이벤트 캡처링?</h1>
+            <div>
+                <h2>JavaScript addEventListener()</h2>
+
+                <div id="myDiv1">
+                  <h2>Bubbling:</h2>
+                  <p id="myP1">나를 클릭!</p>
+                </div><br>
+                
+                <div id="myDiv2">
+                  <h2>Capturing:</h2>
+                  <p id="myP2">나를 클릭!</p>
+                </div>
+            </div>
+        </section><hr>
+        <section class="s9">
+            <h1>removeEventListener() 메서드</h1>
+            <div>
+                <h2>JavaScript removeEventListener()</h2>
+
+                <div id="myDIV9">
+                  <p>이 div 요소에는 이 주황색 필드 내에서 마우스를 움직일 때마다 임의의 숫자를 표시하는 onmousemove 이벤트 핸들러가 있습니다..</p>
+                  <p>버튼을 클릭하면 div의 이벤트 핸들러가 제거됩니다.</p>
+                  <button onclick="removeHandler9()" id="myBtn">이벤트제거</button>
+                </div>
+                
+                <p id="demo9"></p>
+            </div>
+        </section><hr>
+
+        <script src="./js/index_DOMEventListener.js"></script>
+    </body>
+</html>

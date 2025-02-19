@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML DOM Form</title>
+        <link rel="stylesheet" href="./css/index_DOMForms.css">
+        <script src="./js/index_DOMForms.js"></script>
+    </head>
+    <body onload="onPageLoad()">
+        <section id="s1">
+            <h1>JavaScript 폼 검증</h1>
+            <div>
+                <form
+                    name="myform"
+                    action="./index_DOMForms.html"
+                    onsubmit="return validateForm()"
+                    method="get">
+                    이름:
+                    <input type="text" name="fname1" placeholder="이름을 입력하세요.">
+                    <input type="submit" value="확인">
+                </form>
+                <div id="result1"></div>
+            </div>
+        </section>
+        <hr>
+        <section id="s2">
+            <h1>JavaScript는 숫자 입력을 검증할 수 있습니다</h1>
+            <div>
+                <h2>JavaScript Validation</h2>
+
+                <p>1에서 10 사이의 숫자를 입력하세요.:</p>
+
+                <input id="numb" placeholder="1~10 사이 숫자를 입력하세요">
+                <button type="button" onclick="myFunction()">확인</button>
+
+                <p id="demo"></p>
+
+            </div>
+        </section>
+        <hr>
+        <section id="s3">
+            <h1>자동 HTML 양식 검증</h1>
+            <div>
+                <h2>JavaScript Validation</h2>
+
+                <form action="./index_DOMForms.html" method="get">
+                  <input type="text" name="fname3" required placeholder="값을 입력하지 않을때">
+                  <input type="submit" value="확인">
+                </form>
+                <p>텍스트 필드를 작성하지 않고 제출을 클릭하면 브라우저에 오류 메시지가 표시됩니다.</p>
+            </div>
+        </section>
+        <hr>
+
+    </body>
+</html>
