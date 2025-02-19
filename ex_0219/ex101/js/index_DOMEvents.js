@@ -39,19 +39,19 @@ function checkCookies() {
   }
 
   function mOver(obj) {
-    obj.innerHTML = "Thank You"
+    obj.innerHTML = "Mouse Over";
   }
   
   function mOut(obj) {
-    obj.innerHTML = "Mouse Over Me"
+    obj.innerHTML = "Mouse Out";
   }
 
   function mDown(obj) {
     obj.style.backgroundColor = "#1ec5e5";
-    obj.innerHTML = "Release Me";
+    obj.innerHTML = "Mouse Down";
   }
   
   function mUp(obj) {
     obj.style.backgroundColor="#D94A38";
-    obj.innerHTML="Thank You";
+    obj.innerHTML = "Mouse Up";
   }
