@@ -16,9 +16,15 @@ function checkCookies() {
     let text = "";
     if (navigator.cookieEnabled == true) {
       text = "Cookies are enabled.";
-    } else {
+        
+      let myCookie = "name=skc";
+      document.cookie = myCookie;
+      console.log(document.cookie);
+    } 
+    else {
       text = "Cookies are not enabled.";
     }
+
     document.getElementById("demo5").innerHTML = text;
   }
   
