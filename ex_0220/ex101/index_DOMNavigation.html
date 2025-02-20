@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM 탐색</title>
+        <link rel="stylesheet" href="./css/index_DOMNavigation.css">
+
+    </head>
+    <body>
+        <section id="s1">
+            <h1>[DOM 탐색]자식 노드 및 노드 값1</h1>
+            <div>
+                <h1 id="id01">자식 노드 및 노드 값1 Page</h1>
+                <p id="id02">나를 바꿔죠!!</p>
+                <button id="btnS1" onclick="fn_S1()">확인</button>
+                <div id="divS1"></div>
+            </div>
+        </section><hr>
+        <section id="s2">
+            <h1>[DOM 탐색]자식 노드 및 노드 값2</h1>
+            <div>
+                <h1 id="id021">자식 노드 및 노드 값2 Page</h1>
+                <p id="id022">나를 바꿔죠!!</p>
+                <button id="btnS2" onclick="fn_S2()">확인</button>
+                <div id="divS2"></div>
+            </div>
+        </section><hr>
+        <section id="s3">
+            <h1>[DOM 탐색]자식 노드 및 노드 값3</h1>
+            <div>
+                <h1 id="id031">자식 노드 및 노드 값3 Page</h1>
+                <p id="id032">나를 바꿔죠!!</p>
+                <button id="btnS3" onclick="fn_S3()">확인</button>
+                <div id="divS3"></div>
+            </div>
+        </section><hr>
+        <section id="s4">
+            <h1>[DOM 탐색]내부HTML1</h1>
+            <div>
+                <h2>JavaScript HTMLDOM</h2>
+                <p>document.body.innerHTML 전체 값(s1 section으로 대처)</p>
+                <p id="demo4">나를 바꿔죠!!</p>
+                <button id="btnS4" onclick="fn_S4()">확인</button>
+                <div id="divS4"></div>
+            </div>
+        </section><hr>
+        <section id="s5">
+            <h1>[DOM 탐색]내부HTML2</h1>
+            <div>
+                <h2>JavaScript HTMLDOM</h2>
+                <p>document.documentElement.innerHTML 전체 값(s2 section으로 대처)</p>
+                <p id="demo5">나를 바꿔죠!!</p>
+
+                <button id="btnS5" onclick="fn_S5()">확인</button>
+                <div id="divS5"></div>
+            </div>
+        </section><hr>
+        <section id="s6">
+            <h1>[DOM 탐색]nodeName 속성</h1>
+            <div>
+                <h1 id="id061">.nodeName 속성 값</h1>
+                <p id="id062">나를 바꿔죠!!</p>
+                <button id="btnS6" onclick="fn_S6()">확인</button>
+                <div id="divS6"></div>
+            </div>
+        </section><hr>
+        <section id="s7">
+            <h1>[DOM 탐색]nodeType 속성</h1>
+            <div>
+                <h1 id="id071">.nodeType 속성 값</h1>
+                <p id="id072">나를 바꿔죠!!</p>
+                <button id="btnS7" onclick="fn_S7()">확인</button>
+                <div id="divS7"></div>
+            </div>
+        </section><hr>
+        <section id="s8">
+            <h1>[DOM 노드]새로운 HTML 요소(노드) 생성</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Add a new HTML Element.</p>
+                <div id="div81">
+                <p id="p1">이것은 단락.</p>
+                <p id="p2">이것은 또 다른 단락.</p>
+                </div>
+
+                <button id="btnS8" onclick="fn_S8()">확인</button>
+                <div id="divS8"></div>
+            </div>
+        </section><hr>
+        <section id="s9">
+            <h1>[DOM 노드]새로운 HTML 요소 생성 - insertBefore()</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Add a new HTML Element.</p>
+                <div id="div91">
+                <p id="p91">이것은 단락.</p>
+                <p id="p2">이것은 또 다른 단락.</p>
+                </div>
+                
+                <button id="btnS9" onclick="fn_S9()">확인</button>
+                <div id="divS9"></div>
+            </div>
+        </section><hr>
+        <section id="s10">
+            <h1>[DOM 노드]기존 HTML 요소 제거</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <h3>Remove an HTML Element.</h3>
+                <div>
+                <p id="p101">이것은 단락.</p>
+                <p id="p102">이것은 또 다른 단락.</p>
+                </div>
+                
+                <button id="btn10" onclick="fn_S10()">확인</button>
+                <div id="divS10"></div>
+            </div>
+        </section><hr>
+        <section id="s11">
+            <h1>[DOM 노드]자식 노드 제거</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Remove Child Element</p>
+                <div id="div111">
+                <p id="p111">이것은 단락.</p>
+                <p id="p112">이것은 또 다른 단락.</p>
+                </div>
+                
+                <button id="btnS11" onclick="fn_S11()">확인</button>
+                <div id="divS11"></div>
+            </div>
+        </section><hr>
+        <section id="s12">
+            <h1>[DOM 노드]HTML 요소 교체 </h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <h3>Replace an HTML Element.</h3>
+                <div id="div121">
+                <p id="p121">이것은 단락.</p>
+                <p id="p122">이것은 단락.</p>
+                </div>
+
+                <button id="btnS12" onclick="fn_S12()">확인</button>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section id="s13">
+            <h1>[DOM 컬렉션]HTML컬렉션 객체</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hello World!</p>
+                <p>Hello Norway!</p>
+                <p id="demo13"></p>
+                
+                <button id="btnS13" onclick="fn_S13()">확인</button>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section id="s14">
+            <h1>[DOM 컬렉션]HTML HTML컬렉션 길이1</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hello World!</p>
+                <p>Hello Norway!</p>
+                <p id="demo14"></p>
+
+                <button id="btnS14" onclick="fn_S14()">확인</button>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section id="s15">
+            <h1>[DOM 컬렉션]HTML HTML컬렉션 길이2</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hello World!</p>
+                <p>Hello Norway!</p>
+                <p>모든 p 요소의 색상을 변경하려면 버튼을 클릭하세요.</p>
+
+                <button id="btnS15" onclick="fn_S15()">확인</button>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section id="s16">
+            <h1>DOM 노드 목록]HTML DOM NodeList 객체</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hello World!</p>
+                <p>Hello Norway!</p>
+                <p id="demo16"></p>
+
+                <button id="btnS16" onclick="fn_S16()">확인</button>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section id="s17">
+            <h1>DOM 노드 목록]HTML DOM 노드 목록 길이1</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hellow World!</p>
+                <p>Hellow Norway!</p>
+                <p id="demo17"></p>
+
+                <button id="btnS17" onclick="fn_S17()">확인</button>
+                <div id="divS17"></div>
+            </div>
+        </section><hr>
+        <section id="s18">
+            <h1>DOM 노드 목록]HTML DOM 노드 목록 길이2</h1>
+            <div>
+                <h2>JavaScript HTML DOM</h2>
+                <p>Hello World!</p>
+                <p>Hello Norway!</p>
+                <p>모든 p 요소의 색상을 변경하려면 버튼을 클릭하세요.</p>
+
+                <button id="btnS18" onclick="fn_S18()">확인</button>
+                <div id="divS18"></div>
+            </div>
+        </section><hr>
+
+        <script src="./js/index_DOMNavigation.js"></script>
+    </body>
+</html>
