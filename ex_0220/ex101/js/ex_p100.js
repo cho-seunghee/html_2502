@@ -353,5 +353,82 @@ page116 = () => {
 
     d.getElementById("divS9").innerHTML = msg;
 
+};
+
+page119 = () => {
+    msg = '';
+
+    var userName = prompt("당신의 영문 이름은?", '홍길동');
+    var upperName = userName.toUpperCase();
+
+    msg += `${upperName}<br>`;
+
+    var userNum = prompt("당신의 연락처는?", "010-1234-5678");
+    var result = userNum.substring(0, userNum.length - 4) + "****";
+
+    msg += `${result}<br>`;
+
+    d.getElementById("divS10").innerHTML = msg;
 
 };
+
+page120 = () => {
+    msg = '';
+
+    var userEmail = prompt("단신의 이메일 주소는?", "aa@naver.com");
+    var arrUrl = [".co.kr",".com",".net",".or.kr",".go.kr"];
+
+    var check1 = false;
+    var check2 = false;
+
+    if(userEmail.indexOf("@") > 0)
+    {
+        check1 = true;
+    }
+
+    for(var i=0;i<arrUrl.length;i++)
+    {
+        if(userEmail.indexOf(arrUrl[i]) > 0)
+        {
+            check2 = true;
+        }
+    }
+
+    if(check1 && check2)
+    {
+        msg += userEmail;
+    }
+    else{
+        alert("이메일 형식이 잘못되었습니다.");
+    }
+
+    d.getElementById("divS11").innerHTML = msg;
+    
+}
+
+page123 = () => {
+    msg = '';
+
+    const contry = ["영어", "중국어"];
+    const subjects = ["쓰기", "말하기"];
+    const myMap = new Map();
+
+    for(let i=0;i<contry.length;i++)
+    {
+        myMap.set(contry[i], []);
+
+        for(let k=0;k<subjects.length;k++)
+        {
+            myMap.get(contry[i]).push(prompt(`${contry[i]}에 ${subjects[k]} 점수는?`));
+        }
+    }
+
+    console.log(myMap.get("영어"));
+    console.log(myMap.get("중국어"));
+
+    msg += myMap.get("영어");
+    msg += myMap.get("중국어");
+
+    d.getElementById("divS12").innerHTML = msg;
+
+}
