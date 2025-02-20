@@ -1,6 +1,38 @@
 var d = document;
 var msg = '';
 
+const wElement = document.getElementById('windowSize');
+
+function updateWindowSize() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const screenWidth = screen.width;
+    const screenHeight = screen.height;
+
+    const screenaWidth = screen.availWidth;
+    const screenaHeight = screen.availHeight;
+
+    const docWidth = d.documentElement.clientWidth;
+    const docHeight = d.documentElement.clientHeight;
+
+    wElement.innerHTML = `<p>윈도우 (window.innerWidth * window.innerHeight):</p>`;
+    wElement.innerHTML += `${width}x${height}<br><br>`;
+    wElement.innerHTML += `<p>스크린 (screen.width * screen.height):</p>`;
+    wElement.innerHTML += `${screenWidth}x${screenHeight}<br><br>`;
+    
+    wElement.innerHTML += `<p>스크린 사용 가능 (screen.availWidth * screen.availHeight):</p>`;
+    wElement.innerHTML += `${screenaWidth}x${screenaHeight}<br><br>`;
+
+    wElement.innerHTML += `<p>문서 (document.documentElement.clientWidth * document.documentElement.clientHeight):</p>`;
+    wElement.innerHTML += `${docWidth}x${docHeight}<br><br>`;
+
+    d.getElementById("demo5").innerHTML = "Available screen height is " + screen.availHeight;
+    
+}
+
+window.addEventListener('resize', updateWindowSize);
+updateWindowSize(); // 초기 실행
+
 
 fn_s1 = () => {
     const width = window.innerWidth;
