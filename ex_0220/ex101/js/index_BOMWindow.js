@@ -6,6 +6,10 @@ const wElement = document.getElementById('windowSize');
 function updateWindowSize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
+
+    const width2 = window.outerWidth;
+    const height2 = window.outerHeight;
+
     const screenWidth = screen.width;
     const screenHeight = screen.height;
 
@@ -15,8 +19,13 @@ function updateWindowSize() {
     const docWidth = d.documentElement.clientWidth;
     const docHeight = d.documentElement.clientHeight;
 
-    wElement.innerHTML = `<p>윈도우 (window.innerWidth * window.innerHeight):</p>`;
+
+    wElement.innerHTML = `<p>브라우저외부 (window.outerWidth * window.outerHeight):</p>`;
+    wElement.innerHTML += `${width2}x${height2}<br><br>`;
+
+    wElement.innerHTML += `<p>브라우저내부 (window.innerWidth * window.innerHeight):</p>`;
     wElement.innerHTML += `${width}x${height}<br><br>`;
+
     wElement.innerHTML += `<p>스크린 (screen.width * screen.height):</p>`;
     wElement.innerHTML += `${screenWidth}x${screenHeight}<br><br>`;
     
