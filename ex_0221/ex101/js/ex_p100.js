@@ -71,7 +71,31 @@ function page100() {
 function page103() {
     msg = '';
 
-    const week = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];;
+    msg += "<pre>";
+    msg += 'const week = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];<br>';
+    msg += 'var today = new Date();<br>';
+    msg += '<br>';
+    msg += 'var nowMonth = today.getMonth() + 1;<br>';
+    msg += '<br>';
+    msg += 'nowDate = today.getDate();<br>';
+    msg += 'nowDay = today.getDay();<br>';
+    msg += '<br>';
+    msg += 'var worldcup = new Date(2002, 4, 31);<br>';
+    msg += 'var theMonth = worldcup.getMonth();<br>';
+    msg += '<br>';
+    msg += 'theDate = worldcup.getDate();<br>';
+    msg += 'theDay = worldcup.getDay();<br>';
+    msg += "<h1>오늘 날짜 정보</h1>";
+    msg += "현재 월: nowMonth<br>";
+    msg += "현재 일: nowDate<br>";
+    msg += "현재 요일: week[nowDay]<br>";
+    msg += "<h1>월드컵 날짜 정보</h1>";
+    msg += "2002월드컵 몇 월: theMonth<br>";
+    msg += "2002월드컵 몇 일: theDate<br>";
+    msg += "2002월드컵 무슨 요일: week[theDay]<br>";
+    msg += "</pre>";
+
+    const week = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
     var today = new Date();
 
     var nowMonth = today.getMonth() + 1;
@@ -109,6 +133,16 @@ function page104() {
     var diffDate = theDate.getTime() - today.getTime();
 
     var result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
+
+    msg += "<pre>";
+    msg += 'var today = new Date();<br>';
+    msg += 'var nowYear = today.getFullYear();<br>';
+    msg += '<br>';
+    msg += 'var theDate = new Date(nowYear, 11, 31);<br>';
+    msg += 'var diffDate = theDate.getTime() - today.getTime();<br>';
+    msg += '<br>';
+    msg += 'var result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));<br>';
+    msg += "</pre>";
 
     msg += "연말 D-day: " + result + "일 남았습니다.";
 
@@ -167,7 +201,34 @@ function page105() {
 const page107 = () => {
     msg = '';
 
-    msg = "<h1>컴퓨터 가위, 바위 , 보 맞추기</h1>";
+    msg += "<pre>";
+    msg += 'var game = prompt("가위, 바위 , 보 중 선택하세요?", "가위");<br>';
+    msg += 'var gameNum;<br>';
+    msg += '<br>';
+    msg += 'switch (game) {<br>';
+    msg += '	case "가위":<br>';
+    msg += '		gameNum = 1;<br>';
+    msg += '		break;<br>';
+    msg += '<br>';
+    msg += '	case "바위":<br>';
+    msg += '		gameNum = 2;<br>';
+    msg += '		break;<br>';
+    msg += '<br>';
+    msg += '	case "보":<br>';
+    msg += '		gameNum = 3;<br>';
+    msg += '		break;<br>';
+    msg += '<br>';
+    msg += '	default:<br>';
+    msg += '		alert("잘못 작성했습니다.");<br>';
+    msg += '		location.reload();<br>';
+    msg += '		break;<br>';
+    msg += '}<br>';
+    msg += '<br>';
+    msg += 'var com = Math.ceil(Math.random() * 3);<br>';
+    msg += "</pre>";
+        
+
+    msg += "<h1>컴퓨터 가위, 바위 , 보 맞추기</h1>";
     var game = prompt("가위, 바위 , 보 중 선택하세요?", "가위");
     var gameNum;
 
@@ -211,6 +272,21 @@ const page110 = () => {
     var arr = [30, "따르릉", true];
 
     msg = '';
+    
+    msg += "<pre>";
+    msg += "var arr = [30, '따르릉', true];<br>";
+    msg += "<br>";
+    msg += "for(var i=0 ; i < arr.length ; i++)<br>";
+    msg += "{<br>";
+    msg += "	msg += arr[i] + '<br>';<br>";
+    msg += "}<br>";
+    msg += "<br>";
+    msg += "for(i in arr)<br>";
+    msg += "{<br>";
+    msg += "	msg += arr[i] + '<br>';<br>";
+    msg += "}<br>";
+    msg += "</pre>";
+
 
     msg += '<h3>배열값 가져오기-1</h3>';
     msg += arr[0] + '<br>';
