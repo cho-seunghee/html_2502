@@ -394,14 +394,20 @@ page116 = () => {
 page119 = () => {
     msg = '';
 
-    var userName = prompt("당신의 영문 이름은?", '홍길동');
+    var userName = prompt("당신의 영문 이름은?", "홍길동");
     var upperName = userName.toUpperCase();
-
-    msg += `${upperName}<br>`;
-
     var userNum = prompt("당신의 연락처는?", "010-1234-5678");
     var result = userNum.substring(0, userNum.length - 4) + "****";
 
+    msg += "<pre>";
+    msg += 'var userName = prompt("당신의 영문 이름은?", "홍길동");<br>';
+    msg += 'var upperName = userName.toUpperCase();<br>';
+    msg += 'var userNum = prompt("당신의 연락처는?", "010-1234-5678");<br>';
+    msg += 'var result = userNum.substring(0, userNum.length - 4) + "****";<br>';
+    msg += "</pre>";
+
+
+    msg += `${upperName}<br>`;
     msg += `${result}<br>`;
 
     d.getElementById("divS10").innerHTML = msg;
@@ -411,7 +417,7 @@ page119 = () => {
 page120 = () => {
     msg = '';
 
-    var userEmail = prompt("단신의 이메일 주소는?", "aa@naver.com");
+    var userEmail = prompt("당신의 이메일 주소는?", "aa@naver.com");
     var arrUrl = [".co.kr",".com",".net",".or.kr",".go.kr"];
 
     var check1 = false;
@@ -438,6 +444,35 @@ page120 = () => {
         alert("이메일 형식이 잘못되었습니다.");
     }
 
+    msg += "<pre>";
+    msg += 'var userEmail = prompt("당신의 이메일 주소는?", "aa@naver.com");<br>';
+    msg += 'var arrUrl = [".co.kr",".com",".net",".or.kr",".go.kr"];<br>';
+    msg += '<br>';
+    msg += 'var check1 = false;<br>';
+    msg += 'var check2 = false;<br>';
+    msg += '<br>';
+    msg += 'if(userEmail.indexOf("@") > 0)<br>';
+    msg += '{<br>';
+    msg += '	check1 = true;<br>';
+    msg += '}<br>';
+    msg += '<br>';
+    msg += 'for(var i=0 ; i < arrUrl.length ; i++)<br>';
+    msg += '{<br>';
+    msg += '	if(userEmail.indexOf(arrUrl[i]) > 0)<br>';
+    msg += '	{<br>';
+    msg += '		check2 = true;<br>';
+    msg += '	}<br>';
+    msg += '}<br>';
+    msg += '<br>';
+    msg += 'if(check1 && check2)<br>';
+    msg += '{<br>';
+    msg += '	msg += userEmail;<br>';
+    msg += '}<br>';
+    msg += 'else{<br>';
+    msg += '	alert("이메일 형식이 잘못되었습니다.");<br>';
+    msg += '}<br>';
+    msg += "</pre>";
+
     d.getElementById("divS11").innerHTML = msg;
     
 }
@@ -461,6 +496,22 @@ page123 = () => {
 
     console.log(myMap.get("영어"));
     console.log(myMap.get("중국어"));
+
+    msg += "<pre>";
+    msg += 'const contry = ["영어", "중국어"];<br>';
+    msg += 'const subjects = ["쓰기", "말하기"];<br>';
+    msg += 'const myMap = new Map();<br>';
+    msg += '<br>';
+    msg += 'for(let i=0 ; i < contry.length ; i++ );<br>';
+    msg += '{;<br>';
+    msg += '	myMap.set(contry[i], []);<br>';
+    msg += ';<br>';
+    msg += '	for(let k=0;k < subjects.length ; k++ );<br>';
+    msg += '	{;<br>';
+    msg += '		myMap.get(contry[i]).push(prompt(`${contry[i]}에 ${subjects[k]} 점수는?`));<br>';
+    msg += '	};<br>';
+    msg += '};<br>';
+    msg += "</pre>";
 
     msg += myMap.get("영어");
     msg += myMap.get("중국어");
