@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOM</title>
+        <link rel="stylesheet" href="./css/index_BOM.css">
+    </head>
+    <body>
+
+        <section id="s1">
+            <h1>창 위치 Href</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.href</h3>
+                    <p id="demo1"></p>
+                    <button id="btnS1" onclick="fnS1()">확인</button>
+                </p>
+                <div id="divS1"></div>
+            </div>
+        </section><hr>
+        <section id="s2">
+            <h1>창 위치 호스트 이름</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.hostname</h3>
+                    <p id="demo2"></p>
+                    <button id="btnS2" onclick="fnS2()">확인</button>
+                </p>
+                <div id="divS2"></div>
+            </div>
+        </section><hr>
+        <section id="s3">
+            <h1>창 위치 경로 이름</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.pathname</h3>
+                    <p id="demo3"></p>
+                    <button id="btnS3" onclick="fnS3()">확인</button>
+                </p>
+                <div id="divS3"></div>
+            </div>
+        </section><hr>
+        <section id="s4">
+            <h1>창 위치 프로토콜</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.protocol</h3>
+                    <p id="demo4"></p>
+                    <button id="btnS4" onclick="fnS4()">확인</button>
+                </p>
+                <div id="divS4"></div>
+            </div>
+        </section><hr>
+        <section id="s5">
+            <h1>창 위치 포트</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.port</h3>
+                    <p id="demo5"></p>
+                    <p><b>Note: </b>포트 번호가 기본값(http의 경우 80, https의 경우 443)인 경우 대부분 브라우저는 0을 표시하거나 아무것도 표시하지 않습니다.</p>
+                    
+                    <button id="btnS5" onclick="fnS5()">확인</button>
+                </p>
+                <div id="divS5"></div>
+            </div>
+        </section><hr>
+        <section id="s6">
+            <h1>창 위치 지정</h1>
+            <div>
+                <p>
+                    <h2>자바스크립트</h2>
+                    <h3>window.location.assign</h3>
+                    <p id="demo6"></p>
+                    <button id="btnS6" onclick="fnS6()">새문서로드</button>
+                </p>
+                <div id="divS6"></div>
+            </div>
+        </section><hr>
+        <section id="s7">
+            <h1>창 History 뒤로</h1>
+            <div>
+                <p>
+                    <span>window.history.back()</span>
+                    <button id="btnS7" onclick="fnS7()">뒤로</button>
+                </p>
+                <div id="divS7"></div>
+            </div>
+        </section><hr>
+        <section id="s8">
+            <h1>창 History 앞으로</h1>
+            <div>
+                <p>
+                    <span>window.history.forward()</span>
+                    <button id="btnS8" onclick="fnS8()">앞으로</button>
+                </p>
+                <div id="divS8"></div>
+            </div>
+        </section><hr>
+        <section id="s9">
+            <h1>브라우저 쿠키</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.cookieEnabled</h3>
+                    <p>cookieEnabled 속성은 쿠키가 활성화되어 있는 경우 true를 반환합니다.:</p>
+                    <p id="demo9"></p>
+
+                    <button id="btnS9" onclick="fnS9()">확인</button>
+                </p>
+                <div id="divS9"></div>
+            </div>
+        </section><hr>
+        <section id="s10">
+            <h1>브라우저 애플리케이션 이름</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.appName</h3>
+                    <p>appName 속성은 브라우저의 애플리케이션 이름을 반환합니다.:</p>
+                    <p id="demo10"></p>
+                    <p>이상하게도 "Netscape"는 IE11, Chrome, Firefox, Safari의 애플리케이션 이름입니다.</p>
+                    <button id="btnS10" onclick="fnS10()">확인</button>
+                </p>
+                <div id="divS10"></div>
+            </div>
+        </section><hr>
+        <section id="s11">
+            <h1>브라우저 응용 프로그램 코드 이름</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.appCodeName</h3>
+                    <p>appCodeName 속성은 브라우저의 코드 이름을 반환합니다.</p>
+                    <p>그것에 의존하지 마세요! "Mozilla"는 Chrome, Firefox, IE, Safari, Opera의 애플리케이션 코드명입니다.</p>
+                    <p id="demo11"></p>
+                    <button id="btnS11" onclick="fnS11()">확인</button>
+                </p>
+                <div id="divS11"></div>
+            </div>
+        </section><hr>
+        <section id="s12">
+            <h1>브라우저 엔진</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.product</h3>
+                    <p>product 속성은 브라우저의 제품 이름을 반환합니다.</p>
+                    <p>그것에 의존하지 마세요! 대부분 브라우저는 제품 이름으로 "Gecko"를 반환합니다!</p>
+                    <p id="demo12"></p>
+                    <button id="btnS12" onclick="fnS12()">확인</button>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section id="s13">
+            <h1>브라우저 버전</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.appVersion</h3>
+                    <p>appVersion 속성은 브라우저에 대한 버전 정보를 반환합니다.:</p>
+                    <p id="demo13"></p>
+                    <button id="btnS13" onclick="fnS13()">확인</button>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section id="s14">
+            <h1>브라우저 에이전트</h1>
+            <div>
+                <p>
+                    <h2>네비게이터 객체</h2>
+                    <h3>navigator.userAgent</h3>
+                    <p>userAgent 속성은 브라우저에서 서버로 보낸 사용자 에이전트 헤더를 반환합니다.:</p>
+                    <p id="demo14"></p>
+                    <button id="btnS14" onclick="fnS14()">확인</button>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section id="s15">
+            <h1>setTimeout() 메서드</h1>
+            <div>
+                <p>
+                    <h2>JavaScript Timing</h2>
+                    <h3>setTimeout</h3>
+                    <p>"확인"를 클릭하세요. 3초 동안 기다리면 페이지에 "안녕하세요"라는 알림이 표시됩니다.</p>
+                    <button id="btnS15" onclick="fnS15()">확인</button>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section id="s16">
+            <h1>clearTimeout() 메서드</h1>
+            <div>
+                <p>
+                    <h2>JavaScript Timing</h2>
+                    <h3>setTimeout, clearTimeout</h3>
+                    <p>"확인"를 클릭하세요. 3초 동안 기다리면 페이지에 "안녕하세요"라는 알림이 표시됩니다.</p>
+                    <p>첫 번째 기능이 실행되지 않도록 하려면 "중지"를 클릭하세요.</p>
+                    <p>(3초가 지나기 전에 "중지"를 클릭해야 합니다.)</p>
+
+                    <button id="btnS16" onclick="fnS16()">확인</button>
+                    <button id="btnS16_2" onclick="fnS16_2()">중지</button>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section id="s17">
+            <h1>setInterval() 메서드</h1>
+            <div>
+                <p>
+                    <h2>JavaScript Timing</h2>
+                    <h3>setInterval</h3>
+                    <p>이 페이지의 스크립트는 이 시계를 시작합니다::</p>
+                    <p id="demo17"></p>
+                    <button id="btnS17" onclick="fnS17()">확인</button>
+                </p>
+                <div id="divS17"></div>
+            </div>
+        </section><hr>
+        <section id="s18">
+            <h1>clearInterval() 메서드</h1>
+            <div>
+                <p>
+                    <h2>JavaScript Timing</h2>
+                    <h3>setInterval, clearInterval</h3>
+                    <p>이 페이지의 스크립트는 이 시계를 시작합니다:</p>
+                    <p id="demo18"></p>
+                    <button id="btnS18" onclick="fnS18()">확인</button>
+                    <button id="btnS18_2" onclick="fnS18_2()">중지</button>
+                </p>
+                <div id="divS18"></div>
+            </div>
+        </section><hr>
+        <section id="s19">
+            <h1>쿠키</h1>
+            <div>
+                <p>
+                    <p>document.cookie</p>
+                    <button id="btnS19" onclick="fnS19()">쿠키체크</button>
+                    <button id="btnS19_2" onclick="fnS19_2()">쿠키초기화</button>
+                </p>
+                <div id="divS19"></div>
+            </div>
+        </section><hr>
+
+        <script src="./js/index_BOM.js"></script>
+
+    </body>
+</html>
