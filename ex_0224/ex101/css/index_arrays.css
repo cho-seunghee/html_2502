@@ -26,6 +26,7 @@ section > div span {
     background-color: #20235cfb;
     color: #fff;
     display: block;
+    line-height: 1.5;
 }
 
 section > div p h2 {
@@ -33,11 +34,11 @@ section > div p h2 {
 }
 
 pre {
-    background-color: #424242;
+    background-color: #3b393f;
     color: #fff;
-    line-height: 1;
+    line-height: 1.5;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .blue {
