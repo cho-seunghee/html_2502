@@ -1,0 +1,602 @@
+
+section {
+    clear: both;;
+}
+
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+    /* font-size: 18px; */
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+    display: inline-block;
+    width: 90%;
+}
+
+section > div > p {
+    border: 1px solid #000;
+    background-color: #f9ffc4fb;
+    display: block;
+}
+
+section > div span {
+    border: 1px solid #000;
+    background-color: #20235cfb;
+    color: #fff;
+    display: block;
+    line-height: 1.5;
+}
+
+section > div p h2 {
+    color: #0a6ef1;
+}
+
+pre {
+    background-color: #3b393f;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+}
+
+.blue {
+    color: #00f;
+}
+
+.red {
+    color: #f00;
+}
+
+.green {
+    color: green;
+}
+
+.aqua {
+    color : aqua;
+}
+
+
+.s1 > div > p div {
+    float:left;
+    margin-right:20px;
+}
+
+.s1 .box1 {
+    box-sizing: content-box;
+    /* 콘텐츠 영역 기준 */
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+}
+  
+.s1 .box2 {
+    box-sizing: border-box; 
+    /* 테두리까지(박스 전체) */
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid red;
+}
+
+.s2 > div #container {
+    width:800px;
+    margin:20px auto;
+    padding:20px;
+  }
+
+.s2 > div #container .left-img {
+    float:left;
+    margin-right:25px;
+}
+.s2 > div #container p {
+    line-height:30px;
+}
+
+.s3 > div {
+    display: inline-block;
+    padding: 10px;
+    width: 800px;
+}
+
+.s3 > div .box1{
+    padding:20px;
+    margin-right:10px;
+    background:#ffd800;
+    float:left;
+}
+.s3 > div .box2 {
+    background: #0094ff;
+    padding:20px;
+    margin-right:10px;
+    float:left;
+}
+.s3 > div .box3 {
+    background: #00ff21;
+    padding:20px;
+    float:left;
+}
+.s3 > div .box4 {
+    background:#ffffff;
+    padding:20px;
+    float:right;
+    border:1px solid black;
+}
+
+.s4 > div div {
+    padding:20px;
+    margin:10px;
+}
+.s4 > div .box1{
+    background:#ffd800;
+    float:left;
+}
+.s4 > div .box2 {
+    background: #0094ff;
+    float:left;
+}
+.s4 > div .box3 {
+    background: #00ff21;
+}
+.s4 > div .box4 {
+    background:#a874ff;
+    clear:both;
+}
+
+.s5 > div div {
+    border: 1px solid #ccc; /* 모든 영역에 테두리 표시 */
+}
+.s5 > div #container {
+    width:960px; /* 컨테이너 너비 */
+    padding:20px; /* 패딩 */			
+    margin:0 auto;  /* 화면 중앙에 배치 */
+}
+.s5 > div #header {
+    padding:20px;  /* 패딩 */
+    margin-bottom:20px;  /* 아래 요소들과의 간격(마진) */
+}
+.s5 > div #contents {
+    width: 620px;  /* 너비 */
+    padding: 20px;  /* 패딩 */
+    float: left;  /* 왼쪽으로 플로팅 */
+    margin-bottom: 20px;  /* 아래 요소와의 간격 */
+}
+.s5 > div #sidebar {
+    width: 220px;  /* 너비 */
+    padding: 20px;  /* 패딩 */
+    float: right;  /* 오른쪽으로 플로팅 */
+    margin-bottom: 20px;  /* 아래 요소와의 간격 */
+    background:#eee;
+}
+.s5 > div #footer {
+    clear:both;  /* 양쪽 플로팅 해제 */
+    padding:20px;  /* 패딩 */
+}
+
+.s6 > div {
+    padding:20px 0;
+    margin:10px auto;
+}
+
+.s6 > div .box1{
+    float:left;
+    width:100px;
+    background:#ffd800;
+    margin-right:10px;
+    padding:20px;
+}
+.s6 > div .box2 {
+    position:relative;
+    left:-50px;
+    top:30px;
+    width:300px;
+    background:#0094ff;
+    float:left;
+    padding:20px;
+}
+
+.s7 > div #wrap{
+    position:relative;
+    width:300px;
+    height:300px;
+    border:1px solid #ccc;
+}
+.s7 > div .box{
+    position:absolute;
+    width:50px;
+    height:50px;
+    background:#0094ff;
+}
+.s7 > div #crd1{ top:0; left:0; }
+.s7 > div #crd2{ top:0; right:0; }
+.s7 > div #crd3{ bottom:0; left:0; }
+.s7 > div #crd4{ bottom:0; right:0; }
+.s7 > div #crd5{ top:100px; left:100px; }
+
+.s8 > div{
+    height: 300px;
+}
+
+.s8 > div #fx{
+    position:fixed;
+    top:5px;
+    right:5px;
+    width:50px;
+    height:50px;
+    background:#ff6a00;
+}
+.s8 > div #content { 
+    width:400px; 
+    height: 100%;	
+    overflow-y: scroll;
+}
+.s8 > div p { line-height:30px;}
+
+.s88 > div{
+    height: 300px;
+}
+
+.s88 > div #st{
+    position:sticky;
+    top:0;
+    right:5px;
+    width:50px;
+    height:50px;
+    background:#ff6a00;
+}
+.s88 > div #content { 
+    width:400px; 
+    height: 100%;	
+    overflow-y: scroll;
+}
+.s88 > div p { line-height:30px;}
+
+
+.s9 > div img {
+    margin:10px;
+    padding:5px;
+    border:1px solid black;
+}
+.s9 > div .invisible {
+    visibility:hidden;
+}
+
+.s10 > div {
+    display: inline-block;
+    height: 300px;
+
+}
+.s10 > div div#wrapper {
+    position: relative;
+}
+.s10 > div .box {
+    position:absolute;
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    font-size:26px;
+}
+.s10 > div #b1 {				
+    left:50px;
+    top:50px;
+    background:#ff0000;
+    z-index:1;
+}
+.s10 > div #b2 {				
+    left:110px;
+    top:70px;
+    background:#ffd800;
+    z-index:3;
+}
+.s10 > div #b3 {
+    left:70px;
+    top:110px;
+    background:#0094ff;
+    z-index:1;
+}
+
+.s11 > div {
+    height: 300px;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 10px;
+}
+
+.s11 > div .box1 {
+    height: 50px;
+    width: 30%;
+    float: left;
+    background:#ffd800;
+    border: 1px solid #000;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.s11 > div .box2 {
+    height: 50px;
+    background:#ffd800;
+    border: 1px solid #000;
+    width: 60%;
+    float: left;
+    margin-left: 10px;
+}
+
+.s11 > div .box3 {
+    height: 50px;
+    background:#ffd800;
+    border: 1px solid #000;
+    width: 92%;
+    clear: left;
+}
+
+.s12 > div {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+.s12 > div .multi {
+    -webkit-column-width: 120px;
+    -moz-column-width: 120px;
+    column-width: 120px;
+}
+
+.s13 > div {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s13 > div .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.s14 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+    text-align:center;
+}
+.s14 > div div {							
+    padding:20px;
+    width:600px;
+    margin:20px auto;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+.s14 > div .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 2px dotted #000;
+    -moz-column-rule: 2px dotted #000;
+    column-rule: 2px dotted #000;
+    text-align: justify;
+}
+
+.s15 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+
+.s15 > div .multi1, .s15 > div .multi2, .s15 > div .multi3 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-rule: 2px dotted #000;
+    -moz-column-rule: 2px dotted #000;
+    column-rule: 2px dotted #000;
+    text-align: justify;
+}
+.s15 > div .multi1 h3 {
+    break-before: column;
+}
+.s15 > div .multi2 h3 {
+    break-after: column;
+}
+.s15 > div .multi3 h3 {
+    break-inside: column;
+}
+
+.s16 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s16 > div section {							
+    padding:20px;
+    width:600px;
+    margin:20px auto;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+.s16 > div .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 2px dotted #000;
+    -moz-column-rule: 2px dotted #000;
+    column-rule: 2px dotted #000;
+    text-align: justify;
+}
+.s16 > div .no-col{
+    background:#f0f0f0;
+    margin:10px 3px;
+    padding:20px;
+    border-radius:5px;
+    -webkit-column-span:all;
+    -moz-column-span:all;
+    column-span:all;
+}
+
+.s17 > div .multi {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 10px dotted #662323;
+}
+
+.s18 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s18 > div .table1 {
+    border:1px solid black;
+}
+.s18 > div .table1 td {
+    border:1px dotted black;
+    padding:10px;
+    text-align:center;
+}
+
+.s19 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s19 > div .table1 {
+    border:1px solid black;
+    border-collapse:collapse;
+}
+.s19 > div .table1 td {
+    border:1px dashed black;
+    padding:10px;
+    text-align:center;
+}
+
+.s20 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s20 > div table {
+    margin-bottom:50px;
+}
+.s20 > div .table1 {
+    border:1px solid black;
+    border-collapse:separate;
+    border-spacing:20px 10px;
+}
+.s20 > div .table2 {
+    border-collapse:separate;
+    border-spacing:20px 10px;				
+}
+.s20 > div td {
+border:1px solid black;
+padding:10px;
+text-align:center;
+}
+
+.s21 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s21 > div .schedule {
+    border-collapse:separate;
+    margin:20px;
+}
+.s21 > div td {
+    border:1px solid black;
+    padding:10px;
+    text-align:center;				
+}
+.s21 > div #tb1 td{
+    empty-cells:show;
+}
+.s21 > div #tb2 td {
+    empty-cells:hide;
+}
+
+.s22 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s22 > div table {
+    border-collapse:collapse;
+    width:300px;
+}
+.s22 > div td {
+    padding:10px;
+}
+
+.s23 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s23 > div table, td {
+    border:1px solid #ccc;
+}
+.s23 > div .table1 {
+    border-collapse:collapse;
+    width:300px;
+    table-layout:fixed;
+    word-break:break-all;
+    height:auto;
+}			
+.s23 > div .table1 td {
+    width:150px;
+    border:1px solid black;
+    padding:5px;
+}
+
+.s24 > div table, td {
+    border:1px solid #ccc;
+}
+.s24 > div td {
+    height:100px;
+    padding:20px;
+}
+.s24 > div .va1 { vertical-align:top; }
+.s24 > div .va2 { vertical-align:bottom; }
+.s24 > div .va3 { vertical-align:middle; }
+
+.s25 > div table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+
+.s26 > div {
+    font-family:"맑은 고딕", "고딕", "굴림";
+}
+.s26 > div a:link {
+    text-decoration:none;
+}
+.s26 > div nav ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    
+}
+.s26 > div nav ul li{
+    float: left;
+    font-size:1.5em;
+    padding-left:7px;
+    margin-bottom:20px;
+    border-left-width:5px;
+    border-left-color:#990066;
+    border-left-style:solid;
+    margin-right: 15px;
+}
+.s26 > div section article {
+    padding-left:10px;
+    margin-bottom:10px;
+    border-top:1px #a6a6a6 dashed;
+    border-bottom: 1px #a6a6a6 dashed;
+}
+
+.s26 > div section #content {
+    clear: left;
+}
+
+.s27 > div table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    caption-side:bottom;
+}
+
+.s27 > div th, .s27 > div td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.s27 > div .heading {
+    background-color: #eee;
+}
