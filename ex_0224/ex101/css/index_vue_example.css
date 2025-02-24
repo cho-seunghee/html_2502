@@ -1,0 +1,40 @@
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
+
+section > div > p, section > div > span {
+    border: 1px solid #000;
+    background-color: #fffffffb;
+    display: block;
+}
+
+pre {
+    background-color: #424242;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    font-size: 16px;
+}
+
+.blue {
+    color: #00f;
+}
+
+.red {
+    color: #f00;
+}
+
+.green {
+    color: green;
+}
+
+.aqua {
+    color : aqua;
+}

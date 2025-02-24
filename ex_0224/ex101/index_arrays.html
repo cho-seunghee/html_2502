@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Javascript 배열</title>
+        <link rel="stylesheet" href="css/index_arrays.css"/>
+    </head>
+    <body>
+        <section id="s1">
+            <h1>배열 생성1</h1>
+            <div>
+                <p>
+                    <span>const cars = ["Saab", "Volvo" ,"BMW"];</span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo1"></p>
+                    <button id="btnS1" onclick="fnS1()">확인</button>
+                </p>
+                <div id="divS1"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s2">
+            <h1>배열 생성2</h1>
+            <div>
+                <p>
+                    <span>
+                        const cars = [
+                        <br>
+                        "Saab",<br>
+                        "Volvo",<br>
+                        "BMW"<br>
+                        ];
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo2"></p>
+                    <button id="btnS2" onclick="fnS2()">확인</button>
+                </p>
+                <div id="divS2"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s3">
+            <h1>배열 생성3</h1>
+            <div>
+                <p>
+                    <span>
+                        const cars = [];<br>
+                        cars[0] = "Saab";<br>
+                        cars[1] = "Volvo";<br>
+                        cars[2] = "BMW";<br>
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo3"></p>
+                    <button id="btnS3" onclick="fnS3()">확인</button>
+                </p>
+                <div id="divS3"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s4">
+            <h1>JavaScript 키워드 new 사용</h1>
+            <div>
+                <p>
+                    <span>const cars = new Array("Saab", "Volvo", "BMW");</span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo4"></p>
+                    <button id="btnS4" onclick="fnS4()">확인</button>
+                </p>
+                <div id="divS4"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s5">
+            <h1>배열 요소 접근하기</h1>
+            <div>
+                <p>
+                    <span>const cars = ["Saab", "Volve", "BMW"];<br>
+                        d.getElementById("demo5").innerHTML = cars[0];</span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>브라켓 인덱싱</h2>
+                    <p>JavaScript 배열 요소는 숫자 인덱스(0부터 시작)를 사용하여 액세스합니다</p>
+                    <p id="demo5"></p>
+                    <button id="btnS5" onclick="fnS5()">확인</button>
+                </p>
+                <div id="divS5"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s6">
+            <h1>배열 요소 변경</h1>
+            <div>
+                <p>
+                    <span>
+                        const cars = ["Saab", "Volve", "BMW"];<br>
+                        cars[0] = "Opel";
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>브라켓 인덱싱</h2>
+                    <p>JavaScript 배열 요소는 숫자 인덱스(0부터 시작)를 사용하여 액세스합니다.</p>
+                    <p id="demo6"></p>
+                    <button id="btnS6" onclick="fnS6()">확인</button>
+                </p>
+                <div id="divS6"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s7">
+            <h1>배열을 문자열로 변환</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo7").innerHTML = fruits.toString();
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>toString() 메서드</h2>
+                    <p>toString() 메서드는 배열을 쉼표로 구분된 문자열로 반환합니다.</p>
+                    <p id="demo7"></p>
+                    <button id="btnS7" onclick="fnS7()">확인</button>
+                </p>
+                <div id="divS7"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s8">
+            <h1>전체 배열에 액세스</h1>
+            <div>
+                <p>
+                    <span>
+                        const cars = ["Saab", "Volve", "BMW"];<br>
+                        d.getElementById("demo8").innerHTML = cars;
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo8"></p>
+                    <button id="btnS8" onclick="fnS8()">확인</button>
+                </p>
+                <div id="divS8"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s9">
+            <h1>배열은 객체1</h1>
+            <div>
+                <p>
+                    <span>
+                        const person = ["John", "Deo", 46];<br>
+                        d.getElementById("demo9").innerHTML = person[0];
+                    </span>
+                    <h2>JavaScript Arrays</h2>
+                    <p>배열은 숫자를 사용하여 요소에 접근합니다.</p>
+                    <p id="demo9"></p>
+                    <button id="btnS9" onclick="fnS9()">확인</button>
+                </p>
+                <div id="divS9"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s10">
+            <h1>배열은 객체2</h1>
+            <div>
+                <p>
+                    <span>
+                        const person = {firstName:"John", lastName:"Deo", Age:46};<br>
+                        d.getElementById("demo10").innerHTML = person.firstName;
+                    </span>
+                    <h1>JavaScript Objects</h1>
+                    <p>JavaScript는 이름을 사용해 객체 속성에 액세스합니다.</p>
+                    <p id="demo10"></p>
+                    <button id="btnS10" onclick="fnS10()">확인</button>
+                </p>
+                <div id="divS10"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s11">
+            <h1>길이 속성</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        let size = fruits.length;
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>The length Property</h2>
+                    <p>length 속성은 배열의 길이를 반환합니다.</p>
+                    <p id="demo11"></p>
+                    <button id="btnS11" onclick="fnS11()">확인</button>
+                </p>
+                <div id="divS11"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s12">
+            <h1>첫 번째 배열 요소에 액세스하기</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo12").innerHTML = fruits[0];
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>브라켓 인덱싱</h2>
+                    <p>JavaScript 배열 요소는 숫자 인덱스(0부터 시작)를 사용하여 접근합니다.</p>
+                    <p id="demo12"></p>
+                    <button id="btnS12" onclick="fnS12()">확인</button>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section>
+        <section id="s13">
+            <h1>마지막 배열 요소에 접근하기</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo13").innerHTML = fruits[fruits.length - 1];
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>브라켓 인덱싱</h2>
+                    <p>JavaScript 배열 요소는 숫자 인덱스(0부터 시작)를 사용하여 접근합니다.</p>
+                    <p id="demo13"></p>
+                    <button id="btnS13" onclick="fnS13()">확인</button>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s14">
+            <h1>루핑 배열 요소1</h1>
+            <div>
+                <p>
+                    <span>
+                        <pre>
+const fruits = ["banana", "orange", "apple", "mango"];<br>
+let flen = fruits.length;<br><br>
+let text = "&lt;ul&gt;";<br>
+for(let i=0;i < fruits.length ; i++)<br>
+{<br>
+text += "&lt;li&gt;" + fruits[i] + "&lt;/li&gt;";<br>
+}<br>
+text += "&lt;/ul&gt;";<br>
+                        </pre>
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>배열 루핑</h2>
+                    <p id="demo14"></p>
+                    <button id="btnS14" onclick="fnS14()">확인</button>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s15">
+            <h1>루핑 배열 요소2</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br><br>
+                        let text = "&lt;ul&gt;";<br>
+                        fruits.forEach(fnS15_myFunction);<br>
+                        text += "&lt;/ul&gt;";<br><br>
+                        fnS15_myFunction = (value) =><br>
+                        {<br>
+                            text += "&lt;li&gt;" + value + "&lt;/li&gt;";<br>
+                        }<br>
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>forEach() 메서드</h2>
+                    <p>각 배열 요소에 대해 함수를 호출합니다.</p>
+                    <p id="demo15"></p>
+                    <button id="btnS15" onclick="fnS15()">확인</button>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s16">
+            <h1>배열 요소 추가1</h1>
+            <div>
+                <p>
+                    <span>
+                        let fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.push("Lemon");
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>push() 메서드</h2>
+                    <p>push 메서드는 배열에 새로운 요소를 추가합니다.</p>
+                    <p id="demo16"></p>
+                    <button id="btnS16" onclick="fnS16()">확인</button>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s17">
+            <h1>배열 요소 추가2</h1>
+            <div>
+                <p>
+                    <span>
+                        let fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits[fruits.length] = "Lemon";
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>length 속성은 push() 메서드를 사용하지 않고도 배열에 새로운 요소를 쉽게 추가할 수 있는 방법을 제공합니다.</p>
+                    <p id="demo17"></p>
+                    <button id="btnS17" onclick="fnS17()">확인</button>
+                </p>
+                <div id="divS17"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s18">
+            <h1>배열 요소 추가3</h1>
+            <div>
+                <p>
+                    <span>
+                        let fruits = ["Banana", "Orange", "Apple"];<br>
+                        fruits[6] = "Lemon";<br><br>
+                        let fLen = fruits.length;<br>
+                        let text = "";<br>
+                        for(i=0 ; i < fLen ; i++)<br>
+                        {<br>
+                            text += fruits[i] + "&lt;br&gt;";<br>
+                        }
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>높은 인덱스를 가진 요소를 추가하면 배열에 정의되지 않은 "구멍"이 생길 수 있습니다.</p>
+                    <p id="demo18"></p>
+                    <button id="btnS18" onclick="fnS18()">확인</button>
+                </p>
+                <div id="divS18"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s19">
+            <h1>연관 배열1</h1>
+            <div>
+                <p>
+                    <span>
+                        const person = [];<br>
+                        person[0] = "John";<br>
+                        person[1] = "Doe";<br>
+                        person[2] = 46; <br>
+                        document.getElementById("demo19").innerHTML = person[0] + " " + person.length;
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p id="demo19"></p>
+                    <button id="btnS19" onclick="fnS19()">확인</button>
+                </p>
+                <div id="divS19"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s20">
+            <h1>연관 배열2</h1>
+            <div>
+                <p>
+                    <span>
+                        const person = [];<br>
+                        person["firstName"] ="John";<br>
+                        person["lastName"] = "Doe";<br>
+                        person["age"] = 46; <br>
+                        document.getElementById("demo20").innerHTML = person[0] + " " + person.length;
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>배열에 접근할 때 명명된 인덱스를 사용하면 JavaScript가 배열을 표준 객체로 재정의하고, 일부 배열 메서드와 속성은 정의되지 않은 결과나 잘못된 결과를 생성합니다.</p>
+                    <p id="demo20"></p>
+                    <button id="btnS20" onclick="fnS20()">확인</button>
+                </p>
+                <div id="divS20"></div>
+            </div>
+        </section>
+        <hr/>
+
+        <section id="s21">
+            <h1>자바스크립트 new Array()1</h1>
+            <div>
+                <p>
+                    <span>
+                        //const points = new Array(40, 100, 1, 5, 25, 10);<br>
+                        const points = [40, 100, 1, 5, 25, 10];<br>
+                        document.getElementById("demo21").innerHTML = points[0];
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>배열 생성</h2>
+                    <p>new Array() 사용을 피하세요. 대신 []를 사용하세요.</p>
+                    <p id="demo21"></p>
+                    <button id="btnS21" onclick="fnS21()">확인</button>
+                </p>
+                <div id="divS21"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s22">
+            <h1>자바스크립트 new Array()2</h1>
+            <div>
+                <p>
+                    <span>
+                        // 세 개의 요소를 갖는 배열을 생성합니다.<br>
+                        var points = new Array(40, 100, 1);<br>
+                        d.getElementById("demo22").innerHTML = points;
+                    </span>
+                    <h2>JavaScript Arrays</h2>
+                    <p>세 개의 요소를 가진 배열을 만듭니다.</p>
+                    <p id="demo22"></p>
+                    <button id="btnS22" onclick="fnS22()">확인</button>
+                </p>
+                <div id="divS22"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s23">
+            <h1>자바스크립트 new Array()3</h1>
+            <div>
+                <p>
+                    <span>
+                        // 두 개의 요소를 갖는 배열을 생성합니다.<br>
+                        var points = new Array(40, 100);<br>
+                        d.getElementById("demo23").innerHTML = points;  
+                    </span>
+                    <h2>JavaScript Arrays</h2>
+                    <p>두 개의 요소를 가진 배열을 만듭니다.</p>
+                    <p id="demo23"></p>
+                    <button id="btnS23" onclick="fnS23()">확인</button>
+                </p>
+                <div id="divS23"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s24">
+            <h1>자바스크립트 new Array()4</h1>
+            <div>
+                <p>
+                    <span>
+                        // 하나의 요소를 갖는 배열을 생성 ???<br>
+                        var points = new Array(40);<br>
+                        d.getElementById("demo24").innerHTML = points;  
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>new Array() 사용을 피하세요.</p>
+                    <p id="demo24"></p>
+                    <button id="btnS24" onclick="fnS24()">확인</button>
+                </p>
+                <div id="divS24"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s25">
+            <h1>일반적인 오류1</h1>
+            <div>
+                <p>
+                    <span>
+                        var points = [40];<br>
+                        d.getElementById("demo25").innerHTML = points;
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>하나의 요소를 가진 배열을 생성합니다.</p>
+                    <p id="demo25"></p>
+                    <button id="btnS25" onclick="fnS25()">확인</button>
+                </p>
+                <div id="divS25"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s26">
+            <h1>일반적인 오류2</h1>
+            <div>
+                <p>
+                    <span>
+                        // 정의되지 않은 40개의 요소를 포함하는 배열을 생성합니다 <br>
+                        var points = new Array(40); <br>
+                        d.getElementById("demo26").innerHTML = points[0];  
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <p>new Array() 사용을 피하세요.</p>
+                    <p id="demo26"></p>
+                    <button id="btnS26" onclick="fnS26()">확인</button>
+                </p>
+                <div id="divS26"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s27">
+            <h1>배열을 인식하는 방법1</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo27").innerHTML = typeof fruits;
+                    </span>
+                    <h1>JavaScript Arrays</h1> 
+                    <h2>연산자의 유형</h2>
+                    <p>typeof 연산자는 배열에 사용될 경우 객체를 반환합니다.</p>
+                    <p id="demo27"></p>
+                    <button id="btnS27" onclick="fnS27()">확인</button>
+                </p>
+                <div id="divS27"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s28">
+            <h1>해결책1</h1>
+            <div>
+                <p>
+                    <span>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo27").innerHTML = Array.isArray(fruits);
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>isArray() 메서드</h2>
+                    <p id="demo28"></p>
+                    <button id="btnS28" onclick="fnS28()">확인</button>
+                </p>
+                <div id="divS28"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s29">
+            <h1>해결책2</h1>
+            <div>
+                <p>
+                    <span>
+                        //instanceof해당 생성자가 객체를 생성하면 연산자는 true를 반환합니다 <br>
+                        const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        d.getElementById("demo29").innerHTML = "Array: " + (fruits instanceof Array);;
+                    </span>
+                    <h1>JavaScript Operators</h1>
+                    <h2>instanceof 연산자</h2>
+                    <p>instanceof 연산자는 객체가 지정된 객체 유형의 인스턴스인 경우 true를 반환합니다.</p>
+                    <p id="demo29"></p>
+                    <button id="btnS29" onclick="fnS29()">확인</button>
+                </p>
+                <div id="divS29"></div>
+            </div>
+        </section>
+        <hr/>
+        <section id="s30">
+            <h1>중첩된 배열과 객체1</h1>
+            <div>
+                <p>
+                    <span>
+                        let x = "";<br>
+                        const myObj = {<br>
+                            &nbsp;name: "John",<br>
+                            &nbsp;age: 300,<br>
+                            &nbsp;cars: [<br>
+                            &nbsp;&nbsp;{name:"Ford", models:["Fiesta", "Focus", "Mustang"]},<br>
+                            &nbsp;&nbsp;{name:"BMW", models:["320", "X3", "X5"]},<br>
+                            &nbsp;&nbsp;{name:"Fiat", models:["500", "Panda"]}<br>
+                            &nbsp;]<br>
+                        }<br><br>
+                        for (let i in myObj.cars)<br>
+                        {<br>
+                            &nbsp;x += "&lt;h2&gt;" + myObj.cars[i].name + "&lt;/h2&gt;";<br>
+                            &nbsp;for (let j in myObj.cars[i].models)<br>
+                            &nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;x += myObj.cars[i].models[j] + "&lt;b&gt;>";<br>
+                                &nbsp;&nbsp;}<br>
+                        }
+                    </span>
+                    <h1>JavaScript Arrays</h1>
+                    <h2>중첩된 JavaScript 객체와 배열.</h2>
+                    <p id="demo30"></p>
+                    <button id="btnS30" onclick="fnS30()">확인</button>
+                </p>
+                <div id="divS30"></div>
+            </div>
+        </section>
+
+        <script src="./js/index_arrays.js"></script>
+    </body>
+</html>
