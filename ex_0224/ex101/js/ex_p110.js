@@ -128,7 +128,7 @@ page113 = () => {
     msg += "<pre>yellowArr.unshift(data1); : unshift(new data) 배열 data의 가장 앞 인덱스에 새 data 삽입 </pre>";
     msg += `${yellowArr}<br><br>`;
 
-    msg += "<pre>뒤에서 넣고 빼기: push pop<br>앞에서 넣고 빼고: unshift shift</pre>";
+    msg += "<pre>뒤에서 넣고 빼기: push pop <br>앞에서 넣고 빼고: unshift shift</pre>";
     msg += `${yellowArr}<br><br>`;
 
     d.getElementById("divS8").innerHTML = msg;
