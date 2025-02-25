@@ -76,19 +76,21 @@ function myFunction7(a, b) {
 }
 
 //---- 이벤트 버블링 또는 이벤트 캡처링?
-document.getElementById("myP1").addEventListener("click", function () {
+document.getElementById("myP1").addEventListener("click", function (e) {
+    //e.stopImmediatePropagation();
     alert("white1 요소를 클릭했습니다!");
 },false);
 
-document.getElementById("myDiv1").addEventListener("click", function () {
+document.getElementById("myDiv1").addEventListener("click", function (e) {
     alert("orange1 요소를 클릭했습니다!");
 }, false);
 
-document.getElementById("myP2").addEventListener("click", function () {
+document.getElementById("myP2").addEventListener("click", function (e) {
+    //e.stopImmediatePropagation();
     alert("white2 요소를 클릭했습니다!");
 }, true);
 
-document.getElementById("myDiv2").addEventListener("click", function () {
+document.getElementById("myDiv2").addEventListener("click", function (e) {
     alert("orange2 요소를 클릭했습니다!");
 }), true;
 
