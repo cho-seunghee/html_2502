@@ -184,3 +184,24 @@ fnS31 = (event) => {
     d.getElementById("demo31").innerHTML = text;
     d.getElementById("demo32").innerHTML = event.type;
 }
+
+window.addEventListener("load", function(){
+    fnS23();
+});
+
+window.addEventListener("unload", function(){
+    fnS26();
+});
+
+window.addEventListener("resize", function(){
+    fnS27();
+});
+
+window.addEventListener("keyup", function(event){
+    fnS28(event);
+})
+
+window.addEventListener("mousedown", function(event)
+{
+    fnS31(event);
+})
