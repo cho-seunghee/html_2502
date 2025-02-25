@@ -396,8 +396,16 @@ section#s6 aside{
   text-align:center;
 }
 
+section#s6 aside img{
+	transition:2s;
+	-webkit-transition:2s;
+	-moz-transition:2s;
+	-o-transition:2s;
+	-ms-transition:2s;
+}
+
 section#s6 aside img:hover{
-    width:250px;
+    transform: scale(1.1);
 }
 
 section#s6 footer{
