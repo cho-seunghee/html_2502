@@ -395,6 +395,11 @@ section#s6 aside{
   border:1px solid darkgreen;
   text-align:center;
 }
+
+section#s6 aside img:hover{
+    width:250px;
+}
+
 section#s6 footer{
 	clear:both;
 	width: 800px;

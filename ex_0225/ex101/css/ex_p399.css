@@ -87,3 +87,61 @@ input {
     color:#fff;
     text-align:center;
 }
+
+/* page 410 */
+.s7 > div {
+    margin-top:20px;
+    margin-left:50px;
+}
+
+/* page 411 */
+.s8 > div {
+    margin-top:20px;
+    margin-left:50px;
+}
+
+/* page 416 */
+.s9 > div #container {
+    position:relative;
+    text-align:center;				
+    margin-top:10px;
+    margin-left:30%;
+}
+.s9 > div h2 {
+    font-size:2em;
+}
+.s9 > div h1{
+    font-size:3.5em;
+}
+.s9 > div a:link, .s9 > div a:visited { 
+    text-decoration:none;
+    color:#222;
+}
+.s9 > div a:hover {
+    cursor:pointer;
+}
+.s9 > div video#bg {
+    left:0;
+    top:0;
+    width:auto;
+    height:auto;
+    min-width:100%;
+    min-height:100%;
+    z-index:-100;
+    background:url(../images/flame.jpg) left top no-repeat;
+    background-size: cover;
+}
+
+/* page 419 */
+.s10 > div #container10 {
+    width:600px;
+    margin:10px auto;
+    padding:20px;
+}
+
+/* page 419 */
+.s11 > div #container11 {
+    width:600px;
+    margin:10px auto;
+    padding:20px;
+}
