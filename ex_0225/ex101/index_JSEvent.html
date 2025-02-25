@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Event</title>
+        <link rel="stylesheet" href="./css/index_JSEvent.css">
+    </head>
+    <body onload="fnS23()" onunload="fnS26()" onresize="fnS27()" onkeyup="fnS28(event)" onmousedown="fnS31(event);">
+        <header></header>
+
+        <section id="s1">
+            <h1>onblur - 사용자가 입력 필드를 떠날 때</h1>
+            <div>
+                <p>
+                    <span>onblur=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onblur 속성</h2>
+                    이름을 입력하세요: <input type="text" id="fname1" onblur="fnS1()">
+                    <p>입력 필드를 벗어나면 입력 텍스트를 대문자로 변환하는 함수가 트리거됩니다.</p>
+                </p>
+                <div id="divS1"></div>
+            </div>
+        </section><hr>
+        <section id="s2">
+            <h1>onchange - 사용자가 입력 필드의 내용을 변경할 때</h1>
+            <div>
+                <p>
+                    <span>onchange=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onchange 속성</h2>
+                    이름을 입력하세요: <input type="text" id="fname2" onchange="fnS2()">
+                    <p>입력 필드를 벗어나면 함수가 입력 내용을 대문자로 변환합니다.</p>
+                </p>
+                <div id="divS2"></div>
+            </div>
+        </section><hr>
+        <section id="s3">
+            <h1>onchange - 사용자가 드롭다운 값을 선택할 때</h1>
+            <div>
+                <p>
+                    <span>onchange=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onchange 속성</h2>
+                    <form>
+                        원하는 브라우저를 선택하세요:
+                      <select id="browsers3" onchange="fnS3()">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Internet Explorer">Internet Explorer</option>
+                        <option value="Firefox">Firefox</option>
+                      </select>
+                    </form>
+                </p>
+                <div id="divS3"></div>
+            </div>
+        </section><hr>
+        <section id="s4">
+            <h1>onfocus - 입력 필드에 포커스가 주어질 때</h1>
+            <div>
+                <p>
+                    <span>onfocus=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onfocus 속성</h2>
+                    이름을 입력하세요: <input type="text" onfocus="fnS4(this)" onblur="fnS4_2(this)" >
+                    <p>입력 필드에 포커스가 생기면 배경색을 변경하는 함수가 트리거됩니다.</p>
+                </p>
+                <div id="divS4"></div>
+            </div>
+        </section><hr>
+        <section id="s5">
+            <h1>onselect - 입력 텍스트가 선택될 때</h1>
+            <div>
+                <p>
+                    <span>onselect=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onselect 속성</h2>
+                    일부 텍스트: <input type="text" value="Hello world!" onselect="fnS5()">
+                    <p id="demo5"></p>
+                </p>
+                <div id="divS5"></div>
+            </div>
+        </section><hr>
+        <section id="s6">
+            <h1>onsubmit - 사용자가 제출 버튼을 클릭할 때</h1>
+            <div>
+                <p>
+                    <span>onsubmit=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onsubmit 속성</h2>
+                    <form onsubmit="fnS6()" action="#">
+                        이름을 입력하세요: <input id="fname6" name="fname6" type="text" size="20" value="test">
+                     <input type="submit" value="제출">
+                    </form>
+                </p>
+                <div id="divS6"></div>
+            </div>
+        </section><hr>
+        <section id="s7">
+            <h1>onreset - 사용자가 재설정 버튼을 클릭할 때</h1>
+            <div>
+                <p>
+                    <span>onreset=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onreset 속성</h2>
+                    <form onreset="btnS7()">
+                        이름을 입력하세요: <input type="text" size="20">
+                      <input type="reset" value="초기화">
+                    </form>
+                </p>
+                <div id="divS7"></div>
+            </div>
+        </section><hr>
+        <section id="s8">
+            <h1>onkeydown - 사용자가 키를 누르거나 누르고 있을 때</h1>
+            <div>
+                <p>
+                    <span>onkeydown=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onkeydown 속성</h2>
+                    <p>사용자가 입력 필드에서 키를 누르면 함수가 트리거됩니다.</p>
+                    <input type="text" onkeydown="fnS8()" value="여기에 키를 누르세요">
+                </p>
+                <div id="divS8"></div>
+            </div>
+        </section><hr>
+        <section id="s9">
+            <h1>onkeypress - 사용자가 키를 누르거나 누르고 있을 때</h1>
+            <div>
+                <p>
+                    <span>onkeypress=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onkeypress 속성</h2>
+                    <p>사용자가 입력 필드에서 키를 누르면 함수가 트리거됩니다.</p>
+                    <input type="text" onkeypress="fnS9()" value="여기에 키를 누르세요">
+                </p>
+                <div id="divS9"></div>
+            </div>
+        </section><hr>
+        <section id="s10">
+            <h1>onkeyup - 사용자가 키를 놓을 때 (1)</h1>
+            <div>
+                <p>
+                    <span>onkeyup=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onkeyup 속성</h2>
+                    <p>사용자가 입력 필드에서 키를 놓으면 함수가 트리거됩니다.</p>
+                    <p>이 함수는 입력 문자를 대문자로 변환합니다.</p>
+                    이름을 입력하세요: <input type="text" id="fname10" onkeyup="fnS10()">
+                </p>
+                <div id="divS10"></div>
+            </div>
+        </section><hr>
+        <section id="s11">
+            <h1>onkeyup - 사용자가 키를 놓을 때 (2)</h1>
+            <div>
+                <p>
+                    <span>onkeyup=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onkeyup 속성</h2>
+                    <p>onkeyup 이벤트는 키보드 키가 UP 방향으로 이동할 때 발생합니다:</p>
+                    <form>
+                        이름을 입력하세요:
+                      <input type="text" name="myInput11" onkeyup="fnS11()" size="20" placeholder="여기를입력하세요.">
+                      <input type="text" name="mySecondInput11" size="20" placeholder="값이 변합니다.">
+                    </form>
+                </p>
+                <div id="divS11"></div>
+            </div>
+        </section><hr>
+        <section id="s12">
+            <h1>onkeydown 대 onkeyup - 둘 다</h1>
+            <div>
+                <p>
+                    <span>onkeydown="" onkeyup=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onkeydown 및 onkeyup 속성</h2>
+                    <form>
+                        메시지를 작성하세요:<br>
+                    <input type="text" onkeydown="fnS12('yellow')" onkeyup="fnS12('white')" name="myInput12">
+                    </form>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section id="s13">
+            <h1>onmouseover/onmouseout - 마우스가 요소 위로 지나갈 때</h1>
+            <div>
+                <p>
+                    <span>onmouseover="" onmouseout=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmouseover 및 onmouseout 속성</h2>
+                    <h1 onmouseover="fnS13(this, 'red')" onmouseout="fnS13(this, 'black')">이 텍스트 위에 마우스를 올려 놓으세요</h1>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section id="s14">
+            <h1>onmousedown/onmouseup - 마우스 버튼을 누르거나 놓을 때</h1>
+            <div>
+                <p>
+                    <span>onmousedown="" onmouseup=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmousedown 및 onmouseup 속성</h2>
+                    <p onmousedown="fnS14(this,'red')" onmouseup="fnS14(this,'green')">
+                        텍스트를 클릭하여 색상을 변경합니다. 매개변수가 있는 함수는 마우스 버튼을 눌렀을 때 트리거되고, 다른 매개변수가 있는 함수는 마우스 버튼을 놓았을 때 트리거됩니다.
+                    </p>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section id="s15">
+            <h1>onmousedown - 마우스를 클릭하면: 어떤 요소에 경고를 보냅니다.</h1>
+            <div onmousedown="fnS15(event)">
+                <p>
+                    <span>onmousedown=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmousedown 속성</h2>
+                    
+                    <p>문서의 어딘가를 클릭하세요. 경고 상자가 클릭한 요소의 이름을 알려줍니다.</p>
+                    <h3>이것은 제목입니다</h3>
+                    <img border="0" src="./images/smiley.gif" alt="Smiley" width="32" height="32">
+                    <p>이것은 문단입니다.</p>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section id="s16">
+            <h1>onmousedown - 마우스를 클릭했을 때: 어떤 버튼인지 알림</h1>
+            <div>
+                <p>
+                    <span>onmousedown=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmousedown 속성</h2>
+                    
+                    <div onmousedown="fnS16(event);">이 텍스트를 클릭하세요(마우스 버튼 중 하나로)
+                    <p>
+                    0 왼쪽 마우스 버튼을 지정합니다.<br>
+                    1 가운데 마우스 버튼을 지정합니다.<br>
+                    2 오른쪽 마우스 버튼을 지정합니다.</p>
+                    <p><strong>Note:</strong>  Internet Explorer 8 및 이전 버전은 다른 결과를 반환합니다:<br>
+                    1 왼쪽 마우스 버튼을 지정합니다.<br>
+                    4 가운데 마우스 버튼을 지정합니다.<br>
+                    2 오른쪽 마우스 버튼을 지정합니다.</p>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section id="s17">
+            <h1>onmousemove/onmouseout - 이미지 위로 마우스 포인터를 이동할 때/이미지 밖으로 마우스 포인터를 이동할 때</h1>
+            <div>
+                <p>
+                    <span>onmousemove="" onmouseout=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmousemove 및 onmouseout 속성</h2>
+                    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="fnS17(event)" onmouseout="fnS17_2()"></div>
+                    <p>위의 사각형 위에 마우스를 올려 놓으면 마우스 포인터의 좌표를 알 수 있습니다.</p>
+                    <p id="demo17"></p>
+                </p>
+                <div id="divS17"></div>
+            </div>
+        </section><hr>
+        <section id="s18">
+            <h1>onmouseover/onmouseout - 이미지 위로 마우스를 이동하거나 이미지 밖으로 이동할 때</h1>
+            <div>
+                <p>
+                    <span>onmouseover="" onmouseout=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onmouseover 및 onmouseout 속성</h2>
+                    <img onmouseover="fnS18(this)" onmouseout="fnS18_2(this)" border="0" src="./images/smiley.gif" alt="Smiley" width="32" height="32">
+                    <p>bigImg() 함수는 사용자가 마우스 포인터를 이미지 위로 옮기면 트리거됩니다.</p>
+                    <p>normalImg() 함수는 마우스 포인터가 이미지 밖으로 이동하면 트리거됩니다.</p>
+                </p>
+                <div id="divS18"></div>
+            </div>
+        </section><hr>
+        <section id="s19">
+            <h1>이미지 맵에 마우스오버</h1>
+            <div>
+                <p>
+                    <img src ="./images/planets.gif" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
+                    <map name="planetmap">
+                    <area shape ="rect" coords ="0,0,82,126"
+                    onmouseover="fnS19('태양과 목성과 같은 거대한 가스 행성은 우리 태양계에서 가장 큰 물체입니다.')"
+                    href ="#" target ="_blank" alt="Sun" />
+                    <area shape ="circle" coords ="90,58,3"
+                    onmouseover="fnS19('수성은 항상 태양에 너무 가깝기 때문에 지구에서 연구하기가 매우 어렵습니다.')"
+                    href ="#" target ="_blank" alt="Mercury" />
+                    <area shape ="circle" coords ="124,58,8"
+                    onmouseover="fnS19('금성은 우리에게 가장 가까운 행성이고 두 행성이 많은 특성을 공유하는 것처럼 보이기 때문에 1960년대까지 금성은 종종 지구의 쌍둥이 자매로 간주되었습니다.')"
+                    href ="#" target ="_blank" alt="Venus" />
+                    </map> 
+                    <p id="desc19">태양과 행성 위에 마우스를 올려놓으면 다양한 설명을 볼 수 있습니다.</p>
+                </p>
+                <div id="divS19"></div>
+            </div>
+        </section><hr>
+        <section id="s20">
+            <h1>onclick 이벤트에 대한 동작</h1>
+            <div>
+                <p>
+                    <span>onclick=""</span>
+                    <h1>My First JavaScript</h1>
+                    <p id="demo20">이것은 문단입니다.</p>
+                    <button type="button" onclick="fnS20();return false;">날짜표시</button>
+                </p>
+                <div id="divS20"></div>
+            </div>
+        </section><hr>
+        <section id="s21">
+            <h1>onclick - 버튼을 클릭할 때</h1>
+            <div>
+                <p>
+                    <span>onclick=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onclick 속성</h2>
+                    <p>버튼을 클릭하면 기능이 실행됩니다.</p>
+                    <button onclick="fnS21()">확인</button>
+                    <p id="demo21"></p>
+                </p>
+                <div id="divS21"></div>
+            </div>
+        </section><hr>
+        <section id="s22">
+            <h1>ondblclick - 텍스트를 두 번 클릭할 때</h1>
+            <div>
+                <p>
+                    <span>ondblclick=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>ondblclick 속성</h2>
+                    <p ondblclick="fnS22()">이 문단을 두 번 클릭하면 기능이 실행됩니다.</p>
+                    <p id="demo22"></p>
+                </p>
+                <div id="divS22"></div>
+            </div>
+        </section><hr>
+        <section id="s23">
+            <h1>onload - 페이지가 로드되었을 때</h1>
+            <div>
+                <p>
+                    <span>onload=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onload 속성</h2>
+                </p>
+                <div id="divS23"></div>
+            </div>
+        </section><hr>
+        <section id="s24">
+            <h1>onload - 이미지가 로드되었을 때</h1>
+            <div>
+                <p>
+                    <span>onload=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onload 속성</h2>
+                    <img src="./images/w3javascript.gif" onload="fnS24()" width="100" height="132">
+                </p>
+                <div id="divS24"></div>
+            </div>
+        </section><hr>
+        <section id="s25">
+            <h1>onerror - 이미지 로딩 중 오류가 발생하는 경우</h1>
+            <div>
+                <p>
+                    <span>onerror=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onerror 속성</h2>
+                    <img src="image.gif" onerror="fnS25()">
+                    <p>이미지를 로드하는 동안 오류가 발생하면 함수가 트리거됩니다. 함수는 텍스트가 있는 경고 상자를 표시합니다. 이 예에서 우리는 존재하지 않는 이미지를 참조하므로 onerror 이벤트가 발생합니다.</p>
+                </p>
+                <div id="divS25"></div>
+            </div>
+        </section><hr>
+        <section id="s26">
+            <h1>onunload - 브라우저가 문서를 닫을 때</h1>
+            <div>
+                <p>
+                    <span>onunload=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onunload 속성</h2>
+                    <h2>내 홈페이지에 오신 것을 환영합니다</h2>
+                    <p>이 창을 닫거나 F5를 눌러 페이지를 다시 로드하세요.</p>
+                    <button id="btnS26" onclick="fnS26()">페이지 새로고침</button>
+                </p>
+                <div id="divS26"></div>
+            </div>
+        </section><hr>
+        <section id="s27">
+            <h1>onresize - 브라우저 창 크기가 조절될 때</h1>
+            <div>
+                <p>
+                    <span>onresize=""</span>
+                    <h1>JavaScript HTML Events</h1>
+                    <h2>onresize 속성</h2>
+                    <p>브라우저 창 크기를 조절해 보세요.</p>
+                    <p id="demo27"> </p>
+                    <p>Note: 이 예제는 IE8 및 이전 버전에서는 제대로 작동하지 않습니다. IE8 및 이전 버전은 window 객체의 outerWidth/outerHeight 속성을 지원하지 않습니다.</p>
+                </p>
+                <div id="divS27"></div>
+            </div>
+        </section><hr>
+        <section id="s28">
+            <h1>눌러진 키의 키코드는 무엇입니까?</h1>
+            <div>
+                <p>
+                    <span>onkeyup=""</span>
+                    <p><b>Note:</b> 이 예제를 시도할 때 올바른 프레임에 초점이 맞춰져 있는지 확인하세요!</p>
+                    <p>이 페이지를 클릭하고 키보드의 키를 누르세요.</p>
+                    <p id="demo28"></p>
+                </p>
+                <div id="divS28"></div>
+            </div>
+        </section><hr>
+        <section id="s29">
+            <h1>커서의 좌표는 무엇입니까?</h1>
+            <div>
+                <p>
+                    <span>onmousedown=""</span>
+                    <p onmousedown="fnS29(event)">
+                        이 문단을 클릭하면 마우스 포인터의 x, y 좌표가 표시됩니다.</p>
+                    <p id="demo29"></p>
+                </p>
+                <div id="divS29"></div>
+            </div>
+        </section><hr>
+        <section id="s30">
+            <h1>화면을 기준으로 커서의 좌표는 무엇입니까?</h1>
+            <div>
+                <p>
+                    <span>onmousedown=""</span>
+                    <p onmousedown="fnS30(event)">
+                        이 문단을 클릭하면 화면을 기준으로 커서의 x, y 좌표가 표시됩니다.
+                    </p>
+                    <p id="demo30"></p>
+                </p>
+                <div id="divS30"></div>
+            </div>
+        </section><hr>
+        <section id="s31">
+            <h1>Shift 키를 눌렀나요?</h1>
+            <div>
+                <p>
+                    <span>onmousedown=""</span>
+                    <p>이 문단을 클릭하세요. 경고 상자가 Shift 키를 눌렀는지 여부를 알려줍니다.</p>
+                    <p id="demo31"></p>
+                </p>
+                <div id="divS31"></div>
+            </div>
+        </section><hr>
+        <section id="s32">
+            <h1>어떤 유형의 이벤트가 발생했나요?</h1>
+            <div>
+                <p>
+                    <span>onmousedown=""</span>
+                    <p onmousedown="getEventType(event)">
+                        이 문단을 클릭하세요. 메시지가 어떤 유형의 이벤트가 트리거되었는지 알려줍니다.</p>
+                    <p id="demo32"></p>
+                </p>
+                <div id="divS32"></div>
+            </div>
+        </section>
+
+        <footer></footer>
+
+        <script src="./js/index_JSEvent.js"></script>
+
+    </body>
+</html>
