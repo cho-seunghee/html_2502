@@ -342,3 +342,40 @@ fnS27 = () => {
 
     app.mount("#app27");
 }
+
+fnS28 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                many:[
+                    {url:"./images/img_beach3.jpg", name:"a1"},
+                    {url:"./images/img_kangaroo.jpg", name:"a2"},
+                    {url:"./images/img_beach3.jpg", name:"a3"},
+                    {url:"./images/img_kangaroo.jpg", name:"a4"},
+                    {url:"./images/img_beach3.jpg", name:"a5"},
+                    {url:"./images/img_kangaroo.jpg", name:"a6"}
+                ]
+            }
+        }
+    })
+
+    app.mount("#app28");
+}
+
+fnS29 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                many : [
+                    {x:"a1"},
+                    {x:"a2"},
+                    {x:"a3"},
+                    {x:"a4"},
+                    {x:"a5"}
+                ]
+            }
+        }
+    })
+
+    app.mount("#app29");
+}

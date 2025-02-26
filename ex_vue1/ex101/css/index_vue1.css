@@ -336,3 +336,40 @@ img:hover {
     width: 70px;
     margin: 10px;
   }
+
+
+  #s28 > div #app28 > div {
+    border: solid black 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #s28 > div figure {
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+  }
+
+  #s28 > div figcaption {
+    text-align: center;
+  }  
+
+  #s28 > div img {
+    width: 100%;
+  }  
+
+  #s29 > div #app29 > div {
+    display: inline-block;
+    border: dashed black 1px;
+    padding: 10px;
+    background-color: lightgreen;
+  }
+  #s29 > div #app29 p {
+    font-weight: bold;
+    margin: 5px 0;
+  }

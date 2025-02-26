@@ -478,25 +478,40 @@
             </div>
         </section><hr>
         <section id="s28">
-            <h1>aa</h1>
+            <h1>지침v-for​</h1>
             <div>
                 <p>
-                    <span>aa</span>
+                    <span>배열을 기반으로 이미지와 텍스트 랜더링</span>
+                    <p>'v-for' 지시문은 Vue 인스턴스의 'manyFoods' 배열을 기반으로 이미지와 텍스트를 만드는 데 사용됩니다.</p>
+                    <div id="app28">
+                        <div>
+                            <figure v-for="x in many">
+                                <img :src="x.url" alt="" height="135">
+                                <figcaption>{{x.name}}</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                     <br>
-                    <button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <button id="btnS28" onclick="fnS28()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS28"></div>
             </div>
         </section><hr>
         <section id="s29">
-            <h1>aa</h1>
+            <h1>지침v-for​</h1>
             <div>
                 <p>
-                    <span>aa</span>
+                    <span>배열을 기반으로 텍스트를 렌더링할 때 인덱스를 가져옵니다.</span>
+                    <p>'v-for' 지시어는 Vue 인스턴스의 'manyFoods' 배열 내부에 있는 요소의 인덱스와 음식 이름을 가져오는 데 사용됩니다.</p>
+                    <div id="app29">
+                        <p v-for="(x, idx) in many">
+                            {{ idx }}: "{{ x }}" <br>
+                        </p>
+                    </div>
                     <br>
-                    <button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <button id="btnS29" onclick="fnS29()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS29"></div>
             </div>
         </section><hr>
         <section id="s30">
