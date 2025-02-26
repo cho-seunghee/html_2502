@@ -178,7 +178,7 @@ page127 = () => {
     console.log(arr2);
 
     const arr3 = ["홍길동", "김갑중", "박상무"];
-    const arr4 = arr3.map((item, idx) => { //arrap.map((매개변수1, ..) => { return 가공된 반환 데이터})
+    const arr4 = arr3.map((item, idx) => { //array.map((매개변수1, ..) => { return 가공된 반환 데이터})
         let obj = {};
         obj["no"] = idx + 1;
         obj["userName"] = item;
@@ -192,7 +192,7 @@ page127 = () => {
     msg += 'const arr2 = arr1.map((item) => (item / 10)); //array.map(매개변수, ..) => (가공된 반환 데이터));<br>';
     msg += '<br>';
     msg += 'const arr3 = ["홍길동", "김갑중", "박상무"];<br>';
-    msg += 'const arr4 = arr3.map((item, idx) => { //arrap.map((매개변수1, ..) => { return 가공된 반환 데이터})<br>';
+    msg += 'const arr4 = arr3.map((item, idx) => { //array.map((매개변수1, ..) => { return 가공된 반환 데이터})<br>';
     msg += '	let obj = {};<br>';
     msg += '	obj["no"] = idx + 1<br>';;
     msg += '	obj["userName"] = item;<br>';

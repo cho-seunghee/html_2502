@@ -200,11 +200,145 @@ fnS16 = () => {
     const app = Vue.createApp({
         data() {
             return {
-                isYellow: true,
-                isImportant: true   
+                message: "test문자"
             }
         }
     })
 
     app.mount("#app16");
+}
+
+fnS17 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                isImportant : true
+            }
+        }
+    })
+
+    app.mount("#app17");
+}
+
+fnS18 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                inStock : true
+            }
+        }
+    })
+
+    app.mount("#app18");
+}
+
+fnS19 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                cnt : 0
+            }
+        }
+    })
+
+    app.mount("#app19");
+}
+
+fnS20 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                cnt : 1
+            }
+        }
+    })
+
+    app.mount("#app20")
+}
+
+fnS21 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                txt: "I like taco, pizza, Thai beef salad, pho soup and tagine."
+            }
+        }
+    })
+
+    app.mount("#app21");
+}
+
+fnS22 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                txt: "I like taco, pizza, Thai beef salad, pho soup and tagine."
+            }
+        }
+    })
+
+    app.mount("#app22");
+}
+
+fnS23 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                txt: "I like taco, buritto, Thai beef salad, pho soup and tagine."
+            }
+        }
+    })
+
+    app.mount("#app23");
+}
+
+fnS24 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                showDiv: false
+            }
+        }
+    })
+
+    app.mount("#app24");
+}
+
+fnS25 = () => {
+    const app = Vue.createApp({
+        data(){
+            return {
+                showDiv : false
+            }
+        }
+    })
+
+    app.mount("#app25");
+}
+
+fnS26 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                foods: ["aaa", "bbbb", "cccc"]
+            }
+        }
+    })
+
+    app.mount("#app26");
+}
+
+fnS27 = () => {
+    const app = Vue.createApp({
+        data() {
+            return {
+                many: [
+                    "./images/img_beach3.jpg",
+                    "./images/img_kangaroo.jpg"
+                ]
+            }
+        }
+    })
+
+    app.mount("#app27");
 }

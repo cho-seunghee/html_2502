@@ -15,11 +15,12 @@
                     <span>&lt;div&gt;요소를 클래스에 바인딩</span>
                     <p>브라우저는 Vue 인스턴스 내에서 클래스 이름을 찾습니다.</p>
                     <div id="app1">
-                      <p>id="app"을 가진 div 요소 내부의 모든 요소는 Vue 인스턴스의 데이터를 사용할 수 있습니다.</p>
-                      <div v-bind:class="vueClass1">이 요소는 "pinkBG" 클래스에 바인딩됩니다.
+                        <p>id="app"을 가진 div 요소 내부의 모든 요소는 Vue 인스턴스의 데이터를 사용할 수 있습니다.</p>
+                        <div v-bind:class="vueClass1">이 요소는 "pinkBG" 클래스에 바인딩됩니다.
+                        </div>
                     </div>
-                    </div>
-                    <br><button id="btnS1" onclick="fnS1()">확인</button>
+                    <br>
+                    <button id="btnS1" onclick="fnS1()">확인</button>
                 </p>
                 <div id="divS1"></div>
             </div>
@@ -33,7 +34,8 @@
                         <img v-bind:src="url">
                     </div>
                     <span>&lt;img&gt;이미지 파일에 요소바인딩</span>
-                    <br><button id="btnS2" onclick="fnS2()">확인</button>
+                    <br>
+                    <button id="btnS2" onclick="fnS2()">확인</button>
                 </p>
                 <div id="divS2"></div>
             </div>
@@ -47,7 +49,8 @@
                     <div id="app3">
                         <div v-bind:style="{ fontSize: size }">텍스트 예제{{ message }}</div>
                     </div>
-                    <br><button id="btnS3" onclick="fnS3()">확인</button>
+                    <br>
+                    <button id="btnS3" onclick="fnS3()">확인</button>
                 </p>
                 <div id="divS3"></div>
             </div>
@@ -61,7 +64,8 @@
                     <div id="app4">
                         <div v-bind:style="{ fontSize: size + 'px'}">텍스트 예제{{ message }}</div>
                     </div>
-                    <br><button id="btnS4" onclick="fnS4()">확인</button>
+                    <br>
+                    <button id="btnS4" onclick="fnS4()">확인</button>
                 </p>
                 <div id="divS4"></div>
             </div>
@@ -75,7 +79,8 @@
                     <div id="app5">
                         <div v-bind:style="{'font-size': size + 'px'}">텍스트 예제{{ message }}</div>
                     </div>
-                    <br><button id="btnS5" onclick="fnS5()">확인</button>
+                    <br>
+                    <button id="btnS5" onclick="fnS5()">확인</button>
                 </p>
                 <div id="divS5"></div>
             </div>
@@ -90,7 +95,8 @@
                     <div id="app6">
                         <div v-bind:style="{ backgroundColor: 'hsl('+bgVal +' ,80%,80%)'}">이 div 태그의 배경색을 주목하세요.</div>
                     </div>
-                    <br><button id="btnS6" onclick="fnS6()">확인</button>
+                    <br>
+                    <button id="btnS6" onclick="fnS6()">확인</button>
                 </p>
                 <div id="divS6"></div>
             </div>
@@ -99,12 +105,15 @@
             <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>JavaScript 조건을 사용하여 v-bind배경색을 변경합니다. (v-bind:style="{ backgroundColor: isImportant ? 'red' : 'blue'}")</span>
+                    <span>JavaScript 조건을 사용하여 v-bind배경색을 변경합니다. (v-bind:style="{ backgroundColor:
+                        isImportant ? 'red' : 'blue'}")</span>
                     <p>조건부 배경색을 사용한 'v-bind'</p>
                     <div id="app7">
-                        <div v-bind:style="{ backgroundColor: isImportant ? 'red' : 'blue'}">배경색에 따른 중요도 {{message}}</div>
+                        <div v-bind:style="{ backgroundColor: isImportant ? 'red' : 'blue'}">배경색에 따른 중요도
+                            {{message}}</div>
                     </div>
-                    <br><button id="btnS7" onclick="fnS7()">확인</button>
+                    <br>
+                    <button id="btnS7" onclick="fnS7()">확인</button>
                 </p>
                 <div id="divS7"></div>
             </div>
@@ -118,7 +127,8 @@
                     <div id="app8">
                         <div v-bind:class="className">배경색으로 시각화된 중요성</div>
                     </div>
-                    <br><button id="btnS8" onclick="fnS8()">확인</button>
+                    <br>
+                    <button id="btnS8" onclick="fnS8()">확인</button>
                 </p>
                 <div id="divS8"></div>
             </div>
@@ -132,7 +142,8 @@
                     <div id="app9">
                         <div v-bind:class="{myClass9:true}">배경색으로 시각화된 중요성</div>
                     </div>
-                    <br><button id="btnS9" onclick="fnS9()">확인</button>
+                    <br>
+                    <button id="btnS9" onclick="fnS9()">확인</button>
                 </p>
                 <div id="divS9"></div>
             </div>
@@ -146,7 +157,8 @@
                     <div id="app10">
                         <div v-bind:class="{myClass10:isImportant}">배경색으로 시각화된 중요성</div>
                     </div>
-                    <br><button id="btnS10" onclick="fnS10()">확인</button>
+                    <br>
+                    <button id="btnS10" onclick="fnS10()">확인</button>
                 </p>
                 <div id="divS10"></div>
             </div>
@@ -160,7 +172,8 @@
                     <div id="app11">
                         <div :class="{myClass11:isImportant}">배경색으로 시각화된 중요성</div>
                     </div>
-                    <br><button id="btnS11" onclick="fnS11()">확인</button>
+                    <br>
+                    <button id="btnS11" onclick="fnS11()">확인</button>
                 </p>
                 <div id="divS11"></div>
             </div>
@@ -169,13 +182,15 @@
             <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>입력 범위 요소를 사용하여 불투명도를 변경하여 이미지를 표시합니다. (v-bind:style="{backgroundColor:'rgba(99,0,89, '+opacityVal+')'})</span>
+                    <span>입력 범위 요소를 사용하여 불투명도를 변경하여 이미지를 표시합니다.
+                        (v-bind:style="{backgroundColor:'rgba(99,0,89, '+opacityVal+')'})</span>
                     <p>이는 Vue(v-bind:style)를 사용한 인라인 스타일링의 예입니다.</p>
                     <p>아래 div의 불투명도를 변경하려면 범위 입력을 드래그하세요.</p>
                     <div id="app12">
                         <p>
                             <input type="range" min="0" max="1" step="0.1" v-model="opacityVal">
-                            {{opacityVal}} (opacity value)
+                            {{opacityVal}}
+                            (opacity value)
                         </p>
                         <div>
                             <div id="onTop12" :style="{backgroundColor:'rgba(99,0,89, '+opacityVal+')'}">
@@ -183,7 +198,8 @@
                             </div>
                         </div>
                     </div>
-                    <br><button id="btnS12" onclick="fnS12()">확인</button>
+                    <br>
+                    <button id="btnS12" onclick="fnS12()">확인</button>
                 </p>
                 <div id="divS12"></div>
             </div>
@@ -196,10 +212,15 @@
                     <p>이미지를 클릭하면 "selClass" 클래스를 할당하거나 제거할 수 있습니다.</p>
                     <div id="app13">
                         <div v-for="(img, index) in images1">
-                            <img :src="img.url" v-on:click="select1(index)" :class="{selClass13: img.sel}" alt="">
+                            <img
+                                :src="img.url"
+                                v-on:click="select1(index)"
+                                :class="{selClass13: img.sel}"
+                                alt="">
                         </div>
                     </div>
-                    <br><button id="btnS13" onclick="fnS13()">확인</button>
+                    <br>
+                    <button id="btnS13" onclick="fnS13()">확인</button>
                 </p>
                 <div id="divS13"></div>
             </div>
@@ -208,14 +229,17 @@
             <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>CSS 규칙이 설정되어 있고 병합되어 있는 것을 볼 수 있는 class 가 있습니다. (class="impClass14" :class="{yelClass14:isYellow}")</span>
-                    <p>'impClass' 클래스는 class 속성으로 일반적인 방식으로 설정되고, 'yelClass' 클래스는 v-bind:class로 설정됩니다. 결과적으로 Vue는 클래스를 병합하여 div 요소가 두 클래스에 모두 속하게 됩니다.</p>
+                    <span>CSS 규칙이 설정되어 있고 병합되어 있는 것을 볼 수 있는 class 가 있습니다. (class="impClass14"
+                        :class="{yelClass14:isYellow}")</span>
+                    <p>'impClass' 클래스는 class 속성으로 일반적인 방식으로 설정되고, 'yelClass' 클래스는 v-bind:class로
+                        설정됩니다. 결과적으로 Vue는 클래스를 병합하여 div 요소가 두 클래스에 모두 속하게 됩니다.</p>
                     <div id="app14">
                         <div class="impClass14" :class="{yelClass14:isYellow}">
                             이 div는 'impClass'와 'yelClass' 둘 다에 속합니다.
                         </div>
                     </div>
-                    <br><button id="btnS14" onclick="fnS14()">확인</button>
+                    <br>
+                    <button id="btnS14" onclick="fnS14()">확인</button>
                 </p>
                 <div id="divS14"></div>
             </div>
@@ -224,12 +248,14 @@
             <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>여러 개의 클래스를 v-bind:class 쉼표로 구분하여 설정할 수 있습니다. (:class="{ yelClass15: isYellow, impClass15: isImportant}")</span>
+                    <span>여러 개의 클래스를 v-bind:class 쉼표로 구분하여 설정할 수 있습니다. (:class="{ yelClass15:
+                        isYellow, impClass15: isImportant}")</span>
                     <p>Vue에서는 클래스를 쉼표로 구분하여 여러 클래스를 쉽게 할당할 수 있습니다.</p>
                     <div id="app15">
                         <div :class="{ yelClass15: isYellow, impClass15: isImportant}">이는 'isYellow' 및 'isImportant' Vue 속성에 따라 'impClass'와 'yelClass' 모두에 속할 수 있습니다.</div>
                     </div>
-                    <br><button id="btnS15" onclick="fnS15()">확인</button>
+                    <br>
+                    <button id="btnS15" onclick="fnS15()">확인</button>
                 </p>
                 <div id="divS15"></div>
             </div>
@@ -238,124 +264,217 @@
             <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>CSS 규칙은 v-bind:style 캐멀 케이스와 캐밥 케이스 표기법을 모두 사용하여 정의됩니다.</span>
-                    <p>CSS 속성 이름에는 'v-bind:style'을 사용하여 낙타 표기법과 따옴표로 묶인 케밥 표기법을 모두 사용할 수 있지만, 낙타 표기법을 사용하는 것이 좋습니다.</p>
+                    <span>CSS 규칙은 v-bind:style 캐멀 케이스와 캐밥 케이스 표기법을 모두 사용하여 정의됩니다.
+                        (:style="{backgroundColor: 'yellow', 'font-weight':'bolder'}")</span>
+                    <p>CSS 속성 이름에는 'v-bind:style'을 사용하여 낙타 표기법과 따옴표로 묶인 케밥 표기법을 모두 사용할 수 있지만, 낙타
+                        표기법을 사용하는 것이 좋습니다.</p>
                     <div id="app16">
-                        <div :style="{backgroundColor:'linghtpink', 'font-weight':'bolder'}">이 div 태그는 분홍색 배경과 굵은 텍스트를 가지고 있습니다.</div>
+                        <div :style="{backgroundColor: 'yellow', 'font-weight':'bolder'}">이 div 태그는 분홍색 배경과 굵은 텍스트를 가지고 있습니다.</div>
+                        {{message}}
                     </div>
-                    <br><button id="btnS16" onclick="fnS16()">확인</button>
+                    <br>
+                    <button id="btnS16" onclick="fnS16()">확인</button>
                 </p>
                 <div id="divS16"></div>
             </div>
         </section><hr>
         <section id="s17">
-            <h1>aa</h1>
+            <h1>지침v-bind​</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>클래스는 배열 구문으로 지정됩니다. (:class="[{ impClass17: isImportant}, 'yelClass17']")</span>
+                    <p>div 요소에 'yelClass' 클래스가 첨부되고, 'isImportant' 속성이 'true'이면 'impClass' 클래스가 첨부됩니다.</p>
+                    <div id="app17">
+                        <div :class="[{ impClass17: isImportant}, 'yelClass17']">이 div 태그는 isImportant 속성에 따라 하나 또는 두 개의 클래스에 속합니다.</div>
+                    </div>
+                    <br>
+                    <button id="btnS17" onclick="fnS17()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS17"></div>
             </div>
         </section><hr>
         <section id="s18">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>데이터 속성을 기반으로 조건부로 텍스트 표시 (v-if="inStock" v-else)</span>
+                    <p>Vue 인스턴스에서 'typewritersInStock' 값을 'true'에서 'false'로 변경하고 코드를 다시 실행해보세요.</p>
+                    재고 있음
+                    <div id="app18">
+                        <p v-if="inStock">in stock</p>
+                        <p v-else="v-else">not in stock</p>
+                    </div>
+                    <br>
+                    <button id="btnS18" onclick="fnS18()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS18"></div>
             </div>
         </section><hr>
         <section id="s19">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>비교에 따라 조건부로 텍스트 표시 (v-if="cnt>0" v-else)</span>
+                    <p>Vue 인스턴스에서 'typewriterCount' 값을 '0'으로 변경하고 코드를 다시 실행해보세요.</p>
+                    재고 있음
+                    <div id="app19">
+                        <p v-if="cnt>0">in stock</p>
+                        <p v-else="v-else">not in stock</p>
+                    </div>
+                    <br>
+                    <button id="btnS19" onclick="fnS19()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS19"></div>
             </div>
         </section><hr>
         <section id="s20">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>v-if, v-else-if, v-else 를 사용하여 조건부로 텍스트 표시 (v-if="cnt>3" v-else-if="cnt>1"
+                        v-else)</span>
+                    <p>Vue 인스턴스에서 'typewriterCount' 값을 '0' 또는 '5'로 변경하고 코드를 다시 실행해보세요.</p>
+                    <h2>우리는 타자기를 판매합니다</h2>
+                    남은 수가 매우 적습니다!
+                    <img src="./images/img_beach3.jpg" alt="" width="202" height="135">
+                    <div id="app20">
+                        <p v-if="cnt>3">In stock</p>
+                        <p v-else-if="cnt>1">Very few left!</p>
+                        <p v-else="v-else">Not in stock</p>
+                    </div>
+                    <br>
+                    <button id="btnS20" onclick="fnS20()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS20"></div>
             </div>
         </section><hr>
         <section id="s21">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>특정 텍스트에 '피자'라는 단어가 포함되어 있다면 메시지를 표시합니다. (v-if="txt.includes('pizza') v-else)"</span>
+                    <p>이 예에서 'v-if'는 비교 연산자 대신 'includes()' 메서드를 사용합니다.</p>
+                    <p>Vue 인스턴스 내부의 'text' 속성에서 'pizza'를 제거하고 '실행'을 클릭하면 무슨 일이 일어나는지 확인합니다.</p>
+                    <div id="app21">
+                        <p v-if="txt.includes('pizza')">텍스트에 '피자'라는 단어가 포함되어 있습니다.</p>
+                        <p v-else="v-else">텍스트에 '피자'라는 단어가 포함되어 있지 않습니다.</p>
+                    </div>
+                    <br>
+                    <button id="btnS21" onclick="fnS21()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+
+                <div id="divS21"></div>
             </div>
         </section><hr>
         <section id="s22">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>특정 텍스트에 '피자'라는 단어가 포함되어 있다면 메시지와 이미지를 표시합니다. (v-if="txt.includes('pizza')
+                        v-else)"</span>
+                    <p>이 예에서 'v-if'는 비교 연산자 대신 'includes()' 메서드를 사용합니다.</p>
+                    <p>Vue 인스턴스 내부의 'text' 속성에서 'pizza'를 제거하고 '실행'을 클릭하면 무슨 일이 일어나는지 확인합니다.</p>
+                    <div id="app22">
+                        <div v-if="txt.includes('pizza')">
+                            <p>텍스트에 '피자'라는 단어가 포함되어 있습니다.</p>
+                            <img src="./images/img_beach3.jpg" alt="" width="202" height="135">
+                        </div>
+                        <p v-else="v-else">텍스트에 '피자'라는 단어가 포함되어 있지 않습니다.</p>
+                    </div>
+                    <br>
+                    <button id="btnS22" onclick="fnS22()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS22"></div>
             </div>
         </section><hr>
         <section id="s23">
-            <h1>aa</h1>
+            <h1>지침v-if</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>특정 텍스트에 '피자' 또는 '부리또'라는 단어가 포함되어 있다면 메시지와 이미지를 표시합니다. (v-if="txt.includes('pizza')" v-else-if="txt.includes('buritto') v-else")</span>
+                    <p>이 예에서 'v-if'는 비교 연산자 대신 'includes()' 메서드를 사용합니다.</p>
+                    <p>Vue 인스턴스 내부의 'text' 속성에서 'pizza'를 제거하고 '실행'을 클릭하면 무슨 일이 일어나는지 확인합니다.</p>
+                    <div id="app23">
+                        <div v-if="txt.includes('pizza')">
+                            <p>텍스트에 '피자'라는 단어가 포함되어 있습니다.</p>
+                            <img src="./images/img_beach3.jpg" alt="" width="202" height="135">
+                        </div>
+                        <div v-else-if="txt.includes('buritto')">
+                            <p>텍스트에 '브리또'라는 단어가 포함되어 있습니다.</p>
+                            <img src="./images/img_kangaroo.jpg" alt="" width="202" height="135">
+                        </div>
+                        <p v-else>텍스트에 '피자', '브리또'라는 단어가 포함되어 있지 않습니다.</p>
+                    </div>
+                    <br>
+                    <button id="btnS23" onclick="fnS23()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS23"></div>
             </div>
         </section><hr>
         <section id="s24">
-            <h1>aa</h1>
+            <h1>지침v-show​</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>&lt;div&gt;데이터 속성에 따라 요소 표시 또는 숨기기 (v-show="showDiv")</span>
+                    <div id="app24">
+                        <p>코드에서 'showDiv' 데이터 속성을 찾아 'false'로 변경한 뒤 코드를 다시 실행합니다.</p>
+                        <div v-show="showDiv">이 div 태그는 숨길 수 있습니다</div>
+                    </div>
+                    <br>
+                    <button id="btnS24" onclick="fnS24()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS24"></div>
             </div>
         </section><hr>
         <section id="s25">
-            <h1>aa</h1>
+            <h1>지침v-show​</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>v-show와 v-if의 차이점을 살펴보세요 (v-show="showDiv" v-if="showDiv")</span>
+                    <div id="app25">
+                        <p>'showDiv' 데이터 속성을 'false'로 설정하고 코드를 다시 실행합니다. 이 녹색 p 요소를 마우스 오른쪽 버튼으로 클릭하고 'Inspect' 또는 'Inspect element'를 선택하면 v-show가 있는 div 요소가 여전히 존재하고, CSS display 속성만 'none'으로 설정되어 있고, v-if가 있는 div가 파괴된 것을 볼 수 있습니다.</p>
+                        <div v-show="showDiv">v-show가 있는 Div 태그</div>
+                        <div v-if="showDiv">v-if를 포함한 Div 태그</div>
+                    </div>
+                    <br>
+                    <button id="btnS25" onclick="fnS25()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS25"></div>
             </div>
         </section><hr>
         <section id="s26">
-            <h1>aa</h1>
+            <h1>지침v-for​</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>배열 기반으로 목록을 랜더링합니다.</span>
+                    <p>이 예제에서 'v-for'는 Vue 인스턴스 배열의 각 음식 항목에 대한 음식 이름을 포함하는 'li' 태그를 생성합니다.</p>
+                    <div id="app26">
+                        <ol>
+                            <li v-for="x in foods">{{x}}</li>
+                        </ol>
+                    </div>
+
+                    <br>
+                    <button id="btnS26" onclick="fnS26()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS26"></div>
             </div>
         </section><hr>
         <section id="s27">
-            <h1>aa</h1>
+            <h1>지침v-for​</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <span>배열을 기반으로 이미지 랜더링</span>
+                    <p>'v-for' 지시문은 Vue 인스턴스의 'manyFoods' 배열을 기반으로 이미지를 만드는 데 사용됩니다.</p>
+                    <div id="app27">
+                        <div>
+                            <img v-for="xx in many" :src="xx">
+                        </div>
+                    </div>
+                    <br>
+                    <button id="btnS27" onclick="fnS27()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS27"></div>
             </div>
         </section><hr>
         <section id="s28">
@@ -363,7 +482,8 @@
             <div>
                 <p>
                     <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <br>
+                    <button id="btnSaa" onclick="fnSaa()">확인</button>
                 </p>
                 <div id="divSaa"></div>
             </div>
@@ -373,7 +493,8 @@
             <div>
                 <p>
                     <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <br>
+                    <button id="btnSaa" onclick="fnSaa()">확인</button>
                 </p>
                 <div id="divSaa"></div>
             </div>
@@ -383,7 +504,8 @@
             <div>
                 <p>
                     <span>aa</span>
-                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                    <br>
+                    <button id="btnSaa" onclick="fnSaa()">확인</button>
                 </p>
                 <div id="divSaa"></div>
             </div>

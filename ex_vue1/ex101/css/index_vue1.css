@@ -225,4 +225,114 @@ img:hover {
     width: 200px;
     margin: 20px;
     padding: 20px;
+}
+
+.impClass17 {
+    font-weight: bolder;
+}
+.yelClass17 {
+    background-color: rgb(255, 255, 139);
+}
+#s17 > div #app17 > div {
+    border: dashed black 1px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#s18 > div #app18 {
+    border: dashed black 1px;
+    width: 130px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s19 > div #app19 {
+    border: dashed black 1px;
+    width: 130px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s20 > div #app20 {
+    border: dashed black 1px;
+    width: 130px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s21 > div #app21 {
+    border: dashed black 1px;
+    width: 160px;
+    padding: 0 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s22 > div #app22 {
+    border: dashed black 1px;
+    width: 130px;
+    padding: 0 20px 20px 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s23 > div #app23 {
+    border: dashed black 1px;
+    width: 130px;
+    padding: 0 20px 20px 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+  #s24 > div #app24 {
+    border: black dashed 1px;
+    width: 200px;
+    padding: 0 20px 20px 20px;
+  }
+  #s24 > div #app24 div {
+    padding: 20px;
+    background-color: lightgreen;
+    font-weight: bold;
+  }
+
+  #s25 > div #app25 {
+    border: black dashed 1px;
+    width: 80%;
+    padding: 0 20px 20px 20px;
+  }
+  #s25 > div #app25 div {
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    font-weight: bold;
+    border: solid black 1px;
+  }
+  #s25 > div #app25 p {
+    padding: 10px;
+    background-color: rgb(200, 246, 200);
+  }
+
+  #s26 > div #app26 > div {
+    border: solid black 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #s27 > div #app27 > div {
+    border: solid black 1px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #s27 > div img {
+    width: 70px;
+    margin: 10px;
   }
