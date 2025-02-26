@@ -1,0 +1,228 @@
+* {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
+
+section > div > p {
+    border: 1px solid #000;
+    background-color: #fffffffb;
+    display: block;
+}
+
+section > div > p > span {
+    border: 1px solid #9aff47;
+    background-color: #425e01fb;
+    color: #fff;
+    display: block;
+}
+
+pre {
+    background-color: #3b393f;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+}
+
+.blue {
+    color: #00f;
+}
+
+.red {
+    color: #f00;
+}
+
+.green {
+    color: green;
+}
+
+.aqua {
+    color: aqua;
+}
+
+#s1 > div div {
+    margin: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    display: inline-block;
+}
+
+#s1 > div .pinkBG {
+    background-color: lightpink;
+}
+
+#s2 > div #app2 {
+    border: dashed black 1px;
+    width: 250px;
+    padding: 0 10px 10px;
+}
+
+#s2 > div img {
+    width: 100%;
+}
+
+#s3 > div #app3 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+    background-color: lightcoral;
+}
+
+#s4 > div #app4 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+    background-color: lightcoral;
+}
+
+#s5 > div #app5 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+    background-color: lightcoral;
+}
+
+#s6 > div #app6 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+    background-color: lightcoral;
+}
+
+#s7 > div #app7 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+}
+
+#s8 > div #app8 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+}
+
+#s8 > div .impClass {
+    background-color: lightcoral;
+}
+
+#s9 > div #app9 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+}
+
+.myClass9 {
+    background-color: lightcoral;
+}
+
+#s10 > div #app10 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+}
+
+.myClass10 {
+    background-color: lightcoral;
+}
+
+#s11 > div #app11 > div {
+    width: 200px;
+    padding: 20px;
+    border: dashed black 1px;
+}
+
+.myClass11 {
+    background-color: lightcoral;
+}
+
+#s12 > div #app12 > div {
+    position: relative;
+    border: dashed black 1px;
+    width: 200px;
+    height: 100px;
+    background-image: url("../images/img_kangaroo.jpg");
+    background-size: cover;
+}
+#onTop12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    color: white;
+}
+
+#s13 > div #app13 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    border: dashed black 1px;
+}
+#s13 > div #app > div {
+    display: block;
+    flex-basis: 80px;
+    aspect-ratio: 1;
+    margin: 5px;
+}
+#s13 > div div > img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px;
+    border: solid white 4px;
+    border-radius: 5px;
+}
+img:hover {
+    cursor: pointer;
+}
+.selClass13 {
+    border: solid brown 4px;
+    background-color: lightpink;
+}
+
+.impClass14 {
+    font-weight: bolder;
+}
+.yelClass14 {
+    background-color: rgb(255, 255, 136);
+}
+#s14 > #app > div {
+    border: dashed black 1px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.impClass15 {
+    font-weight: bolder;
+}
+.yelClass15 {
+    background-color: rgb(255, 255, 136);
+}
+#s15 > div #app15 > div {
+    border: dashed black 1px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#s16 > div #app16 > div {
+    border: dashed black 1px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+  }

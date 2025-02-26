@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue예제</title>
+        <link rel="stylesheet" href="./css/index_vue1.css">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <section id="s1">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>&lt;div&gt;요소를 클래스에 바인딩</span>
+                    <p>브라우저는 Vue 인스턴스 내에서 클래스 이름을 찾습니다.</p>
+                    <div id="app1">
+                      <p>id="app"을 가진 div 요소 내부의 모든 요소는 Vue 인스턴스의 데이터를 사용할 수 있습니다.</p>
+                      <div v-bind:class="vueClass1">이 요소는 "pinkBG" 클래스에 바인딩됩니다.
+                    </div>
+                    </div>
+                    <br><button id="btnS1" onclick="fnS1()">확인</button>
+                </p>
+                <div id="divS1"></div>
+            </div>
+        </section><hr>
+        <section id="s2">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <div id="app2">
+                        <p>브라우저는 'v-bind'를 사용하여 Vue 인스턴스에서 'src' 속성 값을 찾습니다. (v-bind:src)</p>
+                        <img v-bind:src="url">
+                    </div>
+                    <span>&lt;img&gt;이미지 파일에 요소바인딩</span>
+                    <br><button id="btnS2" onclick="fnS2()">확인</button>
+                </p>
+                <div id="divS2"></div>
+            </div>
+        </section><hr>
+        <section id="s3">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>글꼴 크키를 변경하세요(v-bind:style="{ fontSize: size }")</span>
+                    <p>브라우저는 Vue 인스턴스의 'size' 값에 따라 글꼴 크기를 설정합니다.</p>
+                    <div id="app3">
+                        <div v-bind:style="{ fontSize: size }">텍스트 예제{{ message }}</div>
+                    </div>
+                    <br><button id="btnS3" onclick="fnS3()">확인</button>
+                </p>
+                <div id="divS3"></div>
+            </div>
+        </section><hr>
+        <section id="s4">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>다양한 방식으로 글꼴 크기를 변경하세요 (v-bind:style="{ fontSize: size + 'px'}")</span>
+                    <p>브라우저는 Vue 인스턴스의 'size' 숫자 값을 기반으로 글꼴 크기를 픽셀 단위로 설정합니다.</p>
+                    <div id="app4">
+                        <div v-bind:style="{ fontSize: size + 'px'}">텍스트 예제{{ message }}</div>
+                    </div>
+                    <br><button id="btnS4" onclick="fnS4()">확인</button>
+                </p>
+                <div id="divS4"></div>
+            </div>
+        </section><hr>
+        <section id="s5">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>다양한 방식으로 글꼴 크기를 변경하세요 (v-bind:style="{'font-size': size + 'px'}"")</span>
+                    <p>CSS 속성을 케밥 케이스와 하이픈으로 작성해도 같은 결과를 얻을 수 있지만, 권장하지는 않습니다.</p>
+                    <div id="app5">
+                        <div v-bind:style="{'font-size': size + 'px'}">텍스트 예제{{ message }}</div>
+                    </div>
+                    <br><button id="btnS5" onclick="fnS5()">확인</button>
+                </p>
+                <div id="divS5"></div>
+            </div>
+        </section><hr>
+        <section id="s6">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>배경색 변경 (v-bind:style="{ backgroundColor: 'hsl('+bgVal +' ,80%,80%)'}")</span>
+                    <p>브라우저는 Vue 인스턴스의 'bgVal' 값에 따라 'hsl()'을 사용하여 배경색을 설정합니다.</p>
+                    <p>'bgVal' 속성 값을 0~360 사이의 값으로 변경해보세요.</p>
+                    <div id="app6">
+                        <div v-bind:style="{ backgroundColor: 'hsl('+bgVal +' ,80%,80%)'}">이 div 태그의 배경색을 주목하세요.</div>
+                    </div>
+                    <br><button id="btnS6" onclick="fnS6()">확인</button>
+                </p>
+                <div id="divS6"></div>
+            </div>
+        </section><hr>
+        <section id="s7">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>JavaScript 조건을 사용하여 v-bind배경색을 변경합니다. (v-bind:style="{ backgroundColor: isImportant ? 'red' : 'blue'}")</span>
+                    <p>조건부 배경색을 사용한 'v-bind'</p>
+                    <div id="app7">
+                        <div v-bind:style="{ backgroundColor: isImportant ? 'red' : 'blue'}">배경색에 따른 중요도 {{message}}</div>
+                    </div>
+                    <br><button id="btnS7" onclick="fnS7()">확인</button>
+                </p>
+                <div id="divS7"></div>
+            </div>
+        </section><hr>
+        <section id="s8">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>&lt;div&gt;요소를 클래스에 바인딩 (v-bind:class="className")</span>
+                    <p>브라우저는 클래스 이름을 Vue 인스턴스 내의 'className' 속성에 저장된 값으로 설정합니다.</p>
+                    <div id="app8">
+                        <div v-bind:class="className">배경색으로 시각화된 중요성</div>
+                    </div>
+                    <br><button id="btnS8" onclick="fnS8()">확인</button>
+                </p>
+                <div id="divS8"></div>
+            </div>
+        </section><hr>
+        <section id="s9">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>&lt;div&gt;조건부로 요소를 클래스에 바인딩 (v-bind:class="{myClass9:true}")</span>
+                    <p>브라우저는 'true'로 설정된 경우 div 태그에 'myClass' 클래스를 설정합니다.</p>
+                    <div id="app9">
+                        <div v-bind:class="{myClass9:true}">배경색으로 시각화된 중요성</div>
+                    </div>
+                    <br><button id="btnS9" onclick="fnS9()">확인</button>
+                </p>
+                <div id="divS9"></div>
+            </div>
+        </section><hr>
+        <section id="s10">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>&lt;div&gt;데이터 속성을 사용하여 요소를 클래스에 바인딩 (v-bind:class="{myClass10:isImportant}")</span>
+                    <p>'isImportant' 속성이 'true'인 경우 브라우저는 div 태그에 'myClass' 클래스를 설정합니다.</p>
+                    <div id="app10">
+                        <div v-bind:class="{myClass10:isImportant}">배경색으로 시각화된 중요성</div>
+                    </div>
+                    <br><button id="btnS10" onclick="fnS10()">확인</button>
+                </p>
+                <div id="divS10"></div>
+            </div>
+        </section><hr>
+        <section id="s11">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>v-bind 짧은 표현을 사용하세요. (:class="{myClass11:isImportant}")</span>
+                    <p>'v-bind:'의 약어인 ':'을 사용해 클래스가 설정된 div를 살펴보세요.</p>
+                    <div id="app11">
+                        <div :class="{myClass11:isImportant}">배경색으로 시각화된 중요성</div>
+                    </div>
+                    <br><button id="btnS11" onclick="fnS11()">확인</button>
+                </p>
+                <div id="divS11"></div>
+            </div>
+        </section><hr>
+        <section id="s12">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>입력 범위 요소를 사용하여 불투명도를 변경하여 이미지를 표시합니다. (v-bind:style="{backgroundColor:'rgba(99,0,89, '+opacityVal+')'})</span>
+                    <p>이는 Vue(v-bind:style)를 사용한 인라인 스타일링의 예입니다.</p>
+                    <p>아래 div의 불투명도를 변경하려면 범위 입력을 드래그하세요.</p>
+                    <div id="app12">
+                        <p>
+                            <input type="range" min="0" max="1" step="0.1" v-model="opacityVal">
+                            {{opacityVal}} (opacity value)
+                        </p>
+                        <div>
+                            <div id="onTop12" :style="{backgroundColor:'rgba(99,0,89, '+opacityVal+')'}">
+                                여기에서 범위 입력을 끌어서 불투명도를 변경하세요.
+                            </div>
+                        </div>
+                    </div>
+                    <br><button id="btnS12" onclick="fnS12()">확인</button>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section id="s13">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>v-for 이미지를 클릭하면 클래스를 지정하세요. (v-for="(img, index) in images)</span>
+                    <p>이미지를 클릭하면 "selClass" 클래스를 할당하거나 제거할 수 있습니다.</p>
+                    <div id="app13">
+                        <div v-for="(img, index) in images1">
+                            <img :src="img.url" v-on:click="select1(index)" :class="{selClass13: img.sel}" alt="">
+                        </div>
+                    </div>
+                    <br><button id="btnS13" onclick="fnS13()">확인</button>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section id="s14">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>CSS 규칙이 설정되어 있고 병합되어 있는 것을 볼 수 있는 class 가 있습니다. (class="impClass14" :class="{yelClass14:isYellow}")</span>
+                    <p>'impClass' 클래스는 class 속성으로 일반적인 방식으로 설정되고, 'yelClass' 클래스는 v-bind:class로 설정됩니다. 결과적으로 Vue는 클래스를 병합하여 div 요소가 두 클래스에 모두 속하게 됩니다.</p>
+                    <div id="app14">
+                        <div class="impClass14" :class="{yelClass14:isYellow}">
+                            이 div는 'impClass'와 'yelClass' 둘 다에 속합니다.
+                        </div>
+                    </div>
+                    <br><button id="btnS14" onclick="fnS14()">확인</button>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section id="s15">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>여러 개의 클래스를 v-bind:class 쉼표로 구분하여 설정할 수 있습니다. (:class="{ yelClass15: isYellow, impClass15: isImportant}")</span>
+                    <p>Vue에서는 클래스를 쉼표로 구분하여 여러 클래스를 쉽게 할당할 수 있습니다.</p>
+                    <div id="app15">
+                        <div :class="{ yelClass15: isYellow, impClass15: isImportant}">이는 'isYellow' 및 'isImportant' Vue 속성에 따라 'impClass'와 'yelClass' 모두에 속할 수 있습니다.</div>
+                    </div>
+                    <br><button id="btnS15" onclick="fnS15()">확인</button>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section id="s16">
+            <h1>지침v-bind​</h1>
+            <div>
+                <p>
+                    <span>CSS 규칙은 v-bind:style 캐멀 케이스와 캐밥 케이스 표기법을 모두 사용하여 정의됩니다.</span>
+                    <p>CSS 속성 이름에는 'v-bind:style'을 사용하여 낙타 표기법과 따옴표로 묶인 케밥 표기법을 모두 사용할 수 있지만, 낙타 표기법을 사용하는 것이 좋습니다.</p>
+                    <div id="app16">
+                        <div :style="{backgroundColor:'linghtpink', 'font-weight':'bolder'}">이 div 태그는 분홍색 배경과 굵은 텍스트를 가지고 있습니다.</div>
+                    </div>
+                    <br><button id="btnS16" onclick="fnS16()">확인</button>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section id="s17">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s18">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s19">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s20">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s21">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s22">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s23">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s24">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s25">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s26">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s27">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s28">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s29">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section id="s30">
+            <h1>aa</h1>
+            <div>
+                <p>
+                    <span>aa</span>
+                    <br><button id="btnSaa" onclick="fnSaa()">확인</button>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+
+        <script src="./js/index_vue1.js"></script>
+    </body>
+</html>
