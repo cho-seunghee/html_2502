@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JavaScript 함수</title>
         <link rel="stylesheet" href="./css/ex_p155.css">
-        <script type="module" src="./js/module_pattern_1_c.js"></script>
+        <script type="module">
+            import * as module1 from './js/module_pattern_2_c.js';
+            window.module1 = module1;
+        </script>
     </head>
     <body>
 
@@ -153,175 +156,71 @@
         <section class="s14">
             <h1>모듈 패턴</h1>
             <h1>Live Server 플로그인을 설치해 인터넷 프로토콜 사용하기</h1>
+            <h1>모듈 패턴 예제 살펴보기</h1>
             <div>
                 <p>
-                    <span>모듈 패턴 2개 기능(함수) 값 참조 export로 변수 내보냄</span>
-                    
+                    <span>모듈 패턴 2개 기능(함수) 값 참조 export로 변수 각각 내보냄</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
                     <button id="btnS14" onclick="fnPage185()">확인</button>
                 </p>
                 <div id="divS14"></div>
             </div>
         </section><hr>
         <section class="s15">
-            <h1>aa</h1>
+            <h1>모듈 패턴 예제 살펴보기</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
+                    <span>모듈 패턴 2개 기능(함수) 값 참조 export로 변수 한꺼번에 내보냄</span>
+                    <span>상단 module type의 스크립트에서 window.함수명 으로 값 받아서 일반 js파일에서 사용</span>
+                    <button id="btnS15" onclick="fnPage185_2()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS15"></div>
             </div>
         </section><hr>
         <section class="s16">
-            <h1>aa</h1>
+            <h1>모듈 패턴 예제 살펴보기</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
+                    <span>export default (단독)</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
+                    <button id="btnS16" onclick="fnPage185_3()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS16"></div>
             </div>
         </section><hr>
         <section class="s17">
-            <h1>aa</h1>
+            <h1>모듈 패턴 예제 살펴보기</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
+                    <span>참조의 참조</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
+                    <button id="btnS17" onclick="fnPage185_4()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS17"></div>
             </div>
         </section><hr>
         <section class="s18">
-            <h1>aa</h1>
+            <h1>마무리문제 Q1</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
+                    <span>배경 색상 바꾸기</span>
+                    <div id="theBody18">배경색</div>
+                    <button id="btnS18" onclick="fnPage187()">배경 색상 바꾸기</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS18"></div>
             </div>
         </section><hr>
         <section class="s19">
-            <h1>aa</h1>
+            <h1>마무리문제 Q2</h1>
             <div>
                 <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
+                    <span>성적</span>
+                    <button id="btnS19" onclick="fnPage188()">확인</button>
                 </p>
-                <div id="divSaa"></div>
+                <div id="divS19"></div>
             </div>
         </section><hr>
-        <section class="s20">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s21">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s22">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s23">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s24">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s25">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s26">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s27">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s28">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s29">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
-        <section class="s30">
-            <h1>aa</h1>
-            <div>
-                <p>
-                    <span>aa</span>
-                    <button id="btnSaa" onclick="fnPageaa()">확인</button>
-                </p>
-                <div id="divSaa"></div>
-            </div>
-        </section><hr>
+
 
         <script src="./js/ex_p155.js"></script>
     </body>

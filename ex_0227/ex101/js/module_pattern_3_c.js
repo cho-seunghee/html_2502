@@ -1,5 +1,6 @@
 const fncE = () => {
-	console.log("fncC");
+	console.log("fncE");
+	return "fncE";
 }
 
 export default fncE;

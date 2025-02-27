@@ -343,7 +343,83 @@ fnPage180 = () => {
 fnPage185 = () => {
     msg = "";
 
+    import('./module_pattern_1_c.js').then((module) => {
+        msg += `fncA(): ${module.fncA()}<br>`;
+        msg += `fncB(): ${module.fncB()}<br>`;
+        msg += `msg: ${module.msg}<br>`;
 
- 
-    d.getElementById('divS13').innerHTML = msg;
+        d.getElementById('divS14').innerHTML = msg;
+      });
+}
+
+fnPage185_2 = () => {
+    msg = "";
+    msg += `fncC(): ${module1.fncC()}<br>`;
+    msg += `fncD(): ${module1.fncD()}<br>`;
+        
+    d.getElementById('divS15').innerHTML = msg;
+    
+}
+
+fnPage185_3 = () => {
+    msg = "";
+
+    import('./module_pattern_3_c.js').then((module) => {
+        msg += `default(): ${module.default()}<br>`;
+
+        d.getElementById('divS16').innerHTML = msg;
+      });
+}
+
+fnPage185_4 = () => {
+    msg = "";
+
+    import('./module_pattern_4_c.js').then((module) => {
+        msg += `fncA(): ${module.fncA()}<br>`;
+        msg += `fncB(): ${module.fncB()}<br>`;
+        msg += `fncC(): ${module.fncC()}<br>`;
+        msg += `fncD(): ${module.fncD()}<br>`;
+        msg += `fncE(): ${module.fncE()}<br>`;
+
+        d.getElementById('divS17').innerHTML = msg;
+      });
+}
+
+fnPage187 = () => {
+    msg = "";
+
+	var arrColor = ["#ff0", "#6c0", "#fcf", "#cf0", "#39f"];
+    var arrNum = Math.floor(Math.random() * arrColor.length);
+    var bodyTag = document.getElementById("theBody18");
+    bodyTag.style.backgroundColor = arrColor[arrNum];
+
+    d.getElementById('divS18').innerHTML = msg;
+}
+
+fnPage188 = () => {
+    msg = "";
+
+	function TestScore(name, kor, eng){
+		this.userName = name;
+		this.korNum = kor;
+		this.engNum = eng;
+	}
+	TestScore.prototype.getTestInfo = function() {
+        msg += `이름: ${this.userName} <br>`;
+        msg += `국어: ${this.korNum} <br>`;
+        msg += `영어: ${this.engNum} <br>`;
+	}
+	TestScore.prototype.getAvg = function() {
+		return  (this.korNum + this.engNum) / 2;
+	}
+	var kimgun = new TestScore("김군",80,90);
+	var ohgun = new TestScore("오군",100,80);
+
+	kimgun.getTestInfo();
+    msg += `평균 점수: ${kimgun.getAvg()} <br><br>`;
+
+	ohgun.getTestInfo();
+    msg += `평균 점수: ${ohgun.getAvg()} <br>`;
+
+    d.getElementById('divS19').innerHTML = msg;
 }

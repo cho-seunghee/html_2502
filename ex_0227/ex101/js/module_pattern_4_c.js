@@ -10,3 +10,11 @@ fncC();
 fncD();
 
 fncE();
+
+export {
+    fncA,
+    fncB,
+    fncC,
+    fncD,
+    fncE
+  }
