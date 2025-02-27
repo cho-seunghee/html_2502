@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS 선택자</title>
+        <link rel="stylesheet" href="./css/ex_p420.css">
+    </head>
+    <body>
+        <section class="s1">
+            <h1>하위 선택자 - 지정한 모든 하위 요소에 스타일 적용하기</h1>
+            <div>
+                <p>
+                    <span>파란색 점선 표시</span>
+                    <section id="container1">
+                        <header>
+                            <h1>예약 방법 및 요금</h1>
+                        </header>
+                        <p>
+                            요안도라에 예약하려면?
+                            <ul>
+                                <li>
+                                    예약 방법
+                                    <ul>
+                                        <li>직접 통화</li>
+                                        <li>문자 남기기</li>
+                                    </ul>
+                                </li>
+                                <li>요금
+                                    <ul>
+                                        <li>1인 : 40,000원</li>
+                                        <li>2인 : 60,000원</li>
+                                        <li>3인 : 80,000원</li>
+                                        <li>4인 : 100,000원</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </p>
+                    <div id="divS1"></div>
+                </div>
+            </section><hr>
+            <section class="s2">
+                <h1>자식 선택자 - 자식 요소에만 스타일 적용하기</h1>
+                <div>
+                    <p>
+                        <span>자식 선택자에 점선 표시하기</span>
+                        <section id="container2">
+                            <header>
+                                <h1>예약 방법 및 요금</h1>
+                            </header>
+                            <p>
+                                요안도라에 예약하려면?
+                            </p>
+                            <ul>
+                                <li>
+                                    예약 방법
+                                    <ul>
+                                        <li>직접 통화</li>
+                                        <li>문자 남기기</li>
+                                    </ul>
+                                </li>
+                                <li>요금
+                                    <ul>
+                                        <li>1인 : 40,000원</li>
+                                        <li>2인 : 60,000원</li>
+                                        <li>3인 : 80,000원</li>
+                                        <li>4인 : 100,000원</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <div id="divS2"></div>
+                    </div>
+                </section><hr>
+                <section class="s3">
+                    <h1>인접 형제 선택자 - 가장 가까운 형제 요소에 스타일 적용하기 (가까운 형제하나만(ul만 적용) h1 + ul)</h1>
+                    <div>
+                        <p>
+                            <span>인접 형제 선택자에 스타일 적용하기 (인접형제 즉 ul 1개만 적용됨 h1 + ul)</span>
+                            <section id="container3">
+                                <h1>예약 방법 및 요금</h1>
+                                <ul>
+                                    <li>직접 통화</li>
+                                    <li>문자 남기기</li>
+                                </ul>
+                                <ul>
+                                    <li>1인 : 40,000원</li>
+                                    <li>2인 : 60,000원</li>
+                                    <li>3인 : 80,000원</li>
+                                    <li>4인 : 100,000원</li>
+                                </ul>
+                            </section>
+                        </p>
+                        <div id="divS3"></div>
+                    </div>
+                </section><hr>
+                <section class="s4">
+                    <h1>형제 선택자 - 형제 요소에 스타일 적용하기</h1>
+                    <div>
+                        <p>
+                            <span>형제 선택자에 스타일 적용하기 (형재 전부(ul만 적용) h1 ~ ul)</span>
+                            <section id="container4">
+                                <h1>예약 방법 및 요금</h1>
+                                <ul>
+                                    <li>직접 통화</li>
+                                    <li>문자 남기기</li>
+                                </ul>
+                                <ul>
+                                    <li>1인 : 40,000원</li>
+                                    <li>2인 : 60,000원</li>
+                                    <li>3인 : 80,000원</li>
+                                    <li>4인 : 100,000원</li>
+                                </ul>
+                            </p>
+                            <div id="divS4"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s5">
+                        <h1>[속성]선택자 - 지정한 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>href 속성에 있는 요소를 찾아내 배경 지정하기 (테그에 속성 a[href])</span>
+                                <ul>
+                                    <li>
+                                        <a>메인 메뉴 :
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">메뉴 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">메뉴 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">메뉴 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">메뉴 4</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS5"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s6">
+                        <h1>[속성 = 값]선택자 - 특정 값을 갖는 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>target 속성의 값이 _blank인 링크에 스타일 적용하기 (a[target="_blank"])</span>
+                                <h1>HTML5 표준안 사이트
+                                </h1>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.w3c.org/TR/html" target="_blank">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.w3.org/TR/css3-mediaqueries">미디어쿼리</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS6"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s7">
+                        <h1>[속성 ~= 값]선택자 - 여러 값 중 특정 값이 포함된 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>class 속성에 "button"값이 포함된 요소에 스타일 적용하기 ([class ~= "button"] (button 정확히 일치시만])</span>
+                                <ul>
+                                    <li>
+                                        <a href="#">메뉴 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">메뉴 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="button">메뉴 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flat button">메뉴 4</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS7"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s8">
+                        <h1>[속성 |= 값]선택자 - 특정 값이 포함된 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>title 속성의 값을 체크해 조건에 따라 스타일 적용하기 (단어가 완전일치 사면 적용 됨(jap) a[title |="jap"])</span>
+                                <ul>
+                                    <li>외국어 서비스 :
+                                    </li>
+                                    <li>
+                                        <a href="#" title="us">영어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="us-english">영어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="japanese">일본어</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS8"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s9">
+                        <h1>[속성 ^= 값]선택자 - 특정 값으로 시작하는 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>title 속성 값의 시작 부분을 체크해 스타일 적용하기 (시작단어만 일치하면 적용(eng....)a[title ^="eng"])</span>
+                                <ul>
+                                    <li>외국어 서비스 :
+                                    </li>
+                                    <li>
+                                        <a href="#" title="english">영어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="japanese">일본어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="chinese">중국어</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS9"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s10">
+                        <h1>[속성 $= 값]선택자 - 특정 값으로 끝나는 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>링크한 파일의 확장자에 따라 아이콘 표시하기 (뒤 단어가 일치시 적용(주로 확장자) a[href $= "hwp"])</span>
+                                <h3>회사 소개 파일 다운 받기</h3>
+                                <ul>
+                                    <li>
+                                        <a href="intro.hwp">hwp 파일</a>
+                                    </li>
+                                    <li>
+                                        <a href="intro.xls">엑셀 파일</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS10"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s11">
+                        <h1>[속성 *= 값]선택자 - 값의 일부가 일치하는 속성에 스타일 적용하기</h1>
+                        <div>
+                            <p>
+                                <span>href 속성 값 중 일부가 일치하는 요소에 스타일 적용하기 (href 속성 리스트 중 w3문자가 포함 된 전체 적용 [href *=
+                                    "w3"])</span>
+                                <h1>HTML5 참고 사이트
+                                </h1>
+                                <p>(아래 링크 중 파란색 배경의 링크는 W3C 사이트로 연결됩니다.)</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.w3c.org/TR/html">HTML 표준안 사이트</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.webplatform.org">튜토리얼과 아티클</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://caniuse.com">HTML 지원 여부 체크</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.w3c.org/TR/css3-mediaqueries">미디어쿼리</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="divS11"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s12">
+                        <h1>사용자 동작에 반응하는 가상 클래스</h1>
+                        <div>
+                            <p>
+                                <span>링크에서 가상 선택자 사용하기 (.navi a:link, .navi a:visited, .navi a:hover, .navi
+                                    a:focus, .navi a:active)</span>
+                                <div class="container12">
+                                    <nav class="navi">
+                                        <ul>
+                                            <li>
+                                                <a href="#">이용 안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">객실 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">예약 방법 및 요금</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">예약하기</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </p>
+                            <div id="divS12"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s13">
+                        <h1>UI 요소 상태에 따른 가상 클래스</h1>
+                        <div>
+                            <p>
+                                <span>라디오 버튼을 클릭했을때 스타일 적용하기 (input:disabled input:checked + span)</span>
+                                <form>
+                                    <fieldset>
+                                        <legend>사용자 정보</legend>
+                                        <label>이름
+                                            <input type="text" disabled="disabled"></label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>신청 과목</legend>
+                                        <p>이 달에 신청할 과목을 선택하세요</p>
+                                        <label><input type="radio" name="subject" value="speaking">
+                                            <span>회화</span></label>
+                                        <label><input type="radio" name="subject" value="grammar">
+                                            <span>문법</span></label>
+                                        <label><input type="radio" name="subject" value="writing">
+                                            <span>작문</span></label>
+                                    </fieldset>
+                                </form>
+                            </p>
+                            <div id="divS13"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s14">
+                        <h1>구조 가상 클래스</h1>
+                        <div>
+                            <p>
+                                <span>표의 홀수 번째 열에만 배경 색 넣기 (n항공식으로 됨 table:nth-child(2n+1))</span>
+                                <div id="container14">
+                                    <h1>건강에 좋은 건강 식품</h1>
+                                    <table>
+                                        <tr>
+                                            <td>블루베리</td>
+                                        </tr>
+                                        <tr>
+                                            <td>귀리</td>
+                                        </tr>
+                                        <tr>
+                                            <td>토마토</td>
+                                        </tr>
+                                        <tr>
+                                            <td>시금치</td>
+                                        </tr>
+                                        <tr>
+                                            <td>적포도주</td>
+                                        </tr>
+                                        <tr>
+                                            <td>견과류</td>
+                                        </tr>
+                                        <tr>
+                                            <td>브로콜리</td>
+                                        </tr>
+                                        <tr>
+                                            <td>연어</td>
+                                        </tr>
+                                        <tr>
+                                            <td>마늘</td>
+                                        </tr>
+                                        <tr>
+                                            <td>녹차</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </p>
+                            <div id="divS14"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s15">
+                        <h1>구조 가상 클래스</h1>
+                        <div>
+                            <p>
+                                <span>목록의 첫번째와 마지막 항목에만 스타일 적용하기 (ul.navi li:first-child, ul.navi li:last-child)</span>
+                                <div class="container15">
+                                    <ul class="navi">
+                                        <li class="home">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li id="html">
+                                            <a href="#">HTML5</a>
+                                        </li>
+                                        <li id="css">
+                                            <a href="#">CSS3</a>
+                                        </li>
+                                        <li id="jquery">
+                                            <a href="#">JQuery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </p>
+                            <div id="divS15"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s16">
+                        <h1>그 외 가상 클래스</h1>
+                        <h1>가상 요소</h1>
+                        <div>
+                            <p>
+                                <span>가상 요소를 사용해 내용 표시하기 (콘텐츠 뒤에 내용 추가 li.hot::after)</span>
+                                <div class="container16">
+                                    <h1>제품 목록</h1>
+                                    <ul>
+                                        <li class="hot">제품 A</li>
+                                        <li>제품 B</li>
+                                        <li>제품 C</li>
+                                        <li class="hot">제품 D</li>
+                                    </ul>
+                                </div>
+                            </p>
+                            <div id="divS16"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s17">
+                        <h1>연습문제 Q1</h1>
+                        <div>
+                            <p>
+                                <span>마우스 포인터를 올려놓았을 때의 스타일 정의</span>
+                                <p>이미지 위로 마우스 포인터를 올려보세요</p>
+                                <img src="./images/tangerines.jpg" class="top-img">
+                            </p>
+                            <div id="divS17"></div>
+                        </div>
+                    </section><hr>
+                    <section class="s18">
+                        <h1>연습문제 Q2</h1>
+                        <div>
+                            <p>
+                                <span>가상 클래스 선택자를 사용해 링크 스타일 수정</span>
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">메뉴1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">메뉴2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">메뉴3</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </p>
+                            <div id="divS18"></div>
+                        </div>
+                    </section><hr>
+
+                    <script src="./js/ex_p420.js"></script>
+
+                </body>
+            </html>

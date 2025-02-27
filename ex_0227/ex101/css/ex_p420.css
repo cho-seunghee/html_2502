@@ -1,0 +1,443 @@
+* {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
+
+section > div > p {
+    border: 1px solid #000;
+    background-color: #fffffffb;
+    display: block;
+}
+
+section > div > p > span {
+    border: 1px solid #000;
+    background-color: #175023fb;
+    color: #fff;
+    display: block;
+}
+
+pre {
+    background-color: #3b393f;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+}
+
+.blue {
+    color: #00f;
+}
+
+.red {
+    color: #f00;
+}
+
+.green {
+    color: green;
+}
+
+.aqua {
+    color: aqua;
+}
+
+/* page422 */
+.s1 > div section#container1 ul {
+    border: 1px dotted blue;
+    /* #container 요소의 모든 하위 ul 요소에 파란 1px 실선 */
+}
+
+/* page424 */
+.s2 > div section#container2 > ul {
+    border: 1px dotted blue;
+    /* #container 요소의 모든 하위 ul 요소에 파란 1px 실선 */
+}
+
+/* page426 */
+.s3 > div section#container3 h1 + ul {
+    color: blue;
+    font-weight: bold;
+}
+
+/* page427 */
+.s4 > div section#container4 h1 ~ ul {
+    color: blue;
+    font-weight: bold;
+}
+
+/* page429 */
+.s5 > div ul {
+    list-style: none;
+}
+.s5 > div li {
+    width: 120px;
+    display: inline-block;
+    margin: 10px;
+}
+.s5 > div li a {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s5 > div a[href] {
+    background: yellow;
+}
+
+/* page430 */
+.s6 > div ul {
+    list-style: none;
+}
+.s6 > div li {
+    padding: 5px 30px;
+}
+.s6 > div li a {
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s6 > div a[target="_blank"] {
+    padding-right: 30px;
+    background: url("../images/newwindow.png") no-repeat center right;
+}
+
+/* page431 */
+.s7 > div ul {
+    list-style: none;
+}
+.s7 > div li {
+    display: inline-block;
+    margin: 10px;
+}
+.s7 > div li a {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s7 > div .flat {
+    background: blue;
+    color: white;
+}
+
+.s7 > div [class ~= "button"] {
+    border: 2px solid black;
+    box-shadow: rgba(0,0,0,0.4) 5px 5px;
+}
+
+/* page432 */
+.s8 > div ul {
+    list-style: none;
+}
+.s8 > div li {
+    display: inline-block;
+    margin: 10px;
+}
+.s8 > div li a {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s8 > div a[title |="us"] {
+    background: url("../images/us.png") no-repeat left center;
+    padding: 5px 25px;
+}
+
+.s8 > div a[title |="jap"] {
+    background: url("../images/jp.png") no-repeat left center;
+    padding: 5px 25px;
+}
+
+/* page433 */
+.s9 > div ul {
+    list-style: none;
+}
+.s9 > div li {
+    display: inline-block;
+    margin: 10px;
+}
+.s9 > div li a {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s9 > div a[title ^="eng"] {
+    background: url("../images/us.png") no-repeat left center;
+    padding: 5px 25px;
+}
+
+.s9 > div a[title ^="jap"] {
+    background: url("../images/jp.png") no-repeat left center;
+    padding: 5px 25px;
+}
+
+.s9 > div a[title ^="chin"] {
+    background: url("../images/ch.png") no-repeat left center;
+    padding: 5px 25px;
+}
+
+/* page434 */
+.s10 > div ul {
+    list-style: square;
+}
+.s10 > div li a {
+    line-height: 30px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s10 > div a[href $= "hwp"] {
+    background: url("../images/hwp_icon.gif") no-repeat right center;
+    padding-right: 25px;
+}
+
+.s10 > div a[href $= "xls"] {
+    background: url("../images/excel_icon.gif") no-repeat right center;
+    padding-right: 25px;
+}
+
+/* page435 */
+.s11 > div ul {
+    list-style: circle;
+}
+.s11 > div li {
+    padding: 5px 30px;
+}
+.s11 > div li a {
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+}
+
+.s11 > div [href *= "w3"] {
+    background: blue;
+    color: white;
+}
+
+/* page438 */
+.s12 > div .container12 {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.s12 > div .navi {
+    width: 960px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.s12 > div .navi ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.s12 > div .navi ul li {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+}
+
+.s12 > div .navi a:link,
+.s12 > div .navi a:visited {
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.s12 > div .navi a:focus,
+.s12 > div .navi a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.s12 > div .navi a:active {
+    background-color: #f00;
+}
+
+/* page440 */
+.s13 > div .container12 {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.s13 > div {
+    background-color: #fff;
+}
+.s13 > div form fieldset {
+    margin-bottom: 25px;
+}
+.s13 > div form legend {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.s13 > div input:disabled {
+    background: #5a5a5a;
+    border: 1px #ccc solid;
+}
+
+.s13 > div input:checked + span {
+    color: blue;
+}
+
+/* page442 */
+.s14 > div #container14 {
+    text-align: center;
+    color: #2b2b2b;
+}
+.s14 > div table,
+.s14 > div th,
+.s14 > div tr {
+    border: 1px solid #ccc;
+}
+.s14 > div table {
+    width: 200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.s14 > div td {
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+}
+
+.s14 > div table tr:nth-child(2n+1) {
+    background-color: lightgray;
+    color: black;
+}
+
+/* page443 */
+.s15 > div ul.navi li {
+    list-style-type: none;
+    /* 불릿 없앰 */
+    display: block;
+    /* 영역 만듦 */
+    width: 8em;
+    /* 너비 */
+    height: 3em;
+    /* 높이 */
+    float: left;
+    /* 왼쪽으로 플로팅 */
+    text-align: center;
+    /* 가운데 정렬 */
+    font-family: "Lucida Grande", sans-serif;
+    /* 글꼴 */
+    border: 1px #818181 solid;
+    /* 테두리 */
+    box-shadow: 1px 1px 1px #bbb;
+    /* 박스 그림자 */
+}
+
+/* 메뉴 링크 스타일 */
+.s15 > div ul.navi li a {
+    display: block;
+    /* 영역 만듦 */
+    padding: 0.8em 0.5em 0.5em;
+    /* 안여백 */
+    text-decoration: none;
+    /* 밑줄 없앰 */
+    color: #292929;
+    /* 글자색 */
+    text-shadow: 1px 1px 0 #cccccc;
+    /* 텍스트 그림자 */
+}
+
+/* 메뉴 링크 위로 마우스 오버했을 때의 스타일 */
+.s15 > div ul.navi li:hover {
+    background-color: #333333;
+    /* 배경색 */
+}
+
+/* 메뉴 링크 위로 마우스 오버한 후 링크 스타일 */
+.s15 > div ul.navi li:hover > a {
+    color: #FFF;
+    /* 글자색 */
+    text-shadow: 0 1px 0 #fff;
+    /* 텍스트 그림자 */
+}
+
+.s15 > div ul.navi li:first-child {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.s15 > div ul.navi li:last-child {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.s15 > div .container15 {
+    display: inline-block;
+}
+
+/* page445 */
+.s16 > div .container16 {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.s16 > div ul li {
+    margin: 15px;
+}
+
+.s16 > div li.hot::after {
+    content: "content 내용!";
+    font-size: x-small;
+    padding: 2px 4px;
+    margin: 0 10px;
+    border-radius: 2px;
+    background: #f00;
+    color: #fff;
+}
+
+/* page447 */
+.s17 > div .top-img:hover {
+    border: 5px solid #000;
+}
+
+/* page447 */
+.s18 > div .main-menu {
+    margin: 50px auto;
+    height: 60px;
+    border: 1px solid black;
+}
+.s18 > div .main-menu ul {
+    margin: 0;
+    list-style: none;
+}
+.s18 > div .main-menu ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    line-height: 40px;
+}
+
+.s18 > div .main-menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.s18 > div .main-menu ul li a:link, .s18 > div .main-menu ul li a:visited {
+    color: #000;
+}
+
+.s18 > div .main-menu ul li a:active {
+    color: blue;
+}
