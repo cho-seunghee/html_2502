@@ -1,5 +1,38 @@
 import { Outlet } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import '../styles/Main.css';
+
+function Main() {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
+
+  return (
+    <div className="main-container">
+      <header className="main-header">
+        <h1>관리자 페이지</h1>
+        <button className="logout-button" onClick={handleLogout}>
+          로그아웃
+        </button>
+      </header>
+      <Navigation />
+      <main className="main-content">
+        <Outlet />
+      </main>
+    </div>
+  );
+}
+
+export default Main;
+/* styled 방식
+import { Outlet } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 import styled from 'styled-components';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -57,3 +90,4 @@ function Main() {
 }
 
 export default Main;
+*/

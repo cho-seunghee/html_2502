@@ -1,3 +1,20 @@
+import '../styles/Dashboard.css';
+
+function Dashboard() {
+  return (
+    <div className="dashboard-container">
+      <h2>대시보드</h2>
+      <div className="dashboard-card">
+        <h3>오늘의 통계</h3>
+        <p>주문 수: 150</p>
+        <p>매출액: ₩1,500,000</p>
+      </div>
+    </div>
+  );
+}
+
+export default Dashboard;
+/* styled 방식
 import styled from 'styled-components';
 
 const DashboardContainer = styled.div`
@@ -26,3 +43,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+*/

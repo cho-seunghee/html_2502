@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS 애니메이션</title>
+        <link rel="stylesheet" href="./css/ex_p449.css">
+    </head>
+    <body>
+        <section class="s1">
+            <h1>2차원 변형과 3차원 변형</h1>
+            <h1>transform과 변형 함수</h1>
+            <h1>translate 변형 함수</h1>
+            <div>
+                <p>
+                    <span>이미지 이동하기</span>
+                    <pre>
+                        -webkit-transform: translateX(50px);
+                        -ms-transform: translateX(50px);
+                        -moz-transform: translateX(50px);
+                        -o-transform: translateX(50px);
+                        transform: translateX(50px); //X축 방향으로 50픽셀 만큼 오른쪽으로 이동
+
+                        transform: translateY(20px);
+
+                        transform: translate(10px, 20px);
+                    </pre>
+                    <div class="origin">
+                        <div class="movex">
+                            <img src="./images/bus.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="movey">
+                            <img src="./images/bus.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="movexy">
+                            <img src="./images/bus.jpg">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s2">
+            <h1>sacle 변형 함수 - 요소 확대/축소하기</h1>
+            <div>
+                <p>
+                    <span>이미지 확대/축소하기</span>
+                    <pre>
+                        -webkit-transform: scaleX(1.2);
+                        -ms-transform: scaleX(1.2);
+                        -moz-transform: scaleX(1.2);
+                        -o-transform: scaleX(1.2);
+                        transform: scaleX(1.2);
+
+                        transform: scaleY(1.5);
+
+                        transform: scale(0.7);
+                    </pre>
+                    <div class="origin">
+                        <div class="scalex">
+                            <img src="./images/fruit.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="scaley">
+                            <img src="./images/fruit.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="scale">
+                            <img src="./images/fruit.jpg">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s3">
+            <h1>rotate 변형 함수 - 요소 회전하기</h1>
+            <div>
+                <p>
+                    <span>이미지 2차원 회전하기</span>
+                    <pre>
+                        -webkit-transform: rotate(20deg);
+                        -ms-transform: rotate(20deg);
+                        -moz-transform: rotate(20deg);
+                        -o-transform: rotate(20deg);
+                        transform: rotate(20deg);
+
+                        transform: rotate(-40deg);
+                    </pre>
+                    <div class="origin">
+                        <div class="rotate1">
+                            <img src="./images/fruit.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="rotate2">
+                            <img src="./images/fruit.jpg">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s4">
+            <h1>rotate 변형 함수 - 요소 회전하기</h1>
+            <div>
+                <p>
+                    <span>이미지 3차원 회전하기</span>
+                    <pre>
+                        -webkit-transform: rotateX(45deg);
+                        -moz-transform: rotateX(45deg);
+                        -o-transform: rotateX(45deg);
+                        -ms-transform: rotateX(45deg);
+                        transform: rotateX(45deg);
+
+                        transform: rotateY(45deg);
+
+                        transform: rotateZ(45deg);
+
+                        transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+                    </pre>
+                    <div class="origin">
+                        <div class="rotatex"><img src="./images/fruit.jpg" alt=""></div>
+                    </div>
+                    <div class="origin">
+                        <div class="rotatey"><img src="./images/fruit.jpg" alt=""></div>
+                    </div>
+                    <div class="origin">		
+                        <div class="rotatez"><img src="./images/fruit.jpg" alt=""></div>
+                    </div>
+                    <div class="origin">	
+                        <div class="rotatexyz"><img src="./images/fruit.jpg" alt=""></div>	
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s5">
+            <h1>skew 변형 함수 - 요소를 비틀어 왜곡하기</h1>
+            <div>
+                <p>
+                    <span>x축과 y축으로 이미지 왜곡하기</span>
+                    <pre>
+                        -webkit-transform: skewX(30deg);
+                        -ms-transform: skewX(30deg);
+                        -moz-transform: skewX(30deg);
+                        -o-transform: skewX(30deg);
+                        transform: skewX(30deg);
+
+                        transform: skewY(15deg);
+
+                        transform: skew(-25deg, -15deg);
+                    </pre>
+                    <div class="origin">
+                        <div class="skewx">
+                            <img src="images/rose.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="skewy">
+                            <img src="images/rose.jpg">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="skewxy">
+                            <img src="images/rose.jpg">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s6">
+            <h1>transform-origin 속성 - 변형 기준점 설정하기</h1>
+            <div>
+                <p>
+                    <span>이미지 변형 시작점을 다양하게 지정하기</span>
+                    <pre>
+                        -moz-transform: rotateZ(10deg);
+                        -ms-transform: rotateZ(10deg);
+                        -o-transform: rotateZ(10deg);
+                        -webkit-transform: rotateZ(10deg);
+                        transform: rotateZ(10deg);
+
+                        transform-origin: left top;
+
+                        transform-origin: right top;
+
+                        transform-origin: left bottom;
+
+                        transform-origin: right bottom;
+                    </pre>
+                    <div class="origin">
+                        <div class="ltop">
+                            <img src="images/rose.jpg" class="rose">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="rtop">
+                            <img src="images/rose.jpg" class="rose">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="lbottom">
+                            <img src="images/rose.jpg" class="rose">
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <div class="rbottom">
+                            <img src="images/rose.jpg" class="rose">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s7">
+            <h1>perspective, perspective-origin 속성 - 원근감 표현하기</h1>
+            <div>
+                <p>
+                    <span>이미지 회전하며 원근감 주기</span>
+                    <pre>
+                        transform: rotateX(50deg);
+
+                        perspective: 300px;
+                    </pre>
+                    <h4>원본 이미지</h4>
+                    <div>
+                        <img src="images/sunset.jpg" alt="">
+                    </div>
+                    <div id="no-pers">
+                        <div class="rotatex">
+                            <img src="images/sunset.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="pers">
+                        <div class="rotatex">
+                            <img src="images/sunset.jpg" alt="">
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s8">
+            <h1>transform-style 속성 - 3D 변형 적용하기</h1>
+            <div>
+                <p>
+                    <span>3D 변형을 적용하지 않았을 때 vs 적용했을 때</span>
+                    <pre>
+                        transform: rotateY(45deg);
+
+                        transform: rotateX(45deg);
+
+                        transform-style: flat;
+
+                        transform-style: preserve-3d;
+                    </pre>
+                    <div class="container">
+                        <div class="box1" id="tr-style1">
+                            <div class="box2"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box1" id="tr-style2">
+                            <div class="box2"></div>
+                        </div>
+                    </div>
+                    
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s9">
+            <h1>backface-visibility 속성 - 요소의 뒷면 표시하기</h1>
+            <div>
+                <p>
+                    <span>요소의 뒷면을 표시하지 않을 때 vs 표시할 때</span>
+                    <pre>
+                        transform: rotateY(135deg);
+
+                        backface-visibility: hidden;
+
+                        backface-visibility: visible;
+                    </pre>
+                    <div class="container">
+                        <div class="box" id="back1">
+                            <h1>BACK</h1>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box" id="back2">
+                            <h1>BACK</h1>
+                        </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s10">
+            <h1>트랜지션이란</h1>
+            <h1>transition-property 속성 - 트랜지션을 적용할 속성 지정하기</h1>
+            <h1>transition-duration 속성 - 트랜지션 진행 시간 지정하기</h1>
+            <div>
+                <p>
+                    <span>정해진 시간 동안 높이와 너비 바꾸기</span>
+                    <pre>
+                        transition-duration: 2s, 1s;
+                    </pre>
+                    <div class="tr1"></div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s11">
+            <h1>transition-duration 속성 - 트랜지션 진행 시간 지정하기</h1>
+            <div>
+                <p>
+                    <span>정해진 시간 동안 배경 색과 회전, 높이, 너비 바꾸기</span>
+                    <pre>
+                        transition-duration: 2s, 3s;
+
+                        transform: rotate(180deg);
+                    </pre>
+                    <div class="tr1"><h1>!</h1> </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s12">
+            <h1>transition-timing-function 속성 - 트랜지션 속도 곡선 지정하기</h1>
+            <h1>transition-delay 속성 - 지연 시간 설정하기</h1>
+            <div>
+                <p>
+                    <pre>
+                        transform:rotate(720deg);
+
+                        transition-duration: 3s;
+
+                        transition-delay: 1s;
+                    </pre>
+                    <span>특정 시간 후에 트랜지션 실행하기</span>
+                    <div id="ex">
+                        <div id="no-delay" class="box"> <p>no-delay</p> </div>
+                        <div id="delay" class="box"> <p>delay</p> </div>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s13">
+            <h1>transition 속성 - 트랜지션 속성 한꺼번에 표기하기</h1>
+            <div>
+                <p>
+                    <span>transition 속성 한꺼번에 표기하기</span>
+                    <pre>
+                        transition: 2s ease-in;
+
+                        transform: rotate(270deg);
+                    </pre>
+                    <div class="tr1"></div>
+                    
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s14">
+            <h1>transition 속성 - 트랜지션 속성 한꺼번에 표기하기</h1>
+            <div>
+                <p>
+                    <span>두 개 이상의 트랜지션 연결해서 실행하기</span>
+                    <pre>
+                        transition: 2s ease-in; //ease-in:시작을 느리게, 
+
+                        transform: scale(2) perspective(120px) rotateX(180deg);
+                    </pre>
+                    <div class="box"></div>
+                </p>
+            </div>
+        </section><hr>
+        <section class="s15">
+            <h1>CSS와 애니메이션</h1>
+            <h1>@keyframes 속성 - 애니메이션 지점 설정하기</h1>
+            <div>
+                <p>
+                    <span>사각형에서 원으로 서서히 바뀌는 애니메이션</span>
+                    <pre>
+                        animation-duration: 3s;
+                        
+                        @keyframes change-bg {
+                            from {
+                                background-color: blue;
+                                border: 1px solid black;
+                            }
+                            to {
+                                background-color: #a5d6ff;
+                                border:1px solid blue;
+                                border-radius: 50%;
+                            }
+                        }
+                    </pre>
+                    <div class="ani"></div>
+                    
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s16">
+            <h1>animation-name 속성 - 애니메이션 이름 지정하기</h1>
+            <div>
+                <p>
+                    <span>@keyframe을 사용해 실행할 애니메이션 지정하기</span>
+                    <pre>
+                        animation-name: shape;
+                        animation-duration: 3s;
+
+                        animation-name: rotate;
+                        animation-duration: 3s;
+
+                        @keyframes shape {
+                            from {
+                                border: 1px solid black;
+                            }
+                        
+                            to {
+                                border: 1px solid black;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        @keyframes rotate {
+                            from {
+                                transform:rotate(0deg)
+                            }
+                        
+                            to {
+                                transform: rotate(45deg);
+                            }
+                        }
+                    </pre>
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                </p>
+            </div>
+        </section><hr>
+        <section class="s17">
+            <h1>animation-duration 속성 - 애니메이션 실행 시간 설정하기</h1>
+            <h1>animation-direction 속성 - 애니메이션 방향 지정하기</h1>
+            <h1>animation-iteration-count 속성 - 반복 횟수 지정하기</h1>
+            <div>
+                <p>
+                    <span>무한 반복하는 애니메이션 만들기</span>
+                    <pre>
+                        animation-name: moving;
+                        animation-duration: 3s;
+                        animation-direction: normal;
+                        animation-iteration-count: infinite;
+
+                        @keyframes moving {
+                            from {
+                                width: 200px;
+                                background: #faef7c;
+                                opacity: 0.5;
+                                transform: scale(0.5) rotate(15deg);
+                            }
+                        
+                            to {
+                                width: 400px;
+                                background: #ff9400;
+                                opacity: 1;
+                                transform: scale(1) rotate(0deg);
+                            }
+                        }
+                    </pre>
+                    <div class="box">
+                        <h3>CSS3 Animation</h3>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s18">
+            <h1>animation-timing-function 속성 - 애니메이션 속도 곡선 지정하기</h1>
+            <h1>animation 속성 - 애니메이션 관련 속성 한꺼번에 표기하기</h1>
+            <div>
+                <p>
+                    <span>두 개 이상의 애니메이션 동시에 실행하기</span>
+                    <pre>
+                        animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+
+                        @keyframes rotate {
+                            from {
+                                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                            }
+                            50% {
+                                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+                            }
+                            to {
+                                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+                            }
+                        }
+
+                        @keyframes background {
+                            from {
+                                background: red;
+                            }
+                        
+                            50% {
+                                background-color: green
+                            }
+                        
+                            to {
+                                background-color: blue;
+                            }
+                        }
+                    </pre>
+
+                    <div class="box"></div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s19">
+            <h1>상품 페이지에 가격 떠오르게 만들기</h1>
+            <div>
+                <p>
+                    <span>신상품 목록</span>
+                    <h1>신상품 목록</h1>
+                    <div id="container">
+                        <ul class="prod-list">
+                      <li>
+                        <img src="images/prod1.jpg">
+                        <div class="caption">
+                          <h1>상품 1</h1>
+                          <p>상품 1 설명 텍스트</p>
+                          <p>가격 : 12,345원</p>
+                        </div>
+                      </li>
+                      <li>
+                        <img src="images/prod2.jpg">
+                        <div class="caption">
+                          <h1>상품 2</h1>
+                          <p>상품 2 설명 텍스트</p>
+                          <p>가격 : 12,345원</p>
+                        </div>
+                      </li>
+                      <li>
+                        <img src="images/prod3.jpg">
+                        <div class="caption">
+                          <h1>상품 3</h1>
+                          <p>상품 3 설명 텍스트</p>
+                          <p>가격 : 12,345원</p>
+                        </div>
+                      </li>
+                    </ul>
+                    </div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s20">
+            <h1>연습문제 Q1</h1>
+            <div>
+                <p>
+                    <span>마우스 올렸을때 transition 속성 적용</span>
+                    <div class="box"></div>
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s21">
+            <h1>연습문제 Q2</h1>
+            <div>
+                <p>
+                    <span>마우스 올렸을때 이미지 변형되도록 적용</span>
+                    <div class="container">
+                        <img src="images/coffee.jpg" class="photo">
+                      </div>
+                    
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+        <section class="s22">
+            <h1>연습문제 Q3</h1>
+            <div>
+                <p>
+                    <span>transition, transform 속성 사용해서 확대 적용</span>
+                    <img src="images/lamp.jpg" width="250" height="188" class="photo">
+                </p>
+                <div id="divSaa"></div>
+            </div>
+        </section><hr>
+
+    </body>
+</html>

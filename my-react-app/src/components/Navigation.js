@@ -1,4 +1,31 @@
 import { NavLink } from 'react-router-dom';
+import '../styles/Navigation.css';
+
+function Navigation() {
+  return (
+    <nav className="nav">
+      <ul className="menu-list">
+        <li className="menu-item">
+          <NavLink to="/main" end>대시보드</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/main/products">상품관리</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/main/orders">주문관리</NavLink>
+        </li>
+        <li className="menu-item">
+          <NavLink to="/main/customers">고객관리</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navigation;
+
+/*styled 방식
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -49,3 +76,4 @@ function Navigation() {
 }
 
 export default Navigation;
+*/
