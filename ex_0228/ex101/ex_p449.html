@@ -19,11 +19,11 @@
                         -ms-transform: translateX(50px);
                         -moz-transform: translateX(50px);
                         -o-transform: translateX(50px);
-                        transform: translateX(50px); //X축 방향으로 50픽셀 만큼 오른쪽으로 이동
+                        transform: translateX(50px); //변환(transform) 속성이고, X축 방향으로 50픽셀 만큼 오른쪽으로 이동
 
-                        transform: translateY(20px);
+                        transform: translateY(20px); //변환(transform) 속성이고, Y축 방향으로 20픽셀 만큼 오른쪽으로 이동
 
-                        transform: translate(10px, 20px);
+                        transform: translate(10px, 20px); //변환(transform) 속성이고, X축 방향으로 10픽셀 만큼 Y축 방향으로 20픽셀 만큼 오른쪽으로 이동
                     </pre>
                     <div class="origin">
                         <div class="movex">
@@ -54,11 +54,11 @@
                         -ms-transform: scaleX(1.2);
                         -moz-transform: scaleX(1.2);
                         -o-transform: scaleX(1.2);
-                        transform: scaleX(1.2);
+                        transform: scaleX(1.2); //X축 방향으로 20프로 확대
 
-                        transform: scaleY(1.5);
+                        transform: scaleY(1.5); //Y축 방향으로 50프로 확대
 
-                        transform: scale(0.7);
+                        transform: scale(0.7); //X, Y축 방향으로 30프로 축소
                     </pre>
                     <div class="origin">
                         <div class="scalex">
@@ -85,13 +85,14 @@
                 <p>
                     <span>이미지 2차원 회전하기</span>
                     <pre>
+                        //단위: deg(도), rad(라디안), turn(회전) 사용 가능
                         -webkit-transform: rotate(20deg);
                         -ms-transform: rotate(20deg);
                         -moz-transform: rotate(20deg);
                         -o-transform: rotate(20deg);
-                        transform: rotate(20deg);
+                        transform: rotate(20deg); //20도 시계 방향 회전
 
-                        transform: rotate(-40deg);
+                        transform: rotate(-40deg); //40도 반시계 방향 회전
                     </pre>
                     <div class="origin">
                         <div class="rotate1">
@@ -117,13 +118,13 @@
                         -moz-transform: rotateX(45deg);
                         -o-transform: rotateX(45deg);
                         -ms-transform: rotateX(45deg);
-                        transform: rotateX(45deg);
+                        transform: rotateX(45deg); //X축 기준으로 45도 회전 (3D 회전)
 
-                        transform: rotateY(45deg);
+                        transform: rotateY(45deg); //Y축 기준으로 45도 회전 (3D 회전)
 
-                        transform: rotateZ(45deg);
+                        transform: rotateZ(45deg); //Z축 기준으로 45도 회전 (3D 회전)
 
-                        transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+                        transform: rotate3d(2.5, 1.2, -1.5, 45deg); X축, Y축, Z축, 회전각도 회전(3D 회전)
                     </pre>
                     <div class="origin">
                         <div class="rotatex"><img src="./images/fruit.jpg" alt=""></div>
@@ -151,25 +152,25 @@
                         -ms-transform: skewX(30deg);
                         -moz-transform: skewX(30deg);
                         -o-transform: skewX(30deg);
-                        transform: skewX(30deg);
+                        transform: skewX(30deg); //X축 기준으로 30도 기울림
 
-                        transform: skewY(15deg);
+                        transform: skewY(15deg); //Y축 기준으로 15도 기울림
 
-                        transform: skew(-25deg, -15deg);
+                        transform: skew(-25deg, -15deg); //X축 -25도, Y축 -15 기울림
                     </pre>
                     <div class="origin">
                         <div class="skewx">
-                            <img src="images/rose.jpg">
+                            <img src="./images/rose.jpg">
                         </div>
                     </div>
                     <div class="origin">
                         <div class="skewy">
-                            <img src="images/rose.jpg">
+                            <img src="./images/rose.jpg">
                         </div>
                     </div>
                     <div class="origin">
                         <div class="skewxy">
-                            <img src="images/rose.jpg">
+                            <img src="./images/rose.jpg">
                         </div>
                     </div>
                 </p>
@@ -182,38 +183,39 @@
                 <p>
                     <span>이미지 변형 시작점을 다양하게 지정하기</span>
                     <pre>
+                        //transform-origin 속성 : 요소의 변환(transform)이 일어나는 기준점
                         -moz-transform: rotateZ(10deg);
                         -ms-transform: rotateZ(10deg);
                         -o-transform: rotateZ(10deg);
                         -webkit-transform: rotateZ(10deg);
-                        transform: rotateZ(10deg);
+                        transform: rotateZ(10deg); //Z축 기준으로 10도 회전
 
-                        transform-origin: left top;
+                        transform-origin: left top; //중심점을 요소의 왼쪽 상단으로 설정
 
-                        transform-origin: right top;
+                        transform-origin: right top; //중심점을 요소의 오른쪽 상단으로 설정
 
-                        transform-origin: left bottom;
+                        transform-origin: left bottom; //중심점을 요소의 왼쪽 하단으로 설정
 
-                        transform-origin: right bottom;
+                        transform-origin: right bottom; //중심점을 요소의 오른쪽 하단으로 설정
                     </pre>
                     <div class="origin">
                         <div class="ltop">
-                            <img src="images/rose.jpg" class="rose">
+                            <img src="./images/rose.jpg" class="rose">
                         </div>
                     </div>
                     <div class="origin">
                         <div class="rtop">
-                            <img src="images/rose.jpg" class="rose">
+                            <img src="./images/rose.jpg" class="rose">
                         </div>
                     </div>
                     <div class="origin">
                         <div class="lbottom">
-                            <img src="images/rose.jpg" class="rose">
+                            <img src="./images/rose.jpg" class="rose">
                         </div>
                     </div>
                     <div class="origin">
                         <div class="rbottom">
-                            <img src="images/rose.jpg" class="rose">
+                            <img src="./images/rose.jpg" class="rose">
                         </div>
                     </div>
                 </p>
@@ -226,22 +228,23 @@
                 <p>
                     <span>이미지 회전하며 원근감 주기</span>
                     <pre>
+                        //perspective: 3D 공간에서 관찰자(사용자)와 평면 사이의 거리를 정의(3D 변환에서 원근감을 부여)
                         transform: rotateX(50deg);
 
-                        perspective: 300px;
+                        perspective: 300px; //300픽셀만큼 원근감 (값이 낮을 수록 원근감이 강해짐)
                     </pre>
                     <h4>원본 이미지</h4>
                     <div>
-                        <img src="images/sunset.jpg" alt="">
+                        <img src="./images/sunset.jpg" alt="">
                     </div>
                     <div id="no-pers">
                         <div class="rotatex">
-                            <img src="images/sunset.jpg" alt="">
+                            <img src="./images/sunset.jpg" alt="">
                         </div>
                     </div>
                     <div id="pers">
                         <div class="rotatex">
-                            <img src="images/sunset.jpg" alt="">
+                            <img src="./images/sunset.jpg" alt="">
                         </div>
                     </div>
                 </p>
@@ -254,13 +257,14 @@
                 <p>
                     <span>3D 변형을 적용하지 않았을 때 vs 적용했을 때</span>
                     <pre>
+                        //transform-style 속성 : 요소의 자식 요소들이 3D 공간에서 어떻게 렌더링될지를 결정
                         transform: rotateY(45deg);
 
                         transform: rotateX(45deg);
 
-                        transform-style: flat;
+                        transform-style: flat; //기본값, 자식 요소들을 2D 평면에 투영
 
-                        transform-style: preserve-3d;
+                        transform-style: preserve-3d; //자식 요소들의 3D 위치를 유지
                     </pre>
                     <div class="container">
                         <div class="box1" id="tr-style1">
@@ -283,11 +287,12 @@
                 <p>
                     <span>요소의 뒷면을 표시하지 않을 때 vs 표시할 때</span>
                     <pre>
+                        //backface-visibility 속성 :요소의 뒷면이 사용자를 향할 때 해당 요소를 보이게 할지 숨길지 결정
                         transform: rotateY(135deg);
 
-                        backface-visibility: hidden;
+                        backface-visibility: hidden; //요소의 뒷면이 보이지 않음
 
-                        backface-visibility: visible;
+                        backface-visibility: visible; //visible: 요소의 뒷면이 보임 (기본값)
                     </pre>
                     <div class="container">
                         <div class="box" id="back1">
@@ -311,7 +316,8 @@
                 <p>
                     <span>정해진 시간 동안 높이와 너비 바꾸기</span>
                     <pre>
-                        transition-duration: 2s, 1s;
+                        //transition-duration : CSS 전환 효과의 지속 시간을 지정하는 속성
+                        transition-duration: 2s, 1s; //가로 2초, 세로 1초 지속
                     </pre>
                     <div class="tr1"></div>
                 </p>
@@ -324,9 +330,9 @@
                 <p>
                     <span>정해진 시간 동안 배경 색과 회전, 높이, 너비 바꾸기</span>
                     <pre>
-                        transition-duration: 2s, 3s;
+                        transition-duration: 2s, 3s; //가로 2초, 세로 3초 지속
 
-                        transform: rotate(180deg);
+                        transform: rotate(180deg); //X축과 Y축 180 회전
                     </pre>
                     <div class="tr1"><h1>!</h1> </div>
                 </p>
@@ -339,11 +345,12 @@
             <div>
                 <p>
                     <pre>
+                        //transition-delay : 전환 효과가 시작되기 전의 지연 시간을 지정하는 CSS 속성
                         transform:rotate(720deg);
 
-                        transition-duration: 3s;
+                        transition-duration: 3s; //가로,세로 3초 지속
 
-                        transition-delay: 1s;
+                        transition-delay: 1s; //1초 지연
                     </pre>
                     <span>특정 시간 후에 트랜지션 실행하기</span>
                     <div id="ex">
@@ -360,9 +367,9 @@
                 <p>
                     <span>transition 속성 한꺼번에 표기하기</span>
                     <pre>
-                        transition: 2s ease-in;
+                        transition: 2s ease-in; //2초 지속, 천천히 시작하여 빠르게 끝남
 
-                        transform: rotate(270deg);
+                        transform: rotate(270deg); //X축과 Y축 270도 회전
                     </pre>
                     <div class="tr1"></div>
                     
@@ -376,9 +383,9 @@
                 <p>
                     <span>두 개 이상의 트랜지션 연결해서 실행하기</span>
                     <pre>
-                        transition: 2s ease-in; //ease-in:시작을 느리게, 
+                        transition: 2s ease-in; //2초 지속, 천천히 시작하여 빠르게 끝남
 
-                        transform: scale(2) perspective(120px) rotateX(180deg);
+                        transform: scale(2) perspective(120px) rotateX(180deg); //요소를 2배확대, 3D 변환을 위한 원근감 설정 (120px), X축을 기준으로 180도 회전
                     </pre>
                     <div class="box"></div>
                 </p>
@@ -391,7 +398,9 @@
                 <p>
                     <span>사각형에서 원으로 서서히 바뀌는 애니메이션</span>
                     <pre>
-                        animation-duration: 3s;
+                        //animation-duration : CSS 애니메이션의 한 주기가 완료되는 데 걸리는 시간을 지정하는 속성
+                        //@keyframes change-bg는 CSS 애니메이션을 정의하는 규칙으로, 배경색 변경과 같은 애니메이션 시퀀스를 만드는 데 사용
+                        animation-duration: 3s; //시간이 3초동안 걸림
                         
                         @keyframes change-bg {
                             from {
@@ -417,7 +426,7 @@
                 <p>
                     <span>@keyframe을 사용해 실행할 애니메이션 지정하기</span>
                     <pre>
-                        animation-name: shape;
+                        animation-name: shape; //애니메이션 이름
                         animation-duration: 3s;
 
                         animation-name: rotate;
@@ -457,6 +466,17 @@
                 <p>
                     <span>무한 반복하는 애니메이션 만들기</span>
                     <pre>
+                        //animation-direction: CSS 애니메이션의 재생 방향을 지정하는 속성
+                        -normal: 기본값, 정방향으로 재생
+                        -reverse: 역방향으로 재생
+                        -alternate: 정방향과 역방향을 번갈아 재생
+                        -alternate-reverse: alternate의 반대로 시작
+
+                        //animation-iteration-count : CSS 애니메이션의 반복 횟수를 지정하는 속성
+                        -infinite: 무한 반복
+                        -숫자 값: 특정 횟수만큼 반복 (예: 1, 2, 2.5 등)
+                        -기본값: 1
+
                         animation-name: moving;
                         animation-duration: 3s;
                         animation-direction: normal;
@@ -493,6 +513,13 @@
                     <span>두 개 이상의 애니메이션 동시에 실행하기</span>
                     <pre>
                         animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+                        //이름: rotate
+                        //지속시간: 1.5초
+                        //반복: 무한(infinite)
+                        //이름: background
+                        //지속시간: 1.5초
+                        //반복: 무한(infinite)
+                        //방향: alternate (정방향/역방향 번갈아가며)
 
                         @keyframes rotate {
                             from {
@@ -535,7 +562,7 @@
                     <div id="container">
                         <ul class="prod-list">
                       <li>
-                        <img src="images/prod1.jpg">
+                        <img src="./images/prod1.jpg">
                         <div class="caption">
                           <h1>상품 1</h1>
                           <p>상품 1 설명 텍스트</p>
@@ -543,7 +570,7 @@
                         </div>
                       </li>
                       <li>
-                        <img src="images/prod2.jpg">
+                        <img src="./images/prod2.jpg">
                         <div class="caption">
                           <h1>상품 2</h1>
                           <p>상품 2 설명 텍스트</p>
@@ -551,7 +578,7 @@
                         </div>
                       </li>
                       <li>
-                        <img src="images/prod3.jpg">
+                        <img src="./images/prod3.jpg">
                         <div class="caption">
                           <h1>상품 3</h1>
                           <p>상품 3 설명 텍스트</p>
@@ -580,7 +607,7 @@
                 <p>
                     <span>마우스 올렸을때 이미지 변형되도록 적용</span>
                     <div class="container">
-                        <img src="images/coffee.jpg" class="photo">
+                        <img src="./images/coffee.jpg" class="photo">
                       </div>
                     
                 </p>
@@ -592,7 +619,7 @@
             <div>
                 <p>
                     <span>transition, transform 속성 사용해서 확대 적용</span>
-                    <img src="images/lamp.jpg" width="250" height="188" class="photo">
+                    <img src="./images/lamp.jpg" width="250" height="188" class="photo">
                 </p>
                 <div id="divSaa"></div>
             </div>
