@@ -1,0 +1,40 @@
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header {
+    width: 200px;
+    height: 650px;
+    background-color: #b3d988;
+}
+
+.main {
+    width: 800px;
+    height: 650px;
+    background-color: #888;
+}
+
+.slideContent {
+    height: 350px;
+    background-color: #1a8cff;
+}
+
+.content {
+    height: 200px;
+    background-color: #0059b3;
+}
+
+
+footer {
+    height: 100px;
+    background-color: #b3d9ff;
+}

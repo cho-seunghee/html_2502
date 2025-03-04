@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript 함수</title>
+        <link rel="stylesheet" href="./css/ex_p178.css">
+        <script type="module">
+            import * as module1 from './js/module_pattern_2_c.js';
+            window.module1 = module1;
+        </script>
+    </head>
+    <body>
+        <section class="s12">
+            <h1>화살표 함수</h1>
+            <div>
+                <p>
+                    <span>화살표 함수와 일반 함수의 this 차이점 (console.log 확인)</span>
+                    <button id="btnS12" onclick="fnPage178()">확인</button>
+                </p>
+                <div id="divS12"></div>
+            </div>
+        </section><hr>
+        <section class="s13">
+            <h1>화살표 함수</h1>
+            <div>
+                <p>
+                    <span>일반함수는 this 호출 시 동적(버튼태그 나옴), 화살표함수는 상위 스코프(여기서는 전역이므로 window 객체)의 this 정적 (console.log 확인)</span>
+                    <p><button class="btn-1">BUTTON-01</button></p>
+                    <p><button class="btn-2">BUTTON-02</button></p>
+                    <button id="btnS13" onclick="fnPage180()">버튼이벤트활성화</button>
+                </p>
+                <div id="divS13"></div>
+            </div>
+        </section><hr>
+        <section class="s14">
+            <h1>모듈 패턴</h1>
+            <h1>Live Server 플로그인을 설치해 인터넷 프로토콜 사용하기</h1>
+            <h1>모듈 패턴 예제 살펴보기</h1>
+            <div>
+                <p>
+                    <span>모듈 패턴 2개 기능(함수) 값 참조 export로 변수 각각 내보냄</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
+                    <button id="btnS14" onclick="fnPage185()">확인</button>
+                </p>
+                <div id="divS14"></div>
+            </div>
+        </section><hr>
+        <section class="s15">
+            <h1>모듈 패턴 예제 살펴보기</h1>
+            <div>
+                <p>
+                    <span>모듈 패턴 2개 기능(함수) 값 참조 export로 변수 한꺼번에 내보냄</span>
+                    <span>상단 module type의 스크립트에서 window.함수명 으로 값 받아서 일반 js파일에서 사용</span>
+                    <button id="btnS15" onclick="fnPage185_2()">확인</button>
+                </p>
+                <div id="divS15"></div>
+            </div>
+        </section><hr>
+        <section class="s16">
+            <h1>모듈 패턴 예제 살펴보기</h1>
+            <div>
+                <p>
+                    <span>export default (단독)</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
+                    <button id="btnS16" onclick="fnPage185_3()">확인</button>
+                </p>
+                <div id="divS16"></div>
+            </div>
+        </section><hr>
+        <section class="s17">
+            <h1>모듈 패턴 예제 살펴보기</h1>
+            <div>
+                <p>
+                    <span>참조의 참조</span>
+                    <span>일반js 파일에서 동적으로 참조 사용</span>
+                    <button id="btnS17" onclick="fnPage185_4()">확인</button>
+                </p>
+                <div id="divS17"></div>
+            </div>
+        </section><hr>
+        <section class="s18">
+            <h1>마무리문제 Q1</h1>
+            <div>
+                <p>
+                    <span>배경 색상 바꾸기</span>
+                    <div id="theBody18">배경색</div>
+                    <button id="btnS18" onclick="fnPage187()">배경 색상 바꾸기</button>
+                </p>
+                <div id="divS18"></div>
+            </div>
+        </section><hr>
+        <section class="s19">
+            <h1>마무리문제 Q2</h1>
+            <div>
+                <p>
+                    <span>성적</span>
+                    <button id="btnS19" onclick="fnPage188()">확인</button>
+                </p>
+                <div id="divS19"></div>
+            </div>
+        </section><hr>
+
+
+        <script src="./js/ex_p178.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background-color: #ffad99;
+}
+
+.slideContent {
+    height: 300px;
+    background-color: #ff8080;
+}
+
+.content {
+    height: 200px;
+    background-color: #ffcccc;
+}
+
+footer {
+    height: 100px;
+    background-color: #ffad99;
+}
+
+.logo {
+    src: url('../images/logo1.png') 200px 40px;
+    width: 200px;
+    display: inline-block;
+}
+
+.nav{
+    display: inline-block;
+}
+.nav ul li {
+    display: inline-block;
+}
