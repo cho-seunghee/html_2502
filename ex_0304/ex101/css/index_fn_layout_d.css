@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 950px;
+}
+
+.mainContent {
+    width: 100%;
+    height: 850px;
+    display: flex;
+}
+
+header {
+    width: 200px;
+    height: 850px;
+    background-color: #b3d988;
+}
+
+.main {
+    min-width: 1000px;
+    width: calc(100% - 200px);
+    height: 850px;
+    background-color: #888;
+}
+
+.slideContent {
+    height: 600px;
+    background-color: #1a8cff;
+}
+
+.slideImg {
+    height: 400px;
+    background-color: #23b478;
+}
+
+.slideSel {
+    height: 200px;
+    background-color: #9fc516;
+}
+
+.content {
+    height: 250px;
+    background-color: #0059b3;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.f1 {
+    width: 200px;
+    background-color: yellowgreen;
+}
+
+.f2 {
+    width: calc(100% - 200px - 200px);
+    background-color: yellow;
+}
+
+.f3 {
+    width: 200px;
+    background-color: yellowgreen;
+}
+
+/* 더 화려한 디자인을 위한 추가 스타일 */
+.tab-container {
+    padding: 20px;
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+}
+
+.tab-label {
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.tab-label:hover::after {
+    width: 100%;
+}
+
+#tab1:checked ~ .tab-nav .tab-label[for="tab1"]::after,
+#tab2:checked ~ .tab-nav .tab-label[for="tab2"]::after,
+#tab3:checked ~ .tab-nav .tab-label[for="tab3"]::after {
+    width: 100%;
+}
+
+.tab-content {
+    line-height: 1.6;
+}
+
+.tab-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tab-content p {
+    color: #666;
+}
