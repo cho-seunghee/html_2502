@@ -1,4 +1,4 @@
-*{
+* {
     font-size: 14px;
     font-weight: 300;
 }
@@ -48,5 +48,14 @@ pre {
 }
 
 .aqua {
-    color : aqua;
+    color: aqua;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #aaa;
+    padding: 8px 10px;
 }

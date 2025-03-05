@@ -186,3 +186,113 @@ fnPage198 = () => {
 
     fn_promise();
 }
+
+fnPage203 = () => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(`Data 1: ${data}`)
+        })
+        .catch((error) => {
+            console.log(`Error 1: ${error}`)
+        });
+
+    const getData = async () => {
+        try {
+            const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+            const data = await response.json();
+            console.log(`data : ${data}`);
+            console.log(`Data 2: ${data.slice(0, 10)}`);
+
+            const tbody = d.querySelector('#fetchTable tbody');
+            tbody.innerHTML = '';
+
+            data
+                .slice(0, 10)
+                .forEach(item => {
+                    const row = d.createElement('tr');
+                    const idCell = d.createElement('td');
+                    idCell.textContent = item.id;
+                    row.appendChild(idCell);
+
+                    const titleCell = d.createElement('td');
+                    titleCell.textContent = item.title;
+                    row.appendChild(titleCell);
+
+                    const bodyCell = d.createElement('td');
+                    bodyCell.textContent = item.body;
+                    row.appendChild(bodyCell);
+
+                    tbody.appendChild(row);
+                });
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
+
+    getData();
+    d.addEventListener('DOMContentLoaded', () => {
+        getData();
+    });
+}
+
+fnPage206 = () => {
+    function rocketReady(rocketName) {
+        return new Promise((resolve, reject) => {
+
+            setTimeout(() => {
+                const result = Math.random() > 0.3;
+                console.log(`result: ${result}`);
+
+                if (result) {
+                    resolve(`${rocketName} 발사 완료`);
+                } else {
+                    reject(`${rocketName} 발사 실패`);
+                }
+            }, 3000)
+
+        });
+    }
+    rocketReady('나로호')
+        .then((response) => {
+            console.log(`성공: ${response}`);
+        })
+        .catch((response) => {
+            console.log(`실패: ${response}`);
+        })
+        . finally((response) => {
+            console.log('우주 발사체 테스트 완료');
+        });
+}
+
+fnPage207 = () => {
+    const API_URL = "https://jsonplaceholder.typicode.com/users";
+
+    function getFetchUsers() {
+        console.log("Fetching Load Data...");
+
+        fetch(API_URL)
+        .then((response) => {
+            console.log(response.status);
+            if (!response.ok) {
+                throw new Error(`응답오류! 상태: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then((users) => {
+            console.log(`users: ${users}`);
+            users.slice(0, 4)
+                .forEach((user, index) => {
+                    console.log(`${index + 1} ${user.name} (${user.email})`);
+                });
+        })
+        .catch((error) => {
+            // 네트워크 또는 처리 오류시 실행
+            console.error("Error fetching users:", error.message);
+        });
+    }
+
+    getFetchUsers();
+}
