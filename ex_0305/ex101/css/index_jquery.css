@@ -1,0 +1,36 @@
+* {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+section > h1 {
+    text-shadow: 1px 2px 5px #e0504b, 1px 4px 7px #e3fa17;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section > div {
+    border: 1px solid #000;
+    background-color: #c5e7f5fb;
+}
+
+section > div > p {
+    border: 1px solid #000;
+    background-color: #fffffffb;
+    display: block;
+}
+
+section > div > p > span {
+    border: 1px solid #000;
+    background-color: #175023fb;
+    color: #fff;
+    display: block;
+}
+
+pre {
+    background-color: #3b393f;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+}
