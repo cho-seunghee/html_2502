@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    vertical-align: top;
+}
+
 li {
     list-style: none;
 }
@@ -13,6 +17,14 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .wrap {
@@ -24,7 +36,6 @@ a {
 
 header {
     height: 100px;
-    background-color: #fee5df;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,18 +45,9 @@ header .nav > ul {
     display: flex;
 }
 
-header {
-    height: 100px;
-    background-color: rgb(151, 233, 251);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 header ul a {
     display: block;
     text-align: center;
-    background-color: aqua;
 }
 
 header .menu {
@@ -54,16 +56,14 @@ header .menu {
 }
 
 header .menu:hover>a {
-    color: red;
-    background-color: yellow;
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 145, 112);
 }
 
 header .subMenu {
     width: 100%;
-
     position: absolute;
     z-index: 998;
-
     display: none;
 }
 
@@ -79,6 +79,10 @@ header .subMenu li:hover a {
     background-color: yellow;
 }
 
+.logo img {
+    width: 60px;
+}
+
 .nav {
     width: 800px;
     height: 100px;
@@ -87,51 +91,182 @@ header .subMenu li:hover a {
 
 section {
     height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .slideContent {
-    height: 300px;
-    background-color: #ff8080;
+    position: relative;
+    width: 100%;
+    height: 400px; /* 원하는 높이 설정 */
+    overflow: hidden;
 }
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;           /* Flexbox 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+}
+
+.slide img {
+    max-width: 80%;        /* 컨테이너 너비를 넘지 않도록 */
+    max-height: 100%;       /* 컨테이너 높이를 넘지 않도록 */
+    object-fit: contain;    /* 이미지 비율 유지 */
+    transition: transform 0.3s ease; /* 부드러운 확대/축소 효과 */
+}
+
+/* 호버 시 확대 효과 */
+.slide img:hover {
+    transform: scale(1.1); /* 10% 확대 */
+    cursor: pointer;
+}
+
+/* 버튼 스타일 */
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prevBtn { left: 20px; }
+.nextBtn { right: 20px; }
 
 .content {
     height: 200px;
     display: flex;
     background-color: #ffcccc;
+    align-items: center;
 }
 
-.content  .con1 {
-    width: 33%;
-    background-color: yellowgreen;
+.tabMenu li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.content > .con2 {
-    width: 33%;
-    background-color: pink;
+.tabMenu li a {
+    display: block;
+    padding: 10px;
 }
 
-.content > .con3 {
-    width: 33%;
-    background-color: yellowgreen;
+.tabMenu li.on a {
+    background: #6159d6;
+}
+
+.tabItem >* {
+    height: 156px;
+    padding: 10px;
+}
+
+.tabItem >*.on {
+    background: #bac8ee;
+}
+
+.notice li {
+    display: flex;
+    line-height: 2.2;
+}
+
+.notice li a {
+    display: inline-block;
+    width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice li span {
+    margin-left: auto;
+}
+
+.notice li:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: none;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 120px;
+    margin-top: 8px;
+    object-fit: contain;    /* 이미지 비율 유지 */
+}
+
+.gallery a img {
+    width: 100%;
+}
+
+.banner, .link {
+    position: relative;
+    padding: 10px;
+}
+
+.banner img, .link img {
+    display: inline-block;
+    height: 100%;
+    margin-top: 8px;
+    object-fit: contain;    /* 이미지 비율 유지 */
+}
+
+.banner h2, .link h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px;
 }
 
 footer {
+    width: 100%;
     height: 100px;
-    background-color: #f1f1f1;
+    background-color: #e6e600;
     display: flex;
 }
 
-footer > .f1 {
-    width: 20%;
-    background-color: lightgray;
+a.footerLogo {
+    width: 200px;
+    height: 40px;
+    font-size: 0;
+    color: transparent;
 }
 
-footer > .f2 {
-    width: 60%;
-    background-color: yellow;
+a.footerLogo img {
+    width: 131px;
 }
 
-footer > .f3 {
-    width: 20%;
-    background-color: lightgray;
+footer p {
+    width: 70%;
+    text-align: center;
 }
+
+.sns {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.sns li {
+    display: inline-block;
+    width: 24%;
+}
+
+.sns li img {
+    width: 100%;
+}
+
+

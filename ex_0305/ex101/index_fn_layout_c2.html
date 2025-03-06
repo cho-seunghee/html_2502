@@ -10,7 +10,7 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="logo">로고</div>
+            <div class="logo"><a href="#"><img src="./images/logo1.png" alt="로고"></a></div>
             <div class="nav">
                 <ul>
                     <li class="menu">
@@ -44,17 +44,91 @@
         </header>
         <section>
             <div class="main">
-                <div class="slideContent">이미지 슬라이더</div>
+                <div class="slideContent">
+                    <div class="slide"><img src="./images/g1.jpeg" alt=""></div>
+                    <div class="slide"><img src="./images/g2.jpeg" alt=""></div>
+                    <div class="slide"><img src="./images/g3.jpeg" alt=""></div>
+                    <button class="prevBtn">이전</button>
+                    <button class="nextBtn">다음</button>
+                </div>
                 <div class="content">
-                    <div class="con1">공지사항(C.1)</div>
-                    <div class="con2">갤러리(C.2)</div>
-                    <div class="con3">바로가기(C.3)</div>
+                    <div class="tab">
+                        <ul class="tabMenu">
+                            <li class="on">
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">갤러리</a>
+                            </li>
+                        </ul>
+                        <div class="tabItem">
+                            <ul class="notice on">
+                                <li>
+                                    <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                                    <span>공지사항날짜</span></li>
+                                <li>
+                                    <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                                    <span>공지사항날짜</span></li>
+                                <li>
+                                    <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                                    <span>공지사항날짜</span></li>
+                                <li>
+                                    <a href="#">공지사항공지사항공지사항공지사항공지사항공지사항공지사항</a>
+                                    <span>공지사항날짜</span></li>
+                            </ul>
+                            <ul class="gallery">
+                                <li>
+                                    <a href="#"><img src="./images/g1.jpeg" alt="갤러리이미지1"/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/g2.jpeg" alt="갤러리이미지2"/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/g3.jpeg" alt="갤러리이미지3"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <a href="#">
+                            <h2>배너</h2><img src="./images/g1.jpeg" alt="배너 이미지"></a>
+                    </div>
+                    <div class="link">
+                        <a href="#">
+                            <h2>바로가기</h2><img src="./images/g2.jpeg" alt="링크 이미지"></a>
+                    </div>
                 </div>
                 <footer>
-                    <div class="f1">Copyright</div>
-                    <div class="f_right">
-                        <div class="f2">SNS</div>
-                        <div class="f3">패밀리 사이트</div>
+                    <div class="inner">
+                        <p>&copy;Copyright All rights reserved 가을연꽃축제</p>
+                        <div class="bottomRight">
+                        <ul class="sns">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/facebook.png" alt="페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/Instagram.png" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/twitter.png" alt="트위터">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="familySite">
+                            <select name="" id="fam">
+                                <option value="fam0">패밀리사이트</option>
+                                <option value="fam1">패밀리사이트1</option>
+                                <option value="fam2">패밀리사이트2</option>
+                                <option value="fam3">패밀리사이트3</option>
+                            </select>
+    
+                        </div>
+                    </div>
                     </div>
                 </footer>
             </div>

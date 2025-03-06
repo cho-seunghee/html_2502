@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    vertical-align: top;
+}
+
 li {
     list-style: none;
 }
@@ -29,13 +33,14 @@ header {
     border: 1px solid #000;
 }
 
-.logo {
+.navLogo {
     min-height: 100px;
-    width: 100px;
+    width: 200px;
+    display: flex;
 }
 
-.logo img {
-    width: 100%;
+.logo {
+    width: 100px;
 }
 
 .nav {
@@ -237,10 +242,38 @@ footer {
     display: flex;
     align-items: center;
     border: 1px dotted #000;
+    /* background: #eee; */
+}
+/* 
+footer .footerLogo {
+    display: block;
+    width: 200px;
+    height: 40px;
+    font-size: 0px;
+    color: transparent;
+} */
+/* 
+footer p {
+    width: 70%;
+    text-align: center;
+} */
+/* 
+footer .sns a img {
+    display: inline-block;
+    width: 20px;
+    margin-left: 20px;
+} */
+
+footer > * {
+    border: 1px dotted #000;
+}
+
+footer * {
+    margin: 0;
+    padding: 0;
 }
 
 .f1 {
-    width: 400px + calc(100% - 400px);
     height: 120px;
     min-width: 1000px;
     align-items: center;
@@ -250,7 +283,6 @@ footer {
     height: 50%;
     align-items: center;
     display: flex;
-    border: 1px dotted #000;
     float: left;    
 }
 
@@ -274,9 +306,16 @@ footer {
 .footContent {
     clear: both;
     height: 50%;
-    border: 1px dotted #000;
+    width: 100%;
+    border-top: 1px dotted #000;
 }
 
+.footLogo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
 
 /* -----팝업창----- */
 .winPopup {
