@@ -30,6 +30,13 @@ header {
     background-color: #b3d988;
 }
 
+.navLogo {
+    min-height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
 .nav a {
     display: block;
     width: 100%;
@@ -61,16 +68,13 @@ header {
     width: calc(100% - 200px);
     height: 850px;
     background-color: #888;
+    display: flex;
+    flex-direction: column;
 }
 
 .slideContent {
     height: 600px;
     background-color: #1a8cff;
-}
-
-.slideImg {
-    height: 400px;
-    background-color: #23b478;
 }
 
 .slideSel {
@@ -83,27 +87,91 @@ header {
     background-color: #0059b3;
 }
 
-footer {
-    width: 100%;
-    height: 100px;
+.noticeNav {
+    min-height: 120px;
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+}
+
+.noticeNav > * {
+    margin: 10px;
+}
+
+.noticeNav img {
+    height: 40px;
+}
+
+.noticeNav .noticeNavCon {
+    padding: auto 10px;
+}
+
+.noticeNav .noticeNavConR {
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border: 1px dotted #000;
+    /* background: #eee; */
+}
+
+footer > * {
+    border: 1px dotted #000;
+}
+
+footer * {
+    margin: 0;
     padding: 0;
 }
 
 .f1 {
-    width: 200px;
-    background-color: yellowgreen;
+    height: 120px;
+    min-width: 1000px;
+    align-items: center;
 }
 
-.f2 {
-    width: calc(100% - 200px - 200px);
-    background-color: yellow;
+.footLink {
+    height: 50%;
+    align-items: center;
+    display: flex;
+    float: left;    
 }
 
-.f3 {
+.footmenu {
+    display: flex;
+}
+.footmenu-item {
+    padding: 0 10px;
+    border-right: 1px solid #000;
+}
+
+.footmenu-item  a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footmenu-item:last-child {
+    border-right: none;
+}
+
+.footContent {
+    clear: both;
+    height: 50%;
+    width: 100%;
+    border-top: 1px dotted #000;
+}
+
+.footLogo {
     width: 200px;
-    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+.logo {
+    width: 100px;
 }
 
 /* 더 화려한 디자인을 위한 추가 스타일 */

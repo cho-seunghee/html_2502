@@ -244,25 +244,6 @@ footer {
     border: 1px dotted #000;
     /* background: #eee; */
 }
-/* 
-footer .footerLogo {
-    display: block;
-    width: 200px;
-    height: 40px;
-    font-size: 0px;
-    color: transparent;
-} */
-/* 
-footer p {
-    width: 70%;
-    text-align: center;
-} */
-/* 
-footer .sns a img {
-    display: inline-block;
-    width: 20px;
-    margin-left: 20px;
-} */
 
 footer > * {
     border: 1px dotted #000;
