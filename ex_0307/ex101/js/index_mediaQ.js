@@ -10,7 +10,7 @@ if (matchMedia("screen and (max-width: 700px)").matches) {
         "color": "orange"
     });
 } else if (matchMedia("not all and (orientation: landscape)").matches) {
-    // 세로모드_모바일체크
+    // 세로모드_모바일체크  
     $(".wrap").css({
         "background-color": "orange",
         "color": "white"
