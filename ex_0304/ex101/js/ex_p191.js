@@ -188,11 +188,36 @@ fnPage198 = () => {
 }
 
 fnPage203 = () => {
+    const tableBind = (tblNm, data) => {
+        const tbody = d.querySelector('#'+ tblNm +' tbody');
+        tbody.innerHTML = '';
+
+        data
+            .slice(0, 10)
+            .forEach(item => {
+                const row = d.createElement('tr');
+                const idCell = d.createElement('td');
+                idCell.textContent = item.id;
+                row.appendChild(idCell);
+
+                const titleCell = d.createElement('td');
+                titleCell.textContent = item.title;
+                row.appendChild(titleCell);
+
+                const bodyCell = d.createElement('td');
+                bodyCell.textContent = item.body;
+                row.appendChild(bodyCell);
+
+                tbody.appendChild(row);
+            });
+    }
+
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => {
             return response.json();
         })
         .then((data) => {
+            tableBind('fetchTable', data);
             console.log(`Data 1: ${data}`)
         })
         .catch((error) => {
@@ -206,27 +231,8 @@ fnPage203 = () => {
             console.log(`data : ${data}`);
             console.log(`Data 2: ${data.slice(0, 10)}`);
 
-            const tbody = d.querySelector('#fetchTable tbody');
-            tbody.innerHTML = '';
+            tableBind('fetchTable2', data);
 
-            data
-                .slice(0, 10)
-                .forEach(item => {
-                    const row = d.createElement('tr');
-                    const idCell = d.createElement('td');
-                    idCell.textContent = item.id;
-                    row.appendChild(idCell);
-
-                    const titleCell = d.createElement('td');
-                    titleCell.textContent = item.title;
-                    row.appendChild(titleCell);
-
-                    const bodyCell = d.createElement('td');
-                    bodyCell.textContent = item.body;
-                    row.appendChild(bodyCell);
-
-                    tbody.appendChild(row);
-                });
         } catch (error) {
             console.log(error.message);
         }

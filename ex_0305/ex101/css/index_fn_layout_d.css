@@ -15,7 +15,7 @@ a {
 
 .wrap {
     width: 100%;
-    height: 950px;
+    height: 100%;
 }
 
 .mainContent {
@@ -70,27 +70,99 @@ header {
     background-color: #888;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .slideContent {
     height: 600px;
-    background-color: #1a8cff;
-}
-
-.slideSel {
-    height: 200px;
-    background-color: #9fc516;
+    background-color: #e5ffdf;
+    border: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
     height: 250px;
-    background-color: #0059b3;
+    background-color: #9fc516;
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    padding: 10px;
+}
+
+.tabMenu li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tabMenu li a {
+    display: block;
+    padding: 10px;
+}
+
+.tabMenu li.on a {
+    background: #6159d6;
+}
+
+.tabItem >* {
+    height: 156px;
+    padding: 10px;
+}
+
+.tabItem >*.on {
+    background: #bac8ee;
+}
+
+.notice {
+    overflow: hidden;
+}
+
+.notice li {
+    display: flex;
+    line-height: 2.2;
+}
+
+.notice li a {
+    display: inline-block;
+    width: 460px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice li span {
+    margin-left: auto;
+}
+
+.notice li:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: none;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 100px;
+    margin-top: 8px;
+    object-fit: contain;    /* 이미지 비율 유지 */
+}
+
+.gallery a img {
+    width: 100%;
 }
 
 .noticeNav {
     min-height: 120px;
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
 .noticeNav > * {

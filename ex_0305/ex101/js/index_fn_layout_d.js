@@ -2,7 +2,9 @@ const linkImg = ["./images/g1.jpeg", "./images/g2.jpeg", "./images/g1.jpeg", "./
 let linkImgCnt = 0;
 
 $(document).ready(function() {
-    //$('.content2 img').height($('.content1').height());
+    $('.slideContent img').height($('.slideContent').height());
+
+    $('.tab').width($('.content').width());
     
 
     if($(".noticeImg").attr('src') != '')
@@ -49,13 +51,12 @@ $(".noticeNavConR").click(function() {
     
 });
 
+$('.tabMenu li').click(function() {
+    var idx = $(this).index();
 
-// $('.tabMenu li').click(function() {
-//     var idx = $(this).index();
+    $('.tabItem >*').hide().removeClass('on');
+    $('.tabItem >*').eq(idx).show().addClass('on');
 
-//     $('.tabItem >*').hide().removeClass('on');
-//     $('.tabItem >*').eq(idx).show().addClass('on');
-
-//     $('.tabMenu li').removeClass('on');
-//     $(this).addClass('on');
-// });
+    $('.tabMenu li').removeClass('on');
+    $(this).addClass('on');
+});
